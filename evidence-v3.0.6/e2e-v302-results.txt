@@ -1,0 +1,96 @@
+PASS [A1] en/default: every countdown uses the UI font stack (not monospace), tabular-nums  — {"body":"\"Segoe UI Variable\", \"Segoe UI\", \"Nirmala UI\", Amiri, system-ui, sans-serif","n":7,"bad":[]}
+PASS [A1] en/default: progress core label keeps its monospace face  — ui-monospace, Consolas, monospace
+PASS [A1] en/switched: every countdown uses the UI font stack (not monospace), tabular-nums  — {"body":"Inter, \"Hind Siliguri\", \"Segoe UI Variable\", \"Segoe UI\", \"Nirmala UI\", Amiri, system-ui, sans-serif","n":7,"bad":[]}
+PASS [A1] en: switched stack is the picked font  — Inter, "Hind Siliguri", "Segoe UI Variable", "Segoe UI", "Nirmala UI", Amiri, system-ui, sans-serif
+PASS [A1] en/switched: progress core label keeps its monospace face  — ui-monospace, Consolas, monospace
+PASS [A1] bn/default: every countdown uses the UI font stack (not monospace), tabular-nums  — {"body":"\"Segoe UI Variable\", \"Segoe UI\", \"Nirmala UI\", Amiri, system-ui, sans-serif","n":7,"bad":[]}
+PASS [A1] bn/default: progress core label keeps its monospace face  — ui-monospace, Consolas, monospace
+PASS [A1] bn/switched: every countdown uses the UI font stack (not monospace), tabular-nums  — {"body":"Kalpurush, \"Segoe UI Variable\", \"Segoe UI\", \"Nirmala UI\", Amiri, system-ui, sans-serif","n":7,"bad":[]}
+PASS [A1] bn: switched stack is the picked font  — Kalpurush, "Segoe UI Variable", "Segoe UI", "Nirmala UI", Amiri, system-ui, sans-serif
+PASS [A1] bn/switched: progress core label keeps its monospace face  — ui-monospace, Consolas, monospace
+PASS [A2] en: Bornomala is offered and loads offline; a saved Lohit choice opens as Bornomala  — {"loaded":true,"options":["system","inter","manrope","outfit","jakarta","fraunces","lato","nunito","sourcesans","plex","lora","hind","notosans","notoserif","anek","tiro","kalpurush","siyam","solaiman","bornomala","adorsho"],"value":"bornomala","stack":"Bornomala, \"Segoe UI Variable\", \"Segoe UI\", \"Nirmala UI\", Amiri, system-ui, sans-serif"}
+PASS [A2] en: About names Bornomala and Li Ador Noirrit's licence  — ABOUT THE TEXTSSources and licencesA Blessed Reminder shows the Saheeh International English translation and Muhiuddin Khan’s Bangla translation, stored in the app so it works offline. Its passages fo
+PASS [A2] bn: Bornomala is offered and loads offline; a saved Lohit choice opens as Bornomala  — {"loaded":true,"options":["system","inter","manrope","outfit","jakarta","fraunces","lato","nunito","sourcesans","plex","lora","hind","notosans","notoserif","anek","tiro","kalpurush","siyam","solaiman","bornomala","adorsho"],"value":"bornomala","stack":"Bornomala, \"Segoe UI Variable\", \"Segoe UI\", \"Nirmala UI\", Amiri, system-ui, sans-serif"}
+PASS [A2] bn: About names Bornomala and Li Ador Noirrit's licence  — লেখার উৎসউৎস ও লাইসেন্সএকটি বরকতময় স্মরণে সাহিহ ইন্টারন্যাশনালের ইংরেজি অনুবাদ এবং মুহিউদ্দিন খানের বাংলা অনুবাদ অফলাইনে রাখা হয়েছে। অংশগুলো তাঞ্জিল কুরআন মেটাডেটার ৫৫৬টি রুকু ও পারার সীমা অনুসরণ কর
+PASS [A3] en: no Revise event record text anywhere
+PASS [A3] bn: no Revise event record text anywhere
+PASS [B1] en: no Record completion on the five Fard and voluntary cards  — {"buttons":0,"text":false,"cards":5}
+PASS [B2] en: Mark Complete is still on the open home event card
+PASS [B2] en: Mark Complete is still on the countdown page (enabled while open)  — {"disabled":false}
+PASS [B3] en: open Dhuhr circle ticks as before, not marked late  — {"fard":{"dhuhr":true},"voluntary":{},"at":{"fard:dhuhr":[129,840]},"closed":{"fard:dhuhr":true}}
+PASS [B1] bn: no Record completion on the five Fard and voluntary cards  — {"buttons":0,"text":false,"cards":5}
+PASS [B2] bn: Mark Complete is still on the open home event card
+PASS [B2] bn: Mark Complete is still on the countdown page (enabled while open)  — {"disabled":false}
+PASS [B3] bn: open Dhuhr circle ticks as before, not marked late  — {"fard":{"dhuhr":true},"voluntary":{},"at":{"fard:dhuhr":[129,840]},"closed":{"fard:dhuhr":true}}
+PASS [B4] en: [v3.0.4 F] an ended unticked Fajr gets no card on its own  — {"block":false,"late":0}
+PASS [B5] en: in-window untick brings the circle back under the normal heading (closed card re-opens)  — {"hiddenBefore":true,"shownAgain":true,"undo":true}
+PASS [B4] bn: [v3.0.4 F] an ended unticked Fajr gets no card on its own  — {"block":false,"late":0}
+PASS [B5] bn: in-window untick brings the circle back under the normal heading (closed card re-opens)  — {"hiddenBefore":true,"shownAgain":true,"undo":true}
+PASS [B8] en: a v3.0.1 record loads exactly as v3.0.1 itself loads it (fields kept, revise kept) and the page has no errors  — {"errs":[],"got":{"fard":{"fajr":true,"dhuhr":true,"asr":true},"voluntary":{"witr":true},"rakahs":{"witr":3},"rakahSets":{"witr":[true,true,false,false,false,false]},"revise":{"fard:isha":{"id":"fard:isha","kind":"fard","key":"isha","parts":{}}},"closed":{"fard:fajr":true},"locked":{"fard:fajr":1,"fard:dhuhr":1,"fard:asr":1,"voluntary:witr":1}}}
+PASS [B8] bn: a v3.0.1 record loads exactly as v3.0.1 itself loads it (fields kept, revise kept) and the page has no errors  — {"errs":[],"got":{"fard":{"fajr":true,"dhuhr":true,"asr":true},"voluntary":{"witr":true},"rakahs":{"witr":3},"rakahSets":{"witr":[true,true,false,false,false,false]},"revise":{"fard:isha":{"id":"fard:isha","kind":"fard","key":"isha","parts":{}}},"closed":{"fard:fajr":true},"locked":{"fard:fajr":1,"fard:dhuhr":1,"fard:asr":1,"voluntary:witr":1}}}
+PASS [C1/C2] en: Qiyam card shows the umbrella breakdown  — Qiyam al-Layl 9 rak‘ahs: Tahajjud 4, Witr 3, other 2
+PASS [C3] en: voluntary total counts each rak'ah once (9, not 18)  — Fard 0/5 · Sunnah 0/5 · Nafl 0/5 · Voluntary 9 rak‘ahs
+PASS [C4] en: Qiyam's own circles read 2,4,6…; Witr 1,3,5…  — {"qiyam":"Qiyam al-Layl 9 rak‘ahs: Tahajjud 4, Witr 3, other 2","qLabels":["2","4","6","8","10","12"],"wLabels":["1","3","5","7","9","11"],"caption":"Fard 0/5 · Sunnah 0/5 · Nafl 0/5 · Voluntary 9 rak‘ahs"}
+PASS [C4] en: ticking order and saved counts unchanged (2nd Qiyam circle saves 4)  — {"qiyam":4,"tahajjud":4,"witr":3}
+PASS [C1/C2] bn: Qiyam card shows the umbrella breakdown  — কিয়ামুল লাইল ৯ রাকাত: তাহাজ্জুদ ৪, বিতর ৩, অন্যান্য ২
+PASS [C3] bn: voluntary total counts each rak'ah once (9, not 18)  — ফরজ ০/৫ · সুন্নাত ০/৫ · নফল ০/৫ · ঐচ্ছিক ৯ রাকাত
+PASS [C4] bn: Qiyam's own circles read 2,4,6…; Witr 1,3,5…  — {"qiyam":"কিয়ামুল লাইল ৯ রাকাত: তাহাজ্জুদ ৪, বিতর ৩, অন্যান্য ২","qLabels":["২","৪","৬","৮","১০","১২"],"wLabels":["১","৩","৫","৭","৯","১১"],"caption":"ফরজ ০/৫ · সুন্নাত ০/৫ · নফল ০/৫ · ঐচ্ছিক ৯ রাকাত"}
+PASS [C4] bn: ticking order and saved counts unchanged (2nd Qiyam circle saves 4)  — {"qiyam":4,"tahajjud":4,"witr":3}
+PASS [D1] en: the reminder has no Arabic, only the selected language  — A BLESSED REMINDER
+
+The slander against 'A'ishah
+
+11 Indeed, those who came with falsehood are a group among you. Do not think it bad for you; rather it is good
+PASS [D1] en: surah name and verse numbers are shown  — An-Noor 24:11
+PASS [D7] en: a subject line is shown above the passage  — The slander against 'A'ishah
+PASS [D14] en: progress line under the reminder  — Juz' 18 · 0 of 9 passages read today
+PASS [D4] en: Full section is one tap away and returns  — {"before":"An-Noor 24:11","after":"An-Noor 24:11–20","label":"Show less","back":"An-Noor 24:11"}
+PASS [D13] en: Today's portion opens a scrollable list of today's passages with unread marked [v3.0.6 C/D]  — {"open":true,"title":"Today's portion","items":9,"unread":9,"summary":"Juz' 18 · 0 of 9 passages read today","read":0,"scroll":true}
+PASS [D13] en: opening a passage there does not mark it, its Mark as read does [v3.0.6 A/B]; Full section works there  — {"unread":9,"body":true,"full":true,"marked":8}
+PASS [D12] en: reading memory is a compact bitset per Hijri year (one passage marked) [v3.0.6 F]  — {"old":null,"years":["1448"],"len":460}
+PASS [D14] en: Settings shows the month line and the switch (on by default)  — {"line":"1448 AH: 1 of 2,739 passages read","checked":true}
+PASS [D14] en: switching it off hides the line and survives a reload  — {"line":false,"saved":false}
+PASS [D1] bn: the reminder has no Arabic, only the selected language  — একটি বরকতময় স্মরণ
+
+আয়েশার বিরুদ্ধে অপবাদের ঘটনা
+
+১১ যারা মিথ্যা অপবাদ রটনা করেছে, তারা তোমাদেরই একটি দল। তোমরা একে নিজেদের জন্যে খারাপ মনে করো না; বরং এটা 
+PASS [D1] bn: surah name and verse numbers are shown  — আন-নূর ২৪:১১
+PASS [D7] bn: a subject line is shown above the passage  — আয়েশার বিরুদ্ধে অপবাদের ঘটনা
+PASS [D14] bn: progress line under the reminder  — পারা ১৮ · আজ ৯টি অংশের ০টি পড়া হয়েছে
+PASS [D4] bn: Full section is one tap away and returns  — {"before":"আন-নূর ২৪:১১","after":"আন-নূর ২৪:১১–২০","label":"সংক্ষেপে দেখুন","back":"আন-নূর ২৪:১১"}
+PASS [D13] bn: Today's portion opens a scrollable list of today's passages with unread marked [v3.0.6 C/D]  — {"open":true,"title":"আজকের অংশ","items":9,"unread":9,"summary":"পারা ১৮ · আজ ৯টি অংশের ০টি পড়া হয়েছে","read":0,"scroll":true}
+PASS [D13] bn: opening a passage there does not mark it, its Mark as read does [v3.0.6 A/B]; Full section works there  — {"unread":9,"body":true,"full":true,"marked":8}
+PASS [D12] bn: reading memory is a compact bitset per Hijri year (one passage marked) [v3.0.6 F]  — {"old":null,"years":["1448"],"len":460}
+PASS [D14] bn: Settings shows the month line and the switch (on by default)  — {"line":"১৪৪৮ হিজরি: ২,৭৩৯টি অংশের ১টি পড়া হয়েছে","checked":true}
+PASS [D14] bn: switching it off hides the line and survives a reload  — {"line":false,"saved":false}
+PASS [D2] en: About credits the Tanzil ruku' metadata (CC BY 3.0)  — ABOUT THE TEXTSSources and licencesA Blessed Reminder shows the Saheeh International English translation and Muhiuddin Khan’s Bangla translation, stored in the app so it works offline. Its passages fo
+PASS [D16] en: name and translation credits unchanged
+PASS [D2] bn: About credits the Tanzil ruku' metadata (CC BY 3.0)  — লেখার উৎসউৎস ও লাইসেন্সএকটি বরকতময় স্মরণে সাহিহ ইন্টারন্যাশনালের ইংরেজি অনুবাদ এবং মুহিউদ্দিন খানের বাংলা অনুবাদ অফলাইনে রাখা হয়েছে। অংশগুলো তাঞ্জিল কুরআন মেটাডেটার ৫৫৬টি রুকু ও পারার সীমা অনুসরণ কর
+PASS [D16] bn: name and translation credits unchanged
+PASS [D3] v3.0.3 rebalance: 2,739 passages  — {"count":2739,"crossJuz":0,"crossSection":0,"cut":0,"themes":11,"tagged":229}
+PASS [D4] passages never cross a juz' or ruku' boundary  — {"count":2739,"crossJuz":0,"crossSection":0,"cut":0,"themes":11,"tagged":229}
+PASS [D5] no verse is ever cut (shown verses are whole)  — {"count":2739,"crossJuz":0,"crossSection":0,"cut":0,"themes":11,"tagged":229}
+PASS [D8] eleven themes; tagged verses mark their passages as first picks  — {"count":2739,"crossJuz":0,"crossSection":0,"cut":0,"themes":11,"tagged":229}
+PASS [D5] a long passage shows whole leading verses and Read more shows the rest  — {"i":4,"shown":2,"all":4}
+PASS [D6] hand-check report is in CHECKLIST-v3.0.2.md (300 + 100 split points)
+PASS [D9] 29 days from 11 Nov 2026: portions follow on in mushaf order, no verse twice or skipped [v3.0.6 D]  — {"size":510,"first":2590,"last":3099,"day29":{"d":29,"n":7,"summary":"Juz' 19 · 0 of 7 passages read today"}}
+PASS [D9] 30 days from 10 Dec 2026: portions follow on in mushaf order, no verse twice or skipped [v3.0.6 D]  — {"size":529,"first":3100,"last":3628,"d30":{"d":30,"n":8,"summary":"Juz' 22 · 0 of 8 passages read today"}}
+PASS [D15] a new Hijri month continues the plan from the day before (no restart at juz' 1) [v3.0.6 D]  — {"prev":[3082,3116],"next":3100}
+PASS [D15] after Maghrib the Hijri date moves on while today's portion stays until midnight [v3.0.6 G]  — {"before":{"prog":"Juz' 18 · 0 of 9 passages read today","hijri":"12 Jumada II 1448 AH"},"after":{"prog":"Juz' 18 · 0 of 9 passages read today","hijri":"13 Jumada II 1448 AH"}}
+PASS [D10] reads in order from the start of today's portion; stays until Mark as read, then the next unread [v3.0.6 A]  — {"first":{"i":1301,"first":1301,"unread":[1301,1302,1303,1304,1305,1306,1307,1308,1309],"themed":[],"isThemed":null,"ref":"An-Noor 24:11"},"after16s":1301,"afterMark":1302}
+PASS [D11] right after a tick the gratitude moment picks a gratitude passage of today's portion (in order if it has none)  — {"i":1302,"first":1302,"unread":[1302,1303,1304,1305,1306,1307,1308,1309],"themed":[],"isThemed":false,"ref":"An-Noor 24:12"}
+PASS [D11] Friday in the Jumu'ah window: friday theme if today's portion has one, otherwise in order  — {"i":1338,"first":1338,"unread":[1338,1339,1340,1341,1342,1343,1344,1345],"themed":[],"isThemed":false,"ref":"Al-Furqaan 25:16–18"}
+PASS [D11] first 30 minutes of Fajr: the dawn moment applies (dawn passage if one is unread, otherwise in order)  — {"i":1313,"first":1310,"unread":[1310,1311,1312,1313,1314,1315,1316,1317,1318],"themed":[1313,1314],"isThemed":true,"ref":"An-Noor 24:35–38"}
+PASS [E] en: corner label  — v3.0.6
+PASS [E] bn: corner label  — v৩.০.৬
+PASS [Layout] en 1280x720 day: nothing overflows  — {"pageOverflow":false,"bad":[]}
+PASS [Layout] en 1280x720 night: nothing overflows  — {"pageOverflow":false,"bad":[]}
+PASS [Layout] en 420x700 day: nothing overflows  — {"pageOverflow":false,"bad":[]}
+PASS [Layout] en 420x700 night: nothing overflows  — {"pageOverflow":false,"bad":[]}
+PASS [Layout] bn 1280x720 day: nothing overflows  — {"pageOverflow":false,"bad":[]}
+PASS [Layout] bn 1280x720 night: nothing overflows  — {"pageOverflow":false,"bad":[]}
+PASS [Layout] bn 420x700 day: nothing overflows  — {"pageOverflow":false,"bad":[]}
+PASS [Layout] bn 420x700 night: nothing overflows  — {"pageOverflow":false,"bad":[]}
+
+86/86 passed

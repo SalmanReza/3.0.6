@@ -1,0 +1,1 @@
+{"samples":600,"maxSunAltDiffDeg":0.031,"maxMoonAltDiffDeg":0.026,"maxMoonAzDiffDeg":0.1029,"maxIllumDiff":0.00001,"maxMoonriseDiffMin":0.21}

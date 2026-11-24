@@ -1,0 +1,17 @@
+v3.0.5 side by side with v3.0.4 (scripts/compare305.mjs): same saved data, same fake clock (23 Nov 2026 14:00 Asia/Dhaka),
+7 views (home, settings, countdown, weekly, astrolabe, clock, Reading portion) x EN/BN x 1280x720 and 420x700 = 28 pairs.
+Screenshots: /workspace/prayer/compare305/*-304.png / *-305.png. No page errors in either version.
+
+Text differences (compare-v304-text-diff.json), all from the approved lines:
+- Every view: corner label v3.0.4 -> v3.0.5 (line 4).
+- Settings: "English font" picker and its "System default (Segoe UI)" option are gone; the one Font list carries the
+  honest note "English fonts have no Bangla letters, so with an English font Bangla text uses Hind Siliguri." (BN text too) (line 1).
+- Home / Reading portion weekly tiles: "2/35 · 6%" -> "3/35 · 9%" and "5/5 · 1/5" -> "5/5 · 2/5". The sample data has Witr
+  recorded on 22 Nov; under line 3 Witr counts as part of Qiyam al-Layl, so that night's Qiyam is now counted as done (line 3).
+  Rak'ah totals are unchanged (each rak'ah counted once).
+
+Pixel differences (compare-v304-pixel-diff.txt):
+- settings: 7-8 % at 1280 and 31 px shorter at 420, because one picker row was removed and everything below moved up (line 1).
+- clock-bn (1.3-1.7 %), weekly-*-420 (0.9-1.9 %), countdown-bn-420 (0.6 %): inspected as side-by-side + difference masks;
+  the changed pixels are the moving analog clock hands / second hand and anti-aliasing of the live clock, no layout change.
+- All other views: under 0.25 % (clock seconds, label digit).

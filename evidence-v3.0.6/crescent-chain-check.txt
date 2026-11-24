@@ -1,0 +1,11 @@
+Crescent month chain check, Hijri 1440–1572 (lunations -84..1511), current engine (src/moon-engine.js)
+Dhaka (23.8103, 90.4125): months 1596, 29-day 749, 30-day 847, lengths other than 29/30: 0, months breaking the 29th-evening rule: 0  (3148 ms)
+Mecca (21.4225, 39.8262): months 1596, 29-day 748, 30-day 848, lengths other than 29/30: 0, months breaking the 29th-evening rule: 0  (3012 ms)
+London (51.5074, -0.1278): months 1596, 29-day 749, 30-day 847, lengths other than 29/30: 0, months breaking the 29th-evening rule: 0  (3411 ms)
+LosAngeles (34.05, -118.25): months 1596, 29-day 748, 30-day 848, lengths other than 29/30: 0, months breaking the 29th-evening rule: 0  (2934 ms)
+Jakarta (-6.2, 106.8): months 1596, 29-day 748, 30-day 848, lengths other than 29/30: 0, months breaking the 29th-evening rule: 0  (2763 ms)
+CapeTown (-33.92, 18.42): months 1596, 29-day 748, 30-day 848, lengths other than 29/30: 0, months breaking the 29th-evening rule: 0  (2986 ms)
+Oulu (65.01, 25.47): months 1596, 29-day 748, 30-day 848, lengths other than 29/30: 0, months breaking the 29th-evening rule: 0  (3444 ms)
+Reykjavik (64.15, -21.94): months 1596, 29-day 748, 30-day 848, lengths other than 29/30: 0, months breaking the 29th-evening rule: 0  (3220 ms)
+Ushuaia (-54.8, -68.3): months 1596, 29-day 748, 30-day 848, lengths other than 29/30: 0, months breaking the 29th-evening rule: 0  (2931 ms)
+Tromso (69.65 N) and Svalbard (78.22 N): beyond the polar circle, no crescent date (Umm al-Qura, unlabelled): [null,null]

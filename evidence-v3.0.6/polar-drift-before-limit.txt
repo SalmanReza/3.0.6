@@ -1,0 +1,9 @@
+# Crescent chain check run BEFORE the polar limit was added (18:28 UTC). Months 1440 AH onward per city; "bad lengths" = months that are not 29 or 30 days. Tromso (69.65 N) drifted (164 bad months), which is why the crescent rule is limited to |latitude| <= 66.56 and Umm al-Qura (unlabelled) is used beyond.
+Dhaka months 3648 nulls 0 bad lengths 0  3786ms
+Mecca months 3648 nulls 0 bad lengths 0  3826ms
+London months 3648 nulls 0 bad lengths 0  3602ms
+LA months 3648 nulls 0 bad lengths 0  3502ms
+Jakarta months 3648 nulls 0 bad lengths 0  3634ms
+Oslo months 3648 nulls 0 bad lengths 0  4151ms
+CapeTown months 3648 nulls 0 bad lengths 0  3588ms
+Tromso months 3648 nulls 0 bad lengths 164 {"year":1270,"month":12}:28 {"year":1271,"month":12}:27 {"year":1272,"month":12}:27 {"year":1273,"month":12}:27 {"year":1274,"month":12}:25 9808ms

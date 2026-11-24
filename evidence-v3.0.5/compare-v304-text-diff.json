@@ -1,0 +1,522 @@
+[
+ {
+  "view": "home",
+  "lang": "en",
+  "size": "1280x720",
+  "removed": [
+   "2/35 · 6%",
+   "5/5 · 1/5",
+   "v3.0.4"
+  ],
+  "added": [
+   "3/35 · 9%",
+   "5/5 · 2/5",
+   "v3.0.5"
+  ],
+  "errs304": [],
+  "errs305": [],
+  "shots": [
+   "/workspace/prayer/compare305/home-en-1280-304.png",
+   "/workspace/prayer/compare305/home-en-1280-305.png"
+  ]
+ },
+ {
+  "view": "settings",
+  "lang": "en",
+  "size": "1280x720",
+  "removed": [
+   "English font",
+   "System default (Segoe UI)",
+   "v3.0.4"
+  ],
+  "added": [
+   "English fonts have no Bangla letters, so with an English font Bangla text uses Hind Siliguri.",
+   "v3.0.5"
+  ],
+  "errs304": [],
+  "errs305": [],
+  "shots": [
+   "/workspace/prayer/compare305/settings-en-1280-304.png",
+   "/workspace/prayer/compare305/settings-en-1280-305.png"
+  ]
+ },
+ {
+  "view": "countdown",
+  "lang": "en",
+  "size": "1280x720",
+  "removed": [
+   "v3.0.4"
+  ],
+  "added": [
+   "v3.0.5"
+  ],
+  "errs304": [],
+  "errs305": [],
+  "shots": [
+   "/workspace/prayer/compare305/countdown-en-1280-304.png",
+   "/workspace/prayer/compare305/countdown-en-1280-305.png"
+  ]
+ },
+ {
+  "view": "weekly",
+  "lang": "en",
+  "size": "1280x720",
+  "removed": [
+   "v3.0.4"
+  ],
+  "added": [
+   "v3.0.5"
+  ],
+  "errs304": [],
+  "errs305": [],
+  "shots": [
+   "/workspace/prayer/compare305/weekly-en-1280-304.png",
+   "/workspace/prayer/compare305/weekly-en-1280-305.png"
+  ]
+ },
+ {
+  "view": "astro",
+  "lang": "en",
+  "size": "1280x720",
+  "removed": [
+   "v3.0.4"
+  ],
+  "added": [
+   "v3.0.5"
+  ],
+  "errs304": [],
+  "errs305": [],
+  "shots": [
+   "/workspace/prayer/compare305/astro-en-1280-304.png",
+   "/workspace/prayer/compare305/astro-en-1280-305.png"
+  ]
+ },
+ {
+  "view": "clock",
+  "lang": "en",
+  "size": "1280x720",
+  "removed": [
+   "v3.0.4"
+  ],
+  "added": [
+   "v3.0.5"
+  ],
+  "errs304": [],
+  "errs305": [],
+  "shots": [
+   "/workspace/prayer/compare305/clock-en-1280-304.png",
+   "/workspace/prayer/compare305/clock-en-1280-305.png"
+  ]
+ },
+ {
+  "view": "portion",
+  "lang": "en",
+  "size": "1280x720",
+  "removed": [
+   "2/35 · 6%",
+   "5/5 · 1/5",
+   "v3.0.4"
+  ],
+  "added": [
+   "3/35 · 9%",
+   "5/5 · 2/5",
+   "v3.0.5"
+  ],
+  "errs304": [],
+  "errs305": [],
+  "shots": [
+   "/workspace/prayer/compare305/portion-en-1280-304.png",
+   "/workspace/prayer/compare305/portion-en-1280-305.png"
+  ]
+ },
+ {
+  "view": "home",
+  "lang": "en",
+  "size": "420x700",
+  "removed": [
+   "2/35 · 6%",
+   "5/5 · 1/5",
+   "v3.0.4"
+  ],
+  "added": [
+   "3/35 · 9%",
+   "5/5 · 2/5",
+   "v3.0.5"
+  ],
+  "errs304": [],
+  "errs305": [],
+  "shots": [
+   "/workspace/prayer/compare305/home-en-420-304.png",
+   "/workspace/prayer/compare305/home-en-420-305.png"
+  ]
+ },
+ {
+  "view": "settings",
+  "lang": "en",
+  "size": "420x700",
+  "removed": [
+   "English font",
+   "System default (Segoe UI)",
+   "v3.0.4"
+  ],
+  "added": [
+   "English fonts have no Bangla letters, so with an English font Bangla text uses Hind Siliguri.",
+   "v3.0.5"
+  ],
+  "errs304": [],
+  "errs305": [],
+  "shots": [
+   "/workspace/prayer/compare305/settings-en-420-304.png",
+   "/workspace/prayer/compare305/settings-en-420-305.png"
+  ]
+ },
+ {
+  "view": "countdown",
+  "lang": "en",
+  "size": "420x700",
+  "removed": [
+   "v3.0.4"
+  ],
+  "added": [
+   "v3.0.5"
+  ],
+  "errs304": [],
+  "errs305": [],
+  "shots": [
+   "/workspace/prayer/compare305/countdown-en-420-304.png",
+   "/workspace/prayer/compare305/countdown-en-420-305.png"
+  ]
+ },
+ {
+  "view": "weekly",
+  "lang": "en",
+  "size": "420x700",
+  "removed": [
+   "v3.0.4"
+  ],
+  "added": [
+   "v3.0.5"
+  ],
+  "errs304": [],
+  "errs305": [],
+  "shots": [
+   "/workspace/prayer/compare305/weekly-en-420-304.png",
+   "/workspace/prayer/compare305/weekly-en-420-305.png"
+  ]
+ },
+ {
+  "view": "astro",
+  "lang": "en",
+  "size": "420x700",
+  "removed": [
+   "v3.0.4"
+  ],
+  "added": [
+   "v3.0.5"
+  ],
+  "errs304": [],
+  "errs305": [],
+  "shots": [
+   "/workspace/prayer/compare305/astro-en-420-304.png",
+   "/workspace/prayer/compare305/astro-en-420-305.png"
+  ]
+ },
+ {
+  "view": "clock",
+  "lang": "en",
+  "size": "420x700",
+  "removed": [
+   "v3.0.4"
+  ],
+  "added": [
+   "v3.0.5"
+  ],
+  "errs304": [],
+  "errs305": [],
+  "shots": [
+   "/workspace/prayer/compare305/clock-en-420-304.png",
+   "/workspace/prayer/compare305/clock-en-420-305.png"
+  ]
+ },
+ {
+  "view": "portion",
+  "lang": "en",
+  "size": "420x700",
+  "removed": [
+   "2/35 · 6%",
+   "5/5 · 1/5",
+   "v3.0.4"
+  ],
+  "added": [
+   "3/35 · 9%",
+   "5/5 · 2/5",
+   "v3.0.5"
+  ],
+  "errs304": [],
+  "errs305": [],
+  "shots": [
+   "/workspace/prayer/compare305/portion-en-420-304.png",
+   "/workspace/prayer/compare305/portion-en-420-305.png"
+  ]
+ },
+ {
+  "view": "home",
+  "lang": "bn",
+  "size": "1280x720",
+  "removed": [
+   "২/৩৫ · ৬%",
+   "৫/৫ · ১/৫",
+   "v৩.০.৪"
+  ],
+  "added": [
+   "৩/৩৫ · ৯%",
+   "৫/৫ · ২/৫",
+   "v৩.০.৫"
+  ],
+  "errs304": [],
+  "errs305": [],
+  "shots": [
+   "/workspace/prayer/compare305/home-bn-1280-304.png",
+   "/workspace/prayer/compare305/home-bn-1280-305.png"
+  ]
+ },
+ {
+  "view": "settings",
+  "lang": "bn",
+  "size": "1280x720",
+  "removed": [
+   "ইংরেজি ফন্ট",
+   "সিস্টেম ডিফল্ট (Segoe UI)",
+   "v৩.০.৪"
+  ],
+  "added": [
+   "ইংরেজি ফন্টে বাংলা অক্ষর নেই, তাই ইংরেজি ফন্ট বেছে নিলে বাংলা লেখা Hind Siliguri ফন্টে দেখায়।",
+   "v৩.০.৫"
+  ],
+  "errs304": [],
+  "errs305": [],
+  "shots": [
+   "/workspace/prayer/compare305/settings-bn-1280-304.png",
+   "/workspace/prayer/compare305/settings-bn-1280-305.png"
+  ]
+ },
+ {
+  "view": "countdown",
+  "lang": "bn",
+  "size": "1280x720",
+  "removed": [
+   "v৩.০.৪"
+  ],
+  "added": [
+   "v৩.০.৫"
+  ],
+  "errs304": [],
+  "errs305": [],
+  "shots": [
+   "/workspace/prayer/compare305/countdown-bn-1280-304.png",
+   "/workspace/prayer/compare305/countdown-bn-1280-305.png"
+  ]
+ },
+ {
+  "view": "weekly",
+  "lang": "bn",
+  "size": "1280x720",
+  "removed": [
+   "v৩.০.৪"
+  ],
+  "added": [
+   "v৩.০.৫"
+  ],
+  "errs304": [],
+  "errs305": [],
+  "shots": [
+   "/workspace/prayer/compare305/weekly-bn-1280-304.png",
+   "/workspace/prayer/compare305/weekly-bn-1280-305.png"
+  ]
+ },
+ {
+  "view": "astro",
+  "lang": "bn",
+  "size": "1280x720",
+  "removed": [
+   "v৩.০.৪"
+  ],
+  "added": [
+   "v৩.০.৫"
+  ],
+  "errs304": [],
+  "errs305": [],
+  "shots": [
+   "/workspace/prayer/compare305/astro-bn-1280-304.png",
+   "/workspace/prayer/compare305/astro-bn-1280-305.png"
+  ]
+ },
+ {
+  "view": "clock",
+  "lang": "bn",
+  "size": "1280x720",
+  "removed": [
+   "v৩.০.৪"
+  ],
+  "added": [
+   "v৩.০.৫"
+  ],
+  "errs304": [],
+  "errs305": [],
+  "shots": [
+   "/workspace/prayer/compare305/clock-bn-1280-304.png",
+   "/workspace/prayer/compare305/clock-bn-1280-305.png"
+  ]
+ },
+ {
+  "view": "portion",
+  "lang": "bn",
+  "size": "1280x720",
+  "removed": [
+   "২/৩৫ · ৬%",
+   "৫/৫ · ১/৫",
+   "v৩.০.৪"
+  ],
+  "added": [
+   "৩/৩৫ · ৯%",
+   "৫/৫ · ২/৫",
+   "v৩.০.৫"
+  ],
+  "errs304": [],
+  "errs305": [],
+  "shots": [
+   "/workspace/prayer/compare305/portion-bn-1280-304.png",
+   "/workspace/prayer/compare305/portion-bn-1280-305.png"
+  ]
+ },
+ {
+  "view": "home",
+  "lang": "bn",
+  "size": "420x700",
+  "removed": [
+   "২/৩৫ · ৬%",
+   "৫/৫ · ১/৫",
+   "v৩.০.৪"
+  ],
+  "added": [
+   "৩/৩৫ · ৯%",
+   "৫/৫ · ২/৫",
+   "v৩.০.৫"
+  ],
+  "errs304": [],
+  "errs305": [],
+  "shots": [
+   "/workspace/prayer/compare305/home-bn-420-304.png",
+   "/workspace/prayer/compare305/home-bn-420-305.png"
+  ]
+ },
+ {
+  "view": "settings",
+  "lang": "bn",
+  "size": "420x700",
+  "removed": [
+   "ইংরেজি ফন্ট",
+   "সিস্টেম ডিফল্ট (Segoe UI)",
+   "v৩.০.৪"
+  ],
+  "added": [
+   "ইংরেজি ফন্টে বাংলা অক্ষর নেই, তাই ইংরেজি ফন্ট বেছে নিলে বাংলা লেখা Hind Siliguri ফন্টে দেখায়।",
+   "v৩.০.৫"
+  ],
+  "errs304": [],
+  "errs305": [],
+  "shots": [
+   "/workspace/prayer/compare305/settings-bn-420-304.png",
+   "/workspace/prayer/compare305/settings-bn-420-305.png"
+  ]
+ },
+ {
+  "view": "countdown",
+  "lang": "bn",
+  "size": "420x700",
+  "removed": [
+   "v৩.০.৪"
+  ],
+  "added": [
+   "v৩.০.৫"
+  ],
+  "errs304": [],
+  "errs305": [],
+  "shots": [
+   "/workspace/prayer/compare305/countdown-bn-420-304.png",
+   "/workspace/prayer/compare305/countdown-bn-420-305.png"
+  ]
+ },
+ {
+  "view": "weekly",
+  "lang": "bn",
+  "size": "420x700",
+  "removed": [
+   "v৩.০.৪"
+  ],
+  "added": [
+   "v৩.০.৫"
+  ],
+  "errs304": [],
+  "errs305": [],
+  "shots": [
+   "/workspace/prayer/compare305/weekly-bn-420-304.png",
+   "/workspace/prayer/compare305/weekly-bn-420-305.png"
+  ]
+ },
+ {
+  "view": "astro",
+  "lang": "bn",
+  "size": "420x700",
+  "removed": [
+   "v৩.০.৪"
+  ],
+  "added": [
+   "v৩.০.৫"
+  ],
+  "errs304": [],
+  "errs305": [],
+  "shots": [
+   "/workspace/prayer/compare305/astro-bn-420-304.png",
+   "/workspace/prayer/compare305/astro-bn-420-305.png"
+  ]
+ },
+ {
+  "view": "clock",
+  "lang": "bn",
+  "size": "420x700",
+  "removed": [
+   "v৩.০.৪"
+  ],
+  "added": [
+   "v৩.০.৫"
+  ],
+  "errs304": [],
+  "errs305": [],
+  "shots": [
+   "/workspace/prayer/compare305/clock-bn-420-304.png",
+   "/workspace/prayer/compare305/clock-bn-420-305.png"
+  ]
+ },
+ {
+  "view": "portion",
+  "lang": "bn",
+  "size": "420x700",
+  "removed": [
+   "২/৩৫ · ৬%",
+   "৫/৫ · ১/৫",
+   "v৩.০.৪"
+  ],
+  "added": [
+   "৩/৩৫ · ৯%",
+   "৫/৫ · ২/৫",
+   "v৩.০.৫"
+  ],
+  "errs304": [],
+  "errs305": [],
+  "shots": [
+   "/workspace/prayer/compare305/portion-bn-420-304.png",
+   "/workspace/prayer/compare305/portion-bn-420-305.png"
+  ]
+ }
+]

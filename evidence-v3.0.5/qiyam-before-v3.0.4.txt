@@ -1,0 +1,33 @@
+How the Qiyam al-Layl split worked in v3.0.4 (inspected before any change, line 3 first step)
+
+Events (src/app.js getVoluntaryEvents): Qiyam al-Layl = Isha .. next Fajr; Tahajjud = last third of the night
+(Fajr - (Fajr - Maghrib)/3) .. Fajr; Witr = Isha .. Fajr. Each is its own card with its own Mark Complete.
+Rak'ahs are stored per card in record.rakahs.{qiyam,tahajjud,witr} (+ rakahSets), the done flag in record.voluntary[key],
+the time in record.at['voluntary:key'] = [minutes after the event start, minute of day].
+
+Split (src/voluntary-ticks.js qiyamBreakdown(rakahs)):
+  tahajjud = rakahs.tahajjud (Tahajjud card only)
+  witr     = rakahs.witr
+  other    = rakahs.qiyam   <- ALL Qiyam-card rak'ahs, whatever the time they were prayed
+  total    = sum
+It was used only for the summary line on the Qiyam card.
+
+Consequences in v3.0.4:
+- Qiyam-card rak'ahs prayed in Tahajjud time were reported as "other", never as Tahajjud.
+- Progress ring / weekly flags counted each card's own record.voluntary flag only: a Witr or Tahajjud record never made
+  Qiyam al-Layl done, and Qiyam prayed in Tahajjud time never made Tahajjud done.
+- The Prayer record card for Qiyam showed only "N rak'ahs performed" (no split).
+- Backups carried record.rakahs / at unchanged.
+
+v3.0.5:
+- Mark Complete on the Qiyam card stores record.qiyamPart = 'tahajjud' if the time is between Tahajjud start and Fajr,
+  else 'other'. Older records without qiyamPart use their saved at[0] (minutes after Qiyam start) against that night's
+  Tahajjud start; with no saved time they stay 'other' (as before).
+- Split: Tahajjud = Tahajjud card + Qiyam rak'ahs in Tahajjud time; Witr = Witr card; other = Qiyam rak'ahs before
+  Tahajjud; total = Tahajjud + Witr + other. Summary "Qiyam al-Layl N rak'ahs: Tahajjud a, Witr b, other c" /
+  "কিয়ামুল লাইল N রাকাত: তাহাজ্জুদ a, বিতর b, অন্যান্য c" on the Qiyam card and in the Prayer record.
+- Progress / stats: Qiyam al-Layl counts as done when any of Qiyam, Tahajjud or Witr is recorded that night; Tahajjud
+  counts as done when Qiyam was recorded in Tahajjud time. Rak'ah totals count each rak'ah once.
+- Undo clears qiyamPart; history migration drops an invalid value; backup merge keeps it.
+- Limitation: the Qiyam card closes on Mark Complete, so one night has one Qiyam entry and it goes wholly to one side.
+  Rak'ahs prayed later in Tahajjud time are entered on the Tahajjud card, which always counts as Tahajjud.

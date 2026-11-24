@@ -1,0 +1,4 @@
+cc49327e06088124c0e39d8dde9f0b58  public/ephemeris/de442s.bsp
+54d97562a5b094d298b1b8eafa5a2e17e3e010ce85e1a366d07f003ad159323c  public/ephemeris/de442s.bsp
+32701440 bytes
+cc49327e06088124c0e39d8dde9f0b58 de442s.bsp  (official NAIF aa_checksums.txt, fetched 23 Nov 2026)

@@ -1,0 +1,68 @@
+Prayer Times v3.0.6 — third-party texts and fonts
+=================================================
+
+This file summarises the bundled works. Full licence texts sit next to the
+files they cover.
+
+Qur'an (src/quran/)
+-------------------
+- Section (ruku') and juz' boundaries: Tanzil Quran Metadata,
+  https://tanzil.net. Licence: Creative Commons Attribution 3.0 (CC BY 3.0).
+  Attribution required. The 556 ruku' sections are split into reading
+  passages at build time (scripts/build-passages.mjs). See src/quran/LICENSES.txt.
+  No Arabic text is bundled from v3.0.2.
+
+- English translation: Saheeh International.
+  Copyright remains with the translators and publishers. Included with
+  attribution, as the preferred English text for this free app. It is not
+  claimed to be under an open licence.
+
+- Bangla translation: Muhiuddin Khan.
+  Copyright remains with the translator and publishers. Included with
+  attribution. It is not claimed to be under an open licence.
+
+See also the `sources` field in src/quran/data.json.
+
+English fonts (src/fonts/latin/) — SIL Open Font License 1.1
+------------------------------------------------------------
+Inter, Manrope, Outfit, Plus Jakarta Sans, Fraunces (v3.0.1);
+Lato, Nunito, Source Sans 3, IBM Plex Sans, Lora (v3.0.4, Google Fonts Latin
+subsets, unmodified).
+OFL files: OFL-Inter.txt, OFL-manrope.txt, OFL-outfit.txt,
+OFL-plus-jakarta-sans.txt, OFL-fraunces.txt, OFL-lato.txt, OFL-nunito.txt,
+OFL-source-sans-3.txt, OFL-ibm-plex-sans.txt, OFL-lora.txt.
+
+Bangla fonts added in v3.0.1 (src/fonts/bn-new/)
+------------------------------------------------
+- Kalpurush — SIL Open Font License 1.0 (OFL-Kalpurush.txt)
+- Siyam Rupali — GNU GPL (see GPL-2.0.txt). Mere aggregation with
+  this app; the GPL applies to the font itself.
+- SolaimanLipi — SIL Open Font License 1.0 (OFL-SolaimanLipi.txt)
+  Substitute for Li Ador Noirrit. Re-checked for v3.0.2: Lipighor's font
+  licence and EULA (https://lipighor.com/EULA.html) forbid distributing the
+  font in any medium, so it cannot be bundled.
+- Bornomala — SIL Open Font License 1.0 (OFL-Bornomala.txt), v3.0.2.
+  Copyright © Codepotro; designer Jayed Ahsan Saad. Unmodified
+  Bornomala-Regular.woff2 v1.003 from the publisher's own web-font host
+  (https://webfonts.codepotro.com/bornomala/); the font's name table states
+  OFL 1.0. It replaces Lohit Bengali, the v3.0.1 stand-in.
+- AdorshoLipi — GNU GPL (see GPL-2.0.txt). Mere aggregation.
+  Substitute for Noto Sans Bengali UI, which is not a distinct
+  redistributable family (Noto Sans Bengali is already in the app).
+
+Earlier bundled UI fonts remain under the SIL Open Font License 1.1
+(src/fonts/ui/OFL-*.txt): Hind Siliguri, Noto Sans Bengali, Noto Serif
+Bengali, Anek Bangla, Tiro Bangla.
+
+Moon sighting, sun and moon positions and time zone (v3.0.6)
+-----------------------------------------------------------
+- moon-sighting 1.2.0 by Aric Camarata — MIT licence. Offline copy in
+  src/vendor/moon-sighting.js (telemetry, kernel download and file access
+  removed; no maths changed). Used for the Hijri date (Odeh crescent
+  criterion) and the sun and moon positions.
+- JPL DE442S planetary ephemeris (NASA Jet Propulsion Laboratory, published
+  by NAIF), unmodified, in public/ephemeris/de442s.bsp, so it works offline.
+- @photostructure/tz-lookup 11.8.0 — CC0 1.0 (public domain dedication).
+  Offline copy in src/vendor/tz-lookup.js; finds the time zone of the saved
+  location for the reading day.
+Full licence texts: src/vendor/LICENSES-v3.0.6.txt.

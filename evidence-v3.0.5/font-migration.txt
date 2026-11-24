@@ -1,0 +1,10 @@
+Font migration (src/ui-fonts.js migrateFont), applied on load and on Replace from backup:
+- A saved v3.0.5 "font" wins (sanitised).
+- Otherwise from v3.0.4 "uiFont" (Bangla picker) + "enFont" (English picker):
+  - language Bangla: uiFont, unless it is System default, then enFont.
+  - language English: enFont, unless it is System default, then uiFont (in v3.0.4 that Bangla font drew the English text).
+- Removed fonts map as before: lohit -> bornomala; baloo, atma, mina, galada -> hind. Unknown -> system.
+- uiFont / enFont are deleted from state after migration; backups write "font". Old backups (uiFont/enFont) are read
+  and migrated, and are not reported as unknown keys.
+- Draw: English font -> "X", "Hind Siliguri", system stack (Bangla glyphs from Hind Siliguri); Bangla font -> "X",
+  system stack (its own Latin); System default -> system stack (unchanged).

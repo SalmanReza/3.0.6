@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#111719">
+  <title>Prayer Times</title>
+  <link rel="stylesheet" href="src/styles.css">
+</head>
+<body>
+  <!-- Shared Hillah stripe (red and near-black, diagonal) for the voluntary ring and its ticks. -->
+  <svg class="svg-defs" width="0" height="0" aria-hidden="true" focusable="false"><defs><pattern id="hillahStripes" patternUnits="userSpaceOnUse" width="10" height="10" patternTransform="rotate(45)"><rect width="10" height="10" fill="#B3122E"/><rect width="3.2" height="10" fill="#141414"/></pattern></defs></svg>
+<div class="app-shell">
+  <header class="topbar">
+    <div class="brand">
+      <div class="brand-mark" id="brandMark" aria-hidden="true"><svg viewBox="0 0 512 512" focusable="false"><defs><linearGradient id="pBS" x1="0.1" y1="0" x2="0.9" y2="1"><stop offset="0" stop-color="#f4f6f8"/><stop offset=".28" stop-color="#9aa4ac"/><stop offset=".5" stop-color="#eef1f3"/><stop offset=".74" stop-color="#8b959d"/><stop offset="1" stop-color="#d9dee2"/></linearGradient><radialGradient id="pBE" cx=".38" cy=".3" r=".9"><stop offset="0" stop-color="#27383f"/><stop offset=".7" stop-color="#0b1215"/><stop offset="1" stop-color="#05090a"/></radialGradient><linearGradient id="pBG" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#f6e2a8"/><stop offset="1" stop-color="#c49a4d"/></linearGradient></defs><circle cx="256" cy="256" r="246" fill="url(#pBS)"/><circle cx="256" cy="256" r="246" fill="none" stroke="#fff" stroke-opacity=".55" stroke-width="2"/><path d="M278.2 45.2L280.7 21.3M300.1 48.6L305.1 25.2M321.5 54.4L328.9 31.6M342.2 62.3L352 40.4M380.6 84.5L394.7 65.1M397.9 98.5L413.9 80.6M413.5 114.1L431.4 98.1M427.5 131.4L446.9 117.3M449.7 169.8L471.6 160M457.6 190.5L480.4 183.1M463.4 211.9L486.8 206.9M466.8 233.8L490.7 231.3M466.8 278.2L490.7 280.7M463.4 300.1L486.8 305.1M457.6 321.5L480.4 328.9M449.7 342.2L471.6 352M427.5 380.6L446.9 394.7M413.5 397.9L431.4 413.9M397.9 413.5L413.9 431.4M380.6 427.5L394.7 446.9M342.2 449.7L352 471.6M321.5 457.6L328.9 480.4M300.1 463.4L305.1 486.8M278.2 466.8L280.7 490.7M233.8 466.8L231.3 490.7M211.9 463.4L206.9 486.8M190.5 457.6L183.1 480.4M169.8 449.7L160 471.6M131.4 427.5L117.3 446.9M114.1 413.5L98.1 431.4M98.5 397.9L80.6 413.9M84.5 380.6L65.1 394.7M62.3 342.2L40.4 352M54.4 321.5L31.6 328.9M48.6 300.1L25.2 305.1M45.2 278.2L21.3 280.7M45.2 233.8L21.3 231.3M48.6 211.9L25.2 206.9M54.4 190.5L31.6 183.1M62.3 169.8L40.4 160M84.5 131.4L65.1 117.3M98.5 114.1L80.6 98.1M114.1 98.5L98.1 80.6M131.4 84.5L117.3 65.1M169.8 62.3L160 40.4M190.5 54.4L183.1 31.6M211.9 48.6L206.9 25.2M233.8 45.2L231.3 21.3" fill="none" stroke="#1d262c" stroke-opacity="0.7" stroke-width="4"/><path d="M256 44L256 14M362 72.4L377 46.4M439.6 150L465.6 135M468 256L498 256M439.6 362L465.6 377M362 439.6L377 465.6M256 468L256 498M150 439.6L135 465.6M72.4 362L46.4 377M44 256L14 256M72.4 150L46.4 135M150 72.4L135 46.4" fill="none" stroke="#1d262c" stroke-opacity="0.8999999999999999" stroke-width="7"/><circle cx="256" cy="256" r="204" fill="#05090a"/><circle cx="256" cy="256" r="198" fill="url(#pBE)"/><circle cx="256" cy="256" r="190" fill="none" stroke="url(#pBG)" stroke-width="4" stroke-opacity=".9"/><path d="M269.1 106.6L270.5 90.6M282 108.3L284.8 92.5M294.8 111.1L299 95.7M307.3 115L312.8 100M319.4 120.1L326.2 105.6M342 133.1L351.2 120M352.4 141.1L362.7 128.8M362.1 149.9L373.4 138.6M370.9 159.6L383.2 149.3M378.9 170L392 160.8M391.9 192.6L406.4 185.8M397 204.7L412 199.2M400.9 217.2L416.3 213M403.7 230L419.5 227.2M405.4 242.9L421.4 241.5M405.4 269.1L421.4 270.5M403.7 282L419.5 284.8M400.9 294.8L416.3 299M397 307.3L412 312.8M391.9 319.4L406.4 326.2M378.9 342L392 351.2M370.9 352.4L383.2 362.7M362.1 362.1L373.4 373.4M352.4 370.9L362.7 383.2M342 378.9L351.2 392M319.4 391.9L326.2 406.4M307.3 397L312.8 412M294.8 400.9L299 416.3M282 403.7L284.8 419.5M269.1 405.4L270.5 421.4M242.9 405.4L241.5 421.4M230 403.7L227.2 419.5M217.2 400.9L213 416.3M204.7 397L199.2 412M192.6 391.9L185.8 406.4M170 378.9L160.8 392M159.6 370.9L149.3 383.2M149.9 362.1L138.6 373.4M141.1 352.4L128.8 362.7M133.1 342L120 351.2M120.1 319.4L105.6 326.2M115 307.3L100 312.8M111.1 294.8L95.7 299M108.3 282L92.5 284.8M106.6 269.1L90.6 270.5M106.6 242.9L90.6 241.5M108.3 230L92.5 227.2M111.1 217.2L95.7 213M115 204.7L100 199.2M120.1 192.6L105.6 185.8M133.1 170L120 160.8M141.1 159.6L128.8 149.3M149.9 149.9L138.6 138.6M159.6 141.1L149.3 128.8M170 133.1L160.8 120M192.6 120.1L185.8 105.6M204.7 115L199.2 100M217.2 111.1L213 95.7M230 108.3L227.2 92.5M242.9 106.6L241.5 90.6" fill="none" stroke="#e7c98a" stroke-opacity="0.55" stroke-width="2.6"/><path d="M256 106L256 84M331 126.1L342 107M385.9 181L405 170M406 256L428 256M385.9 331L405 342M331 385.9L342 405M256 406L256 428M181 385.9L170 405M126.1 331L107 342M106 256L84 256M126.1 181L107 170M181 126.1L170 107" fill="none" stroke="#e7c98a" stroke-opacity="0.75" stroke-width="4.5"/><circle cx="256" cy="256" r="118" fill="none" stroke="#e7c98a" stroke-opacity=".4" stroke-width="3"/><circle cx="276" cy="240" r="84" fill="none" stroke="#e7c98a" stroke-opacity=".55" stroke-width="3.5" stroke-dasharray="2 0"/><mask id="m1x" maskUnits="userSpaceOnUse" x="158" y="186" width="156" height="156"><rect x="158" y="186" width="156" height="156" fill="#000"/><circle cx="236" cy="264" r="76" fill="#fff"/><circle cx="264.53" cy="254.73" r="63" fill="#000"/></mask><rect x="158" y="186" width="156" height="156" fill="url(#pBG)" mask="url(#m1x)"/><path d="M300.0 228.0L305.9 243.8L322.8 244.6L309.6 255.1L314.1 271.4L300.0 262.1L285.9 271.4L290.4 255.1L277.2 244.6L294.1 243.8Z" fill="url(#pBG)" stroke="url(#pBG)" stroke-width="3" stroke-linejoin="round"/></svg></div>
+      <div class="brand-copy">
+        <div class="brand-name">Prayer Times</div>
+      </div>
+    </div>
+    <div class="topbar-astro" id="topbarAstro"></div>
+    <div class="topbar-clock" id="topbarClock"></div>
+    <button class="icon-button settings-crown" id="settingsToggle" type="button" title="Settings" aria-label="Settings">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 8.2a3.8 3.8 0 1 0 0 7.6 3.8 3.8 0 0 0 0-7.6ZM19.4 13.5l1.2.9-1.5 2.6-1.4-.6a7.7 7.7 0 0 1-1.5.9l-.2 1.5h-3l-.3-1.5a7.7 7.7 0 0 1-1.5-.9l-1.4.6-1.5-2.6 1.2-.9a7 7 0 0 1 0-1.8l-1.2-.9 1.5-2.6 1.4.6a7.7 7.7 0 0 1 1.5-.9l.3-1.5h3l.2 1.5a7.7 7.7 0 0 1 1.5.9l1.4-.6 1.5 2.6-1.2.9a7 7 0 0 1 0 1.8Z"/></svg>
+    </button>
+    <button class="coord-card" id="locationLabel" type="button" aria-live="polite">coordinates: (—, —)</button>
+  </header>
+  <div class="instrument-row" id="instrumentRow">
+  <section class="sky-panel astro-card" id="skyPanel" role="group" aria-label="" hidden data-mode="day">
+    <div class="astro-top"><span class="sky-observatory-title" id="skyHeading">ASTROLABE</span><span class="sky-observatory-position" id="skyPosition"></span></div>
+    <div class="sky-stage astro-stage" id="astroStage" tabindex="0" role="group" aria-label="Astrolabe: drag to rotate, hold Shift for fine adjustment, arrow keys and mouse wheel for small steps, double-click to reset">
+    <div class="astro-flip" id="astroFlip">
+    <svg class="sky-svg astro-svg" id="skySvg" focusable="false" viewBox="0 0 400 400" preserveAspectRatio="xMidYMid meet">
+      <defs id="avDefs"></defs>
+      <g id="avMirror">
+      <g id="avBody">
+        <g id="skyMater"></g>
+        <g clip-path="url(#avPlateClip)"><g id="skyPlate"></g></g>
+        <g id="avDetailFixed" class="av-detail"></g>
+        <g clip-path="url(#avPlateClip)"><g id="skyRete"><g id="skyReteBody"></g><g id="skyReteDetail" class="av-detail"></g></g></g>
+        <g id="avStarLabels" class="av-detail" clip-path="url(#avPlateClip)"></g>
+        <g id="avTrails" fill="none"></g>
+        <g id="skyRule"></g>
+        <g class="sky-body sky-moon" id="skyMoon"></g>
+        <g class="sky-body sky-sun" id="skySun"></g>
+        <g id="avPivot"></g>
+      </g>
+      </g>
+      <g id="avOverlay" pointer-events="none"></g>
+    </svg>
+    </div>
+    <div class="astro-tools" id="astroTools" role="group" aria-label="Astrolabe controls">
+      <button class="astro-tool astro-rotate-btn" id="astroRotateBtn" type="button" aria-pressed="false" title="Rotate the astrolabe" aria-label="Rotate the astrolabe"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M19.2 12.6A7.3 7.3 0 1 1 16.9 7"/><path d="M17.6 3.6v3.9h-3.9"/><circle cx="12" cy="12" r=".9" class="dot"/></svg></button>
+      <button class="astro-tool astro-flip-btn" id="astroFlipBtn" type="button" aria-pressed="false" title="Flip the astrolabe" aria-label="Flip the astrolabe"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M12 3.6v16.8" class="axis"/><path d="M10 6.1C6.5 6.9 4.2 9.2 4.2 12s2.3 5.1 5.8 5.9z"/><path d="M14 6.1c3.5.8 5.8 3.1 5.8 5.9s-2.3 5.1-5.8 5.9z"/></svg></button>
+    </div>
+    </div>
+    <div class="sky-observatory-footer astro-foot" id="skyObservatoryFooter"></div>
+  </section>
+  <article class="clock-card" id="clockCard">
+    <button class="analog-clock" id="analogClockButton" type="button" aria-label="Open the expanded clock page">
+      <svg class="analog-svg" id="analogSvg" viewBox="0 0 200 200" aria-hidden="true">
+        <defs id="clockDefs"></defs>
+        <g id="clockDial"></g>
+        <g id="clockHour" class="clock-hand clock-hour"></g>
+        <g id="clockMinute" class="clock-hand clock-minute"></g>
+        <g id="clockSecond" class="clock-hand clock-second"></g>
+        <g id="clockCap"></g>
+        <g id="clockGlass"></g>
+      </svg>
+    </button>
+    <div class="clock-readout">
+      <div class="clock-card-kicker"><span class="eyebrow">LOCAL TIME</span></div>
+      <time id="liveClock" tabindex="0" role="button">00:00:00</time>
+      <div class="clock-date">
+        <div class="clock-date-greg" id="dateLabel">—</div>
+        <div class="clock-date-hijri hijri-date-label" id="hijriDateLabel">—</div>
+        <div class="clock-date-note" id="hijriSourceLabel" hidden></div>
+      </div>
+    </div>
+  </article>
+  </div>
+
+  <dialog id="keyboardHelp" class="keyboard-help" aria-labelledby="keyboardHelpTitle">
+    <div class="keyboard-help-head"><h2 id="keyboardHelpTitle">Keyboard shortcuts</h2><button id="closeKeyboardHelp" class="icon-button" type="button" aria-label="Close shortcuts">×</button></div>
+    <dl>
+      <div><dt>F11</dt><dd>Toggle fullscreen</dd></div>
+      <div><dt>Esc</dt><dd>Exit fullscreen, go back, or close this panel</dd></div>
+      <div><dt>Home</dt><dd>Return to the top of the home page</dd></div>
+      <div><dt>Page Up</dt><dd>Scroll up one screen</dd></div>
+      <div><dt>Page Down</dt><dd>Scroll down one screen</dd></div>
+      <div><dt>End</dt><dd>Go to the bottom of the page</dd></div>
+      <div><dt>?</dt><dd>Show or hide these shortcuts</dd></div>
+      <div><dt>← →</dt><dd>Previous or next item in a focused card</dd></div>
+      <div><dt>Tab</dt><dd>Move between controls</dd></div>
+      <div><dt>Enter / Space</dt><dd>Activate the focused button or tick circle</dd></div>
+    </dl>
+  </dialog>
+  <main id="homeView">
+    <div class="home-board">
+    <section class="board-panel section-block live-events-section">
+      <div class="section-heading"><div><div class="eyebrow">AVAILABLE RIGHT NOW</div><h2 id="liveHeading">Prayer events</h2></div><span class="muted">Mark a prayer after its time begins</span></div>
+      <div id="liveEvents" class="live-events"></div>
+    </section>
+
+    <div class="hero-row">
+    <article class="board-panel next-card">
+      <div class="eyebrow" id="nextEyebrow">NEXT EVENT</div>
+      <button class="next-name prayer-name-button" id="nextName" type="button">Fajr</button>
+      <div class="lead-evidence" id="nextEvidence"></div>
+      <button class="next-count next-count-button countdown-card" id="nextCountdownOpen" type="button" aria-label="Open prayer countdown"><span class="countdown-card-label" id="nextCountLabel">BEGINS IN</span><strong class="countdown-card-value" id="nextCountValue">—</strong></button>
+      <div class="next-meta" id="nextMeta">Prayer times are calculated on this device</div>
+      <div class="next-foot"><span class="status-dot"></span><span id="currentMeta">Local timetable · Hanafi Asr</span></div>
+    </article>
+
+    <article class="board-panel progress-panel">
+      <div class="progress-head">
+        <div class="progress-visual" id="progressVisual" role="img" aria-label="Prayer completion progress">
+          <div class="progress-figure" id="progressFigure"></div>
+          <div class="progress-reward" id="progressReward" hidden><b class="progress-reward-ar">قَدْ أَفْلَحَ الْمُؤْمِنُونَ</b><small class="progress-reward-tr">Qad aflaha al-mu'minun</small><small class="progress-reward-mean">Certainly, the believers have succeeded</small></div>
+          <span class="progress-core-label" id="progressCore">0/5</span>
+        </div>
+        <div class="progress-copy">
+          <div class="eyebrow">TODAY'S PROGRESS</div>
+          <div class="progress-title" id="progressTitle">Keep going</div>
+          <p class="progress-status" id="progressStatus" aria-live="polite"></p>
+          <div class="voluntary-reward" id="voluntaryReward" role="status" aria-live="polite" hidden></div>
+          <div class="fard-verse-card" id="fardVerseCard" role="status" aria-live="polite" hidden></div>
+          <p class="daily-note" id="dailyNote"></p>
+          <div class="progress-caption" id="progressCaption">Complete the five obligatory prayers to earn your daily achievement.</div>
+          <div class="progress-legend"><span><i class="legend-dot fard" aria-hidden="true"></i> Fard</span><span><i class="legend-dot sunnah" aria-hidden="true"></i> Sunnah</span><span><i class="legend-dot nafl" aria-hidden="true"></i> Nafl</span><span data-bn="ঐচ্ছিক"><i class="legend-dot voluntary" aria-hidden="true"></i> Voluntary</span><span id="legendSeasonal" hidden><i class="legend-dot seasonal" aria-hidden="true"></i> Date-specific</span></div>
+        </div>
+      </div>
+    </article>
+    </div>
+
+    <section class="board-panel section-block completion-summaries">
+      <div class="section-heading"><div><div class="eyebrow">RECORDED TODAY</div><h2>Completion summaries</h2></div><span class="muted" id="completedCount">—</span></div>
+      <div id="completedToday" class="completion-grid"></div>
+    </section>
+    </div>
+
+    <div id="occasionBanner" class="occasion-banner" hidden></div>
+    <div id="eclipseCard" class="occasion-banner eclipse-card" hidden></div>
+
+    <section class="section-block">
+      <div class="section-heading"><div><div class="eyebrow">THE FIVE OBLIGATORY PRAYERS</div><h2>Daily prayers</h2></div><div class="day-switch"><button id="prevDay" type="button" aria-label="Previous day">‹</button><span id="selectedDay">Today</span><button id="nextDay" type="button" aria-label="Next day">›</button></div></div>
+      <div class="prayer-grid" id="prayerGrid"></div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-heading"><div><div class="eyebrow">ADDITIONAL WORSHIP</div><h2>Voluntary prayers</h2></div><span class="muted" id="voluntaryCount">—</span></div>
+      <div id="voluntaryList" class="voluntary-list"></div>
+    </section>
+
+    <section class="section-block">
+      <div class="section-heading weekly-progress-heading"><div><div class="eyebrow">YOUR RECORD</div><h2>Weekly Prayer Progress</h2></div><span class="muted">Saturday to Friday</span></div>
+      <div id="weeklyReview" class="weekly-review"></div>
+    </section>
+
+    <footer class="app-footer"><span>Calculated on this device · Prayer records stay on this device</span></footer>
+  </main>
+
+  <main id="countdownView" hidden>
+    <button class="back-button countdown-back" id="countdownBack" type="button"><span aria-hidden="true">←</span> Back to prayers</button>
+    <div class="page-cards">
+      <section class="page-card countdown-focus panel" id="eventHero">
+        <div class="cf-left"><div class="eyebrow" id="countdownEyebrow">PRAYER COUNTDOWN</div>
+        <h1 id="countdownTitle">Fajr</h1></div>
+        <div class="cf-centre"><div class="countdown-large" id="countdownLarge">00:00:00</div>
+        <div class="countdown-description" id="countdownDescription">Time until the next prayer</div></div>
+        <div class="countdown-start" id="countdownStart">—</div>
+      </section>
+      <section class="page-card panel" id="bestBlock" hidden>
+        <div class="eyebrow">PREFERRED TIME</div>
+        <div class="best-count" id="bestCountdown">—</div>
+        <p id="bestNote"></p>
+      </section>
+      <section class="page-card panel event-prayer-card" id="eventPrayerCard">
+        <div id="eventRakahCard"></div>
+        <div class="event-prayer-divider" aria-hidden="true"></div>
+        <div id="eventCompletionCard"></div>
+      </section>
+      <section class="page-card panel event-timing-card" id="eventTimingCard"></section>
+    </div>
+  </main>
+
+  <main id="timeView" class="clock-page" hidden>
+    <button class="back-button" id="timeBack" type="button"><span aria-hidden="true">←</span> Back to prayers</button>
+    <section class="clock-hero panel" id="clockHero">
+      <div class="clock-hero-info" id="clockHeroLeft"></div>
+      <div class="clock-hero-center">
+        <div class="clock-big-slot" id="clockBigSlot"></div>
+        <div class="clock-hero-count" id="clockHeroCount"></div>
+      </div>
+      <div class="clock-hero-info" id="clockHeroRight"></div>
+    </section>
+    <div class="page-cards clock-page-cards" id="timeCards"></div>
+  </main>
+
+  <main id="astroView" class="astro-page" hidden>
+    <button class="back-button" id="astroBack" type="button"><span aria-hidden="true">←</span> Back to prayers</button>
+    <section class="astro-hero panel" id="astroHero">
+      <div class="astro-hero-info" id="astroHeroLeft"></div>
+      <div class="astro-hero-center"><div class="astro-big-slot" id="astroBigSlot"></div></div>
+      <div class="astro-hero-info" id="astroHeroRight"></div>
+    </section>
+    <div class="page-cards astro-page-cards" id="astroCards"></div>
+  </main>
+
+  <main id="weeklyDayView" hidden>
+    <button class="back-button" id="weeklyDayBack" type="button"><span aria-hidden="true">←</span> Back to prayers</button>
+    <div class="weekly-day-heading"><div class="eyebrow">DAILY RECORD</div><h1 id="weeklyDayTitle">Prayer record</h1></div>
+    <div class="page-cards" id="weeklyDayCards"></div>
+  </main>
+
+  <main id="prayerView" class="prayer-page" hidden>
+    <button class="back-button" id="prayerBack" type="button"><span aria-hidden="true">←</span> Back to prayers</button>
+    <div class="weekly-day-heading"><div class="eyebrow">PRAYER</div><h1 id="prayerViewTitle">Prayer</h1></div>
+    <div class="page-cards prayer-page-cards" id="prayerViewBody"></div>
+  </main>
+
+  <main id="settingsView" hidden>
+    <div class="settings-title"><div><div class="eyebrow">PREFERENCES</div><h1>Settings</h1><p class="muted">Your configuration is saved locally on this device.</p></div></div>
+    <section class="settings-card panel location-settings">
+      <div class="settings-card-head"><div><div class="eyebrow">YOUR LOCATION</div><h2>Prayer location</h2></div><span class="local-badge"><i></i> On-device</span></div>
+      <p class="muted">Use a Google Maps share link or enter coordinates manually. No login or automatic location detection is used.</p>
+      <label for="mapsLink">Google Maps sharing link</label>
+      <div class="inline-input"><input id="mapsLink" type="url" spellcheck="false" placeholder="https://maps.app.goo.gl/…"><button class="primary-button" id="parseMapLink" type="button">Use link</button></div>
+      <div class="form-note" id="mapLinkNote">Expanded Google Maps links containing coordinates are read offline. Shortened share links cannot be expanded offline; copy the coordinates from Maps or enter them below. Location data is stored only on this device.</div>
+      <div class="coordinate-grid"><div><label for="latitude">Latitude</label><input id="latitude" type="number" step="any" min="-90" max="90" placeholder="e.g. 23.8103"></div><div><label for="longitude">Longitude</label><input id="longitude" type="number" step="any" min="-180" max="180" placeholder="e.g. 90.4125"></div></div>
+      <div class="location-save-row"><button class="primary-button" id="saveLocation" type="button">Save location</button><span class="form-note" id="locationStatus" role="status"></span></div>
+      <div class="saved-location"><span class="saved-location-icon">⌖</span><div><small>Currently saved location</small><strong id="savedLocationText">Location not configured</strong><span id="savedCoordinates">—</span></div></div>
+    </section>
+
+    <section class="settings-card panel"><div class="calculation-profile is-open"><div class="settings-card-head"><div><div class="eyebrow">METHOD</div><h2>Calculation profile</h2></div><span class="profile-summary" id="profileSummary"></span></div><div class="profile-controls"><label for="methodSelect">Calculation method</label><select id="methodSelect"></select><label for="schoolSelect">School (Asr method)</label><select id="schoolSelect"></select><label for="highLatSelect">High-latitude rule</label><select id="highLatSelect"></select><p class="form-note" id="profileNote"></p></div><div class="setting-row"><div><strong>Time zone</strong><small id="timezoneLabel">Device local time</small></div><span class="pill">Device</span></div><div class="setting-row"><div><strong>Zawal exclusion</strong><small>True solar noon · six-minute prohibited interval</small></div><span class="pill">6 min</span></div><div class="setting-row interval-readout"><div><strong>Today's prohibited intervals</strong><small id="settingsIntervals">—</small></div></div><p class="form-note">Prayer calculations follow the device's local time zone. Location coordinates do not change Windows time-zone settings.</p></div></section>
+
+    <section class="settings-card panel"><div class="eyebrow">APPEARANCE</div><h2>Personalise Prayer Times</h2><label for="themeSelect">Colour theme</label><select id="themeSelect"></select><div class="theme-preview" id="themePreview"></div><label class="check-row"><input type="checkbox" id="compactToggle"> Compact desktop mode</label><label for="languageSelect">Language</label><select id="languageSelect"><option value="en">English</option><option value="bn">Bangla</option></select><label for="uiFontSelect">Font</label><select id="uiFontSelect"></select><p class="form-note" id="fontNote">English fonts have no Bangla letters, so with an English font Bangla text uses Hind Siliguri.</p><label for="clockFormatSelect">Clock format</label><select id="clockFormatSelect"><option value="24h">24-hour (17:05)</option><option value="12h">12-hour (5:05 PM)</option></select><label class="check-row"><input type="checkbox" id="soundToggle" checked> Play a short tick sound when a prayer is marked complete</label><label class="check-row"><input type="checkbox" id="tickSoundToggle" checked> Tick sound</label><label for="tickStyleSelect">Tick style</label><select id="tickStyleSelect"><option value="wooden">Wooden</option><option value="soft">Soft</option><option value="crystal">Crystal</option></select></section>
+
+    <section class="settings-card panel"><div class="eyebrow">TIME ADJUSTMENTS</div><h2>Fine-tune local timings</h2><p class="muted">Optional minute offsets are applied after the calculation. Use these only when you have a trusted local timetable to compare against.</p><div class="adjustment-grid" id="adjustmentGrid"></div><div class="hijri-adjust-row" id="hijriAdjustRow"><label for="hijriAdjustSelect" id="hijriAdjustLabel">Hijri date adjustment</label><select id="hijriAdjustSelect"></select><p class="form-note" id="hijriAdjustNote">Moves every Hijri date in the app by whole days to match your local moon sighting. Prayer times do not change.</p></div></section>
+
+    <section class="settings-card panel"><div class="eyebrow">WINDOWS INTEGRATION</div><h2>Desktop behaviour</h2><label class="check-row"><input type="checkbox" id="startupToggle"> Start Prayer Times when Windows starts</label><p class="form-note">When enabled, Prayer Times starts quietly in the system tray. This setting is optional and stays off until you enable it.</p><label class="check-row"><input type="checkbox" id="notificationsToggle"> Enable Windows prayer notifications</label><p class="form-note">Windows notification permission is requested only when you enable reminders. Prayer calculations and tracking work without it.</p><div class="test-notification"><button class="secondary-button" id="testNotification" type="button">Send test notification</button><p class="form-note">Shows a real Windows notification now, with the reason if Windows refuses it.</p><pre class="notification-status" id="notificationStatus" role="status" aria-live="polite"></pre></div><div class="reminder-settings"><h3>Remind me before a prayer period ends</h3><p class="form-note">Choose a separate lead time for each event. Select Off to disable an individual reminder.</p><div id="eventReminderSettings" class="event-reminder-settings"></div></div><div class="reminder-settings pre-reminder-settings"><h3>Remind me before a prayer begins</h3><p class="form-note">Enter any whole number of minutes from 0 to 180. 0 turns that reminder off. Voluntary prayers appear here when they have their own start time. Sunnah Rawatib does not, because it is prayed with the five prayers.</p><div id="preReminderSettings" class="event-reminder-settings"></div></div>
+<div class="reminder-settings pref-reminders" id="prefReminders"><h3>Preferred prayer time reminders</h3><p class="form-note">For prayers that have a preferred time inside their window. Times come from your calculation profile; each reminder has its own switch and its own tab.</p>
+<div class="pref-tabs" role="tablist" aria-label="Preferred prayer time reminders"><button class="pref-tab is-active" id="prefTabBegin" type="button" role="tab" aria-selected="true" aria-controls="prefPanelBegin" data-pref-tab="begin">Before preferred time begins</button><button class="pref-tab" id="prefTabEnd" type="button" role="tab" aria-selected="false" aria-controls="prefPanelEnd" data-pref-tab="end" tabindex="-1">Before preferred time ends</button></div>
+<div class="pref-panel" id="prefPanelBegin" role="tabpanel" aria-labelledby="prefTabBegin"><label class="check-row"><input type="checkbox" id="prefEnableBegin" data-pref-enable="begin"> Remind me before the preferred time begins</label><div id="prefRowsBegin" class="event-reminder-settings"></div></div>
+<div class="pref-panel" id="prefPanelEnd" role="tabpanel" aria-labelledby="prefTabEnd" hidden><label class="check-row"><input type="checkbox" id="prefEnableEnd" data-pref-enable="end"> Remind me before the preferred time ends</label><div id="prefRowsEnd" class="event-reminder-settings"></div></div>
+</div></section>
+
+    <section class="settings-card panel"><div class="eyebrow">REWARD TEXT</div><h2>Reward phrases</h2><label class="check-row"><input type="checkbox" id="showRewardText" checked> Show reward text</label><p class="form-note" id="showRewardTextNote">When this is on, a short phrase appears after you record a prayer. Once all five Fard are done, Qur’an 23:1 appears in its own card and then leaves.</p><label for="voluntarySeconds">Reward seconds</label><input id="voluntarySeconds" type="number" min="1" max="120" step="1" value="8" aria-describedby="voluntarySecondsNote"><p class="form-note" id="voluntarySecondsNote">How long the reward phrase stays after you record a prayer. Whole seconds from 1 to 120.</p><label for="verseSeconds">All five Fard verse</label><input id="verseSeconds" type="number" min="1" max="120" step="1" value="12" aria-describedby="verseSecondsNote"><p class="form-note" id="verseSecondsNote">How long Qur’an 23:1 stays after the fifth Fard is recorded. Whole seconds from 1 to 120.</p></section>
+    <section class="settings-card panel"><div class="eyebrow">RECOVERY</div><h2>Prayer Completion Recovery</h2><p class="muted">Only for a prayer you performed and forgot to record. It is not a missed-prayer tool. The two Fard prayers just before it must already be recorded. Press and hold for three seconds, then confirm.</p><button class="secondary-button" id="recoveryHold" type="button">Hold to recover a record</button><p class="form-note" id="recoveryStatus"></p><div id="recoveryPanel" hidden><label for="recoverySelect">Locked prayer</label><select id="recoverySelect"></select><label class="check-row"><input type="checkbox" id="recoveryConfirm"> I performed this prayer but forgot to record it.</label><button class="primary-button" id="recoverySave" type="button">Record it</button></div></section>
+    <section class="settings-card panel"><div class="eyebrow">YOUR DATA</div><h2>Private by default</h2><p class="muted">Prayer history, preferences, themes and location stay in this application's local profile. Nothing is uploaded or synchronised.</p><div class="data-actions"><button class="secondary-button" id="exportData" type="button">Export backup</button><label class="secondary-button" for="importFile">Choose backup</label><input id="importFile" type="file" accept="application/json,.json" hidden><button class="secondary-button" id="replaceBackup" type="button">Replace</button><button class="secondary-button" id="mergeBackup" type="button">Merge</button><button class="danger-button" id="resetData" type="button">Reset local data</button></div><p class="form-note" id="backupStatus"></p></section>
+    <section class="settings-card panel" id="blessedSettings"><div class="eyebrow">A BLESSED REMINDER</div><h2>Qur’an reading</h2><p class="blessed-month" id="blessedMonthLine"></p><label class="check-row"><input type="checkbox" id="blessedProgressToggle" checked> Show the reading progress line under the reminder</label><p class="form-note">The whole Qur’an is read once each Hijri year: its 2,739 passages in mushaf order, about 7–8 a day, from 1 Muharram to the last day of Dhul Hijjah. A passage counts as read only when you mark it. The reading day changes at midnight in the time zone of your saved location.</p></section>
+    <section class="settings-card panel" id="aboutSources"><div class="eyebrow">ABOUT THE TEXTS</div><h2>Sources and licences</h2><p class="muted">A Blessed Reminder shows the Saheeh International English translation and Muhiuddin Khan’s Bangla translation, stored in the app so it works offline. Its passages follow the 556 ruku’ sections and the juz’ boundaries of the Tanzil Quran Metadata (CC BY 3.0, tanzil.net). The English fonts (Inter, Manrope, Outfit, Plus Jakarta Sans, Fraunces, Lato, Nunito, Source Sans 3, IBM Plex Sans, Lora) and Hind Siliguri, Noto Sans Bengali, Noto Serif Bengali, Anek Bangla and Tiro Bangla are under the SIL Open Font License. Kalpurush, SolaimanLipi and Bornomala are OFL; Siyam Rupali and AdorshoLipi are GNU GPL. Li Ador Noirrit is not bundled because its licence forbids redistribution. The Hijri date and the sun and moon positions are worked out on this device with moon-sighting by Aric Camarata (MIT licence) and NASA JPL’s DE442S ephemeris, which is stored in the app; the time zone of the saved location is looked up offline with tz-lookup (CC0). Beyond the polar circles (latitude above 66.56° N or S), where some days have no sunset, the Hijri date is not predicted from the crescent: the Umm al-Qura calendar is used, without the “Predicted by crescent visibility” label. Full notices are in the LICENSES file.</p></section>
+
+  </main>
+
+  <dialog id="eventInfo" class="event-info" aria-labelledby="eventInfoTitle">
+    <div class="event-info-head"><h2 id="eventInfoTitle">Prayer</h2><button id="eventInfoClose" class="icon-button" type="button" aria-label="Close prayer information">×</button></div>
+    <div id="eventInfoBody"></div>
+  </dialog>
+  <dialog id="portionDialog" class="event-info portion-dialog" aria-labelledby="portionTitle">
+    <div class="event-info-head"><h2 id="portionTitle">Today's portion</h2><button id="portionClose" class="icon-button" type="button" aria-label="Close">×</button></div>
+    <p class="muted portion-summary" id="portionSummary"></p>
+    <div class="portion-nav" id="portionNav" hidden></div>
+    <ol id="portionList" class="portion-list"></ol>
+  </dialog>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <small class="copyright-signature copyright-corner" id="copyrightMark">© 2026–2027 Salman Reza Amit</small>
+  <small class="app-version-label" id="appVersionLabel">v3.0.6</small>
+</div>
+<script type="module" src="src/app.js"></script>
+</body>
+</html>

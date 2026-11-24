@@ -1,0 +1,602 @@
+[
+ {
+  "view": "home",
+  "lang": "en",
+  "size": "1280x720",
+  "removed": [
+   "Record previous prayer",
+   "04:59 – 06:18",
+   "2 Sunnah before",
+   "2 Fard",
+   "VOLUNTARY",
+   "06:38 – 11:38",
+   "✓",
+   "2 rak‘ahs",
+   "More than 12 rak‘ahs? Enter the total",
+   "Set total",
+   "v3.0.3"
+  ],
+  "added": [
+   "v3.0.4"
+  ],
+  "errs303": [],
+  "errs304": [],
+  "shots": [
+   "/workspace/prayer/compare304/home-en-1280-303.png",
+   "/workspace/prayer/compare304/home-en-1280-304.png"
+  ]
+ },
+ {
+  "view": "settings",
+  "lang": "en",
+  "size": "1280x720",
+  "removed": [
+   "Baloo Da 2 · rounded",
+   "Atma · friendly display",
+   "Mina · soft humanist",
+   "Galada · script",
+   "A Blessed Reminder shows the Saheeh International English translation and Muhiuddin Khan’s Bangla translation, stored in the app so it works offline. Its passages follow the 556 ruku’ sections and the juz’ boundaries of the Tanzil Quran Metadata (CC BY 3.0, tanzil.net). New English fonts are under the SIL Open Font License. Kalpurush, SolaimanLipi and Bornomala are OFL; Siyam Rupali and AdorshoLipi are GNU GPL. Li Ador Noirrit is not bundled because its licence forbids redistribution. Full notices are in the LICENSES file.",
+   "v3.0.3"
+  ],
+  "added": [
+   "Lato · warm sans",
+   "Nunito · rounded",
+   "Source Sans 3 · readable",
+   "IBM Plex Sans · technical",
+   "Lora · book serif",
+   "A Blessed Reminder shows the Saheeh International English translation and Muhiuddin Khan’s Bangla translation, stored in the app so it works offline. Its passages follow the 556 ruku’ sections and the juz’ boundaries of the Tanzil Quran Metadata (CC BY 3.0, tanzil.net). The English fonts (Inter, Manrope, Outfit, Plus Jakarta Sans, Fraunces, Lato, Nunito, Source Sans 3, IBM Plex Sans, Lora) and Hind Siliguri, Noto Sans Bengali, Noto Serif Bengali, Anek Bangla and Tiro Bangla are under the SIL Open Font License. Kalpurush, SolaimanLipi and Bornomala are OFL; Siyam Rupali and AdorshoLipi are GNU GPL. Li Ador Noirrit is not bundled because its licence forbids redistribution. Full notices are in the LICENSES file.",
+   "v3.0.4"
+  ],
+  "errs303": [],
+  "errs304": [],
+  "shots": [
+   "/workspace/prayer/compare304/settings-en-1280-303.png",
+   "/workspace/prayer/compare304/settings-en-1280-304.png"
+  ]
+ },
+ {
+  "view": "countdown",
+  "lang": "en",
+  "size": "1280x720",
+  "removed": [
+   "v3.0.3"
+  ],
+  "added": [
+   "v3.0.4"
+  ],
+  "errs303": [],
+  "errs304": [],
+  "shots": [
+   "/workspace/prayer/compare304/countdown-en-1280-303.png",
+   "/workspace/prayer/compare304/countdown-en-1280-304.png"
+  ]
+ },
+ {
+  "view": "weekly",
+  "lang": "en",
+  "size": "1280x720",
+  "removed": [
+   "v3.0.3"
+  ],
+  "added": [
+   "v3.0.4"
+  ],
+  "errs303": [],
+  "errs304": [],
+  "shots": [
+   "/workspace/prayer/compare304/weekly-en-1280-303.png",
+   "/workspace/prayer/compare304/weekly-en-1280-304.png"
+  ]
+ },
+ {
+  "view": "astro",
+  "lang": "en",
+  "size": "1280x720",
+  "removed": [
+   "v3.0.3"
+  ],
+  "added": [
+   "v3.0.4"
+  ],
+  "errs303": [],
+  "errs304": [],
+  "shots": [
+   "/workspace/prayer/compare304/astro-en-1280-303.png",
+   "/workspace/prayer/compare304/astro-en-1280-304.png"
+  ]
+ },
+ {
+  "view": "clock",
+  "lang": "en",
+  "size": "1280x720",
+  "removed": [
+   "v3.0.3"
+  ],
+  "added": [
+   "v3.0.4"
+  ],
+  "errs303": [],
+  "errs304": [],
+  "shots": [
+   "/workspace/prayer/compare304/clock-en-1280-303.png",
+   "/workspace/prayer/compare304/clock-en-1280-304.png"
+  ]
+ },
+ {
+  "view": "portion",
+  "lang": "en",
+  "size": "1280x720",
+  "removed": [
+   "Record previous prayer",
+   "04:59 – 06:18",
+   "2 Sunnah before",
+   "2 Fard",
+   "VOLUNTARY",
+   "06:38 – 11:38",
+   "✓",
+   "2 rak‘ahs",
+   "More than 12 rak‘ahs? Enter the total",
+   "Set total",
+   "v3.0.3"
+  ],
+  "added": [
+   "v3.0.4"
+  ],
+  "errs303": [],
+  "errs304": [],
+  "shots": [
+   "/workspace/prayer/compare304/portion-en-1280-303.png",
+   "/workspace/prayer/compare304/portion-en-1280-304.png"
+  ]
+ },
+ {
+  "view": "home",
+  "lang": "en",
+  "size": "420x700",
+  "removed": [
+   "Record previous prayer",
+   "04:59 – 06:18",
+   "2 Sunnah before",
+   "2 Fard",
+   "VOLUNTARY",
+   "06:38 – 11:38",
+   "✓",
+   "2 rak‘ahs",
+   "More than 12 rak‘ahs? Enter the total",
+   "Set total",
+   "v3.0.3"
+  ],
+  "added": [
+   "v3.0.4"
+  ],
+  "errs303": [],
+  "errs304": [],
+  "shots": [
+   "/workspace/prayer/compare304/home-en-420-303.png",
+   "/workspace/prayer/compare304/home-en-420-304.png"
+  ]
+ },
+ {
+  "view": "settings",
+  "lang": "en",
+  "size": "420x700",
+  "removed": [
+   "Baloo Da 2 · rounded",
+   "Atma · friendly display",
+   "Mina · soft humanist",
+   "Galada · script",
+   "A Blessed Reminder shows the Saheeh International English translation and Muhiuddin Khan’s Bangla translation, stored in the app so it works offline. Its passages follow the 556 ruku’ sections and the juz’ boundaries of the Tanzil Quran Metadata (CC BY 3.0, tanzil.net). New English fonts are under the SIL Open Font License. Kalpurush, SolaimanLipi and Bornomala are OFL; Siyam Rupali and AdorshoLipi are GNU GPL. Li Ador Noirrit is not bundled because its licence forbids redistribution. Full notices are in the LICENSES file.",
+   "v3.0.3"
+  ],
+  "added": [
+   "Lato · warm sans",
+   "Nunito · rounded",
+   "Source Sans 3 · readable",
+   "IBM Plex Sans · technical",
+   "Lora · book serif",
+   "A Blessed Reminder shows the Saheeh International English translation and Muhiuddin Khan’s Bangla translation, stored in the app so it works offline. Its passages follow the 556 ruku’ sections and the juz’ boundaries of the Tanzil Quran Metadata (CC BY 3.0, tanzil.net). The English fonts (Inter, Manrope, Outfit, Plus Jakarta Sans, Fraunces, Lato, Nunito, Source Sans 3, IBM Plex Sans, Lora) and Hind Siliguri, Noto Sans Bengali, Noto Serif Bengali, Anek Bangla and Tiro Bangla are under the SIL Open Font License. Kalpurush, SolaimanLipi and Bornomala are OFL; Siyam Rupali and AdorshoLipi are GNU GPL. Li Ador Noirrit is not bundled because its licence forbids redistribution. Full notices are in the LICENSES file.",
+   "v3.0.4"
+  ],
+  "errs303": [],
+  "errs304": [],
+  "shots": [
+   "/workspace/prayer/compare304/settings-en-420-303.png",
+   "/workspace/prayer/compare304/settings-en-420-304.png"
+  ]
+ },
+ {
+  "view": "countdown",
+  "lang": "en",
+  "size": "420x700",
+  "removed": [
+   "v3.0.3"
+  ],
+  "added": [
+   "v3.0.4"
+  ],
+  "errs303": [],
+  "errs304": [],
+  "shots": [
+   "/workspace/prayer/compare304/countdown-en-420-303.png",
+   "/workspace/prayer/compare304/countdown-en-420-304.png"
+  ]
+ },
+ {
+  "view": "weekly",
+  "lang": "en",
+  "size": "420x700",
+  "removed": [
+   "v3.0.3"
+  ],
+  "added": [
+   "v3.0.4"
+  ],
+  "errs303": [],
+  "errs304": [],
+  "shots": [
+   "/workspace/prayer/compare304/weekly-en-420-303.png",
+   "/workspace/prayer/compare304/weekly-en-420-304.png"
+  ]
+ },
+ {
+  "view": "astro",
+  "lang": "en",
+  "size": "420x700",
+  "removed": [
+   "v3.0.3"
+  ],
+  "added": [
+   "v3.0.4"
+  ],
+  "errs303": [],
+  "errs304": [],
+  "shots": [
+   "/workspace/prayer/compare304/astro-en-420-303.png",
+   "/workspace/prayer/compare304/astro-en-420-304.png"
+  ]
+ },
+ {
+  "view": "clock",
+  "lang": "en",
+  "size": "420x700",
+  "removed": [
+   "v3.0.3"
+  ],
+  "added": [
+   "v3.0.4"
+  ],
+  "errs303": [],
+  "errs304": [],
+  "shots": [
+   "/workspace/prayer/compare304/clock-en-420-303.png",
+   "/workspace/prayer/compare304/clock-en-420-304.png"
+  ]
+ },
+ {
+  "view": "portion",
+  "lang": "en",
+  "size": "420x700",
+  "removed": [
+   "Record previous prayer",
+   "04:59 – 06:18",
+   "2 Sunnah before",
+   "2 Fard",
+   "VOLUNTARY",
+   "06:38 – 11:38",
+   "✓",
+   "2 rak‘ahs",
+   "More than 12 rak‘ahs? Enter the total",
+   "Set total",
+   "v3.0.3"
+  ],
+  "added": [
+   "v3.0.4"
+  ],
+  "errs303": [],
+  "errs304": [],
+  "shots": [
+   "/workspace/prayer/compare304/portion-en-420-303.png",
+   "/workspace/prayer/compare304/portion-en-420-304.png"
+  ]
+ },
+ {
+  "view": "home",
+  "lang": "bn",
+  "size": "1280x720",
+  "removed": [
+   "আগের নামাজ রেকর্ড করুন",
+   "০৪:৫৯ – ০৬:১৮",
+   "আগে ২ রাকাত সুন্নাত",
+   "২ ফরজ",
+   "নফল",
+   "০৬:৩৮ – ১১:৩৮",
+   "✓",
+   "২ রাকাত",
+   "১২ রাকাতের বেশি হলে সংখ্যা লিখুন",
+   "নিশ্চিত করুন",
+   "v৩.০.৩"
+  ],
+  "added": [
+   "v৩.০.৪"
+  ],
+  "errs303": [],
+  "errs304": [],
+  "shots": [
+   "/workspace/prayer/compare304/home-bn-1280-303.png",
+   "/workspace/prayer/compare304/home-bn-1280-304.png"
+  ]
+ },
+ {
+  "view": "settings",
+  "lang": "bn",
+  "size": "1280x720",
+  "removed": [
+   "Baloo Da ২ · গোলাকার",
+   "Atma · বন্ধুসুলভ",
+   "Mina · কোমল",
+   "Galada · হস্তলিপি",
+   "একটি বরকতময় স্মরণে সাহিহ ইন্টারন্যাশনালের ইংরেজি অনুবাদ এবং মুহিউদ্দিন খানের বাংলা অনুবাদ অফলাইনে রাখা হয়েছে। অংশগুলো তাঞ্জিল কুরআন মেটাডেটার ৫৫৬টি রুকু ও পারার সীমা অনুসরণ করে (CC BY 3.0, tanzil.net)। নতুন ইংরেজি ফন্ট SIL Open Font License-এর আওতায়। কালপুরুষ, সোলায়মানলিপি ও বর্ণমালা OFL; সিয়াম রূপালি ও আদর্শলিপি GNU GPL। লি আদর নৈঋত যুক্ত করা হয়নি, কারণ এর লাইসেন্স পুনর্বিতরণ নিষেধ করে। পূর্ণ বিজ্ঞপ্তি LICENSES ফাইলে আছে।",
+   "v৩.০.৩"
+  ],
+  "added": [
+   "Lato · উষ্ণ সানস",
+   "Nunito · গোলাকার",
+   "Source Sans ৩ · সহজপাঠ্য",
+   "IBM Plex Sans · প্রযুক্তিগত",
+   "Lora · বইয়ের সেরিফ",
+   "একটি বরকতময় স্মরণে সাহিহ ইন্টারন্যাশনালের ইংরেজি অনুবাদ এবং মুহিউদ্দিন খানের বাংলা অনুবাদ অফলাইনে রাখা হয়েছে। অংশগুলো তাঞ্জিল কুরআন মেটাডেটার ৫৫৬টি রুকু ও পারার সীমা অনুসরণ করে (CC BY 3.0, tanzil.net)। ইংরেজি ফন্টগুলো (Inter, Manrope, Outfit, Plus Jakarta Sans, Fraunces, Lato, Nunito, Source Sans 3, IBM Plex Sans, Lora) এবং হিন্দ শিলিগুড়ি, নোটো সান্স বাংলা, নোটো সেরিফ বাংলা, অনেক বাংলা ও তিরো বাংলা SIL Open Font License-এর আওতায়। কালপুরুষ, সোলায়মানলিপি ও বর্ণমালা OFL; সিয়াম রূপালি ও আদর্শলিপি GNU GPL। লি আদর নৈঋত যুক্ত করা হয়নি, কারণ এর লাইসেন্স পুনর্বিতরণ নিষেধ করে। পূর্ণ বিজ্ঞপ্তি LICENSES ফাইলে আছে।",
+   "v৩.০.৪"
+  ],
+  "errs303": [],
+  "errs304": [],
+  "shots": [
+   "/workspace/prayer/compare304/settings-bn-1280-303.png",
+   "/workspace/prayer/compare304/settings-bn-1280-304.png"
+  ]
+ },
+ {
+  "view": "countdown",
+  "lang": "bn",
+  "size": "1280x720",
+  "removed": [
+   "v৩.০.৩"
+  ],
+  "added": [
+   "v৩.০.৪"
+  ],
+  "errs303": [],
+  "errs304": [],
+  "shots": [
+   "/workspace/prayer/compare304/countdown-bn-1280-303.png",
+   "/workspace/prayer/compare304/countdown-bn-1280-304.png"
+  ]
+ },
+ {
+  "view": "weekly",
+  "lang": "bn",
+  "size": "1280x720",
+  "removed": [
+   "v৩.০.৩"
+  ],
+  "added": [
+   "v৩.০.৪"
+  ],
+  "errs303": [],
+  "errs304": [],
+  "shots": [
+   "/workspace/prayer/compare304/weekly-bn-1280-303.png",
+   "/workspace/prayer/compare304/weekly-bn-1280-304.png"
+  ]
+ },
+ {
+  "view": "astro",
+  "lang": "bn",
+  "size": "1280x720",
+  "removed": [
+   "v৩.০.৩"
+  ],
+  "added": [
+   "v৩.০.৪"
+  ],
+  "errs303": [],
+  "errs304": [],
+  "shots": [
+   "/workspace/prayer/compare304/astro-bn-1280-303.png",
+   "/workspace/prayer/compare304/astro-bn-1280-304.png"
+  ]
+ },
+ {
+  "view": "clock",
+  "lang": "bn",
+  "size": "1280x720",
+  "removed": [
+   "v৩.০.৩"
+  ],
+  "added": [
+   "v৩.০.৪"
+  ],
+  "errs303": [],
+  "errs304": [],
+  "shots": [
+   "/workspace/prayer/compare304/clock-bn-1280-303.png",
+   "/workspace/prayer/compare304/clock-bn-1280-304.png"
+  ]
+ },
+ {
+  "view": "portion",
+  "lang": "bn",
+  "size": "1280x720",
+  "removed": [
+   "আগের নামাজ রেকর্ড করুন",
+   "০৪:৫৯ – ০৬:১৮",
+   "আগে ২ রাকাত সুন্নাত",
+   "২ ফরজ",
+   "নফল",
+   "০৬:৩৮ – ১১:৩৮",
+   "✓",
+   "২ রাকাত",
+   "১২ রাকাতের বেশি হলে সংখ্যা লিখুন",
+   "নিশ্চিত করুন",
+   "v৩.০.৩"
+  ],
+  "added": [
+   "v৩.০.৪"
+  ],
+  "errs303": [],
+  "errs304": [],
+  "shots": [
+   "/workspace/prayer/compare304/portion-bn-1280-303.png",
+   "/workspace/prayer/compare304/portion-bn-1280-304.png"
+  ]
+ },
+ {
+  "view": "home",
+  "lang": "bn",
+  "size": "420x700",
+  "removed": [
+   "আগের নামাজ রেকর্ড করুন",
+   "০৪:৫৯ – ০৬:১৮",
+   "আগে ২ রাকাত সুন্নাত",
+   "২ ফরজ",
+   "নফল",
+   "০৬:৩৮ – ১১:৩৮",
+   "✓",
+   "২ রাকাত",
+   "১২ রাকাতের বেশি হলে সংখ্যা লিখুন",
+   "নিশ্চিত করুন",
+   "v৩.০.৩"
+  ],
+  "added": [
+   "v৩.০.৪"
+  ],
+  "errs303": [],
+  "errs304": [],
+  "shots": [
+   "/workspace/prayer/compare304/home-bn-420-303.png",
+   "/workspace/prayer/compare304/home-bn-420-304.png"
+  ]
+ },
+ {
+  "view": "settings",
+  "lang": "bn",
+  "size": "420x700",
+  "removed": [
+   "Baloo Da ২ · গোলাকার",
+   "Atma · বন্ধুসুলভ",
+   "Mina · কোমল",
+   "Galada · হস্তলিপি",
+   "একটি বরকতময় স্মরণে সাহিহ ইন্টারন্যাশনালের ইংরেজি অনুবাদ এবং মুহিউদ্দিন খানের বাংলা অনুবাদ অফলাইনে রাখা হয়েছে। অংশগুলো তাঞ্জিল কুরআন মেটাডেটার ৫৫৬টি রুকু ও পারার সীমা অনুসরণ করে (CC BY 3.0, tanzil.net)। নতুন ইংরেজি ফন্ট SIL Open Font License-এর আওতায়। কালপুরুষ, সোলায়মানলিপি ও বর্ণমালা OFL; সিয়াম রূপালি ও আদর্শলিপি GNU GPL। লি আদর নৈঋত যুক্ত করা হয়নি, কারণ এর লাইসেন্স পুনর্বিতরণ নিষেধ করে। পূর্ণ বিজ্ঞপ্তি LICENSES ফাইলে আছে।",
+   "v৩.০.৩"
+  ],
+  "added": [
+   "Lato · উষ্ণ সানস",
+   "Nunito · গোলাকার",
+   "Source Sans ৩ · সহজপাঠ্য",
+   "IBM Plex Sans · প্রযুক্তিগত",
+   "Lora · বইয়ের সেরিফ",
+   "একটি বরকতময় স্মরণে সাহিহ ইন্টারন্যাশনালের ইংরেজি অনুবাদ এবং মুহিউদ্দিন খানের বাংলা অনুবাদ অফলাইনে রাখা হয়েছে। অংশগুলো তাঞ্জিল কুরআন মেটাডেটার ৫৫৬টি রুকু ও পারার সীমা অনুসরণ করে (CC BY 3.0, tanzil.net)। ইংরেজি ফন্টগুলো (Inter, Manrope, Outfit, Plus Jakarta Sans, Fraunces, Lato, Nunito, Source Sans 3, IBM Plex Sans, Lora) এবং হিন্দ শিলিগুড়ি, নোটো সান্স বাংলা, নোটো সেরিফ বাংলা, অনেক বাংলা ও তিরো বাংলা SIL Open Font License-এর আওতায়। কালপুরুষ, সোলায়মানলিপি ও বর্ণমালা OFL; সিয়াম রূপালি ও আদর্শলিপি GNU GPL। লি আদর নৈঋত যুক্ত করা হয়নি, কারণ এর লাইসেন্স পুনর্বিতরণ নিষেধ করে। পূর্ণ বিজ্ঞপ্তি LICENSES ফাইলে আছে।",
+   "v৩.০.৪"
+  ],
+  "errs303": [],
+  "errs304": [],
+  "shots": [
+   "/workspace/prayer/compare304/settings-bn-420-303.png",
+   "/workspace/prayer/compare304/settings-bn-420-304.png"
+  ]
+ },
+ {
+  "view": "countdown",
+  "lang": "bn",
+  "size": "420x700",
+  "removed": [
+   "v৩.০.৩"
+  ],
+  "added": [
+   "v৩.০.৪"
+  ],
+  "errs303": [],
+  "errs304": [],
+  "shots": [
+   "/workspace/prayer/compare304/countdown-bn-420-303.png",
+   "/workspace/prayer/compare304/countdown-bn-420-304.png"
+  ]
+ },
+ {
+  "view": "weekly",
+  "lang": "bn",
+  "size": "420x700",
+  "removed": [
+   "v৩.০.৩"
+  ],
+  "added": [
+   "v৩.০.৪"
+  ],
+  "errs303": [],
+  "errs304": [],
+  "shots": [
+   "/workspace/prayer/compare304/weekly-bn-420-303.png",
+   "/workspace/prayer/compare304/weekly-bn-420-304.png"
+  ]
+ },
+ {
+  "view": "astro",
+  "lang": "bn",
+  "size": "420x700",
+  "removed": [
+   "v৩.০.৩"
+  ],
+  "added": [
+   "v৩.০.৪"
+  ],
+  "errs303": [],
+  "errs304": [],
+  "shots": [
+   "/workspace/prayer/compare304/astro-bn-420-303.png",
+   "/workspace/prayer/compare304/astro-bn-420-304.png"
+  ]
+ },
+ {
+  "view": "clock",
+  "lang": "bn",
+  "size": "420x700",
+  "removed": [
+   "v৩.০.৩"
+  ],
+  "added": [
+   "v৩.০.৪"
+  ],
+  "errs303": [],
+  "errs304": [],
+  "shots": [
+   "/workspace/prayer/compare304/clock-bn-420-303.png",
+   "/workspace/prayer/compare304/clock-bn-420-304.png"
+  ]
+ },
+ {
+  "view": "portion",
+  "lang": "bn",
+  "size": "420x700",
+  "removed": [
+   "আগের নামাজ রেকর্ড করুন",
+   "০৪:৫৯ – ০৬:১৮",
+   "আগে ২ রাকাত সুন্নাত",
+   "২ ফরজ",
+   "নফল",
+   "০৬:৩৮ – ১১:৩৮",
+   "✓",
+   "২ রাকাত",
+   "১২ রাকাতের বেশি হলে সংখ্যা লিখুন",
+   "নিশ্চিত করুন",
+   "v৩.০.৩"
+  ],
+  "added": [
+   "v৩.০.৪"
+  ],
+  "errs303": [],
+  "errs304": [],
+  "shots": [
+   "/workspace/prayer/compare304/portion-bn-420-303.png",
+   "/workspace/prayer/compare304/portion-bn-420-304.png"
+  ]
+ }
+]

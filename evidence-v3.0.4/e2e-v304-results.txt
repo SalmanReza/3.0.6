@@ -1,0 +1,170 @@
+URL: http://127.0.0.1:1426/
+PASS [A] en home: 9 clock/countdown elements use the app font (Lora), tabular digits, no Optima/Palatino  — []
+PASS [A] en countdown page: 9 clock/countdown elements use the app font (Lora), tabular digits, no Optima/Palatino  — []
+PASS [A] en clock page: 11 clock/countdown elements use the app font (Lora), tabular digits, no Optima/Palatino  — []
+PASS [A] en: after switching fonts the app font is IBM Plex Sans first  — "IBM Plex Sans", Kalpurush, "Segoe UI Variable", "Segoe UI", "Nirmala UI", Amiri, system-ui, sans-serif
+PASS [A] en after font switch: 11 clock/countdown elements use the app font ("IBM Plex Sans"), tabular digits, no Optima/Palatino  — []
+PASS [A] bn home: 9 clock/countdown elements use the app font (Lora), tabular digits, no Optima/Palatino  — []
+PASS [A] bn countdown page: 9 clock/countdown elements use the app font (Lora), tabular digits, no Optima/Palatino  — []
+PASS [A] bn clock page: 11 clock/countdown elements use the app font (Lora), tabular digits, no Optima/Palatino  — []
+PASS [A] bn: after switching fonts the app font is Kalpurush first  — "IBM Plex Sans", Kalpurush, "Segoe UI Variable", "Segoe UI", "Nirmala UI", Amiri, system-ui, sans-serif
+PASS [A] bn after font switch: 11 clock/countdown elements use the app font ("IBM Plex Sans"), tabular digits, no Optima/Palatino  — []
+PASS [B] en: English list = 10 fonts + System  — system,inter,manrope,outfit,jakarta,fraunces,lato,nunito,sourcesans,plex,lora
+PASS [B] en: Bangla list = 10 fonts + System, without Baloo Da 2 / Atma / Mina / Galada  — system,hind,notosans,notoserif,anek,tiro,kalpurush,siyam,solaiman,bornomala,adorsho
+PASS [B] en: a saved Baloo Da 2 choice now shows Hind Siliguri  — {"en":["system","inter","manrope","outfit","jakarta","fraunces","lato","nunito","sourcesans","plex","lora"],"ui":["system","hind","notosans","notoserif","anek","tiro","kalpurush","siyam","solaiman","bornomala","adorsho"],"uiValue":"hind","saved":"hind"}
+PASS [B] en: the 5 new English fonts are bundled and load  — 1,1,1,1,1
+PASS [B] en: About credits the new fonts
+PASS [B] bn: English list = 10 fonts + System  — system,inter,manrope,outfit,jakarta,fraunces,lato,nunito,sourcesans,plex,lora
+PASS [B] bn: Bangla list = 10 fonts + System, without Baloo Da 2 / Atma / Mina / Galada  — system,hind,notosans,notoserif,anek,tiro,kalpurush,siyam,solaiman,bornomala,adorsho
+PASS [B] bn: a saved Baloo Da 2 choice now shows Hind Siliguri  — {"en":["system","inter","manrope","outfit","jakarta","fraunces","lato","nunito","sourcesans","plex","lora"],"ui":["system","hind","notosans","notoserif","anek","tiro","kalpurush","siyam","solaiman","bornomala","adorsho"],"uiValue":"hind","saved":"hind"}
+PASS [B] bn: the 5 new English fonts are bundled and load  — 1,1,1,1,1
+PASS [B] bn: About credits the new fonts
+PASS [C] en: ticking Dhuhr Fard only selects it (tick sound, nothing recorded)  — {"o0":0,"o1":2,"pend":{"fard":{"dhuhr":true}}}
+PASS [C] en: the selection survives a reload and the progress count did not move (0)  — {"kept":true,"ring0":"0"}
+PASS [C] en: Mark Complete records Dhuhr with the completion sound and clears the selection  — {"fard":{"dhuhr":true},"closed":{"fard:dhuhr":true}}
+PASS [C] en: two "+2 rak'ahs" taps show 4 performed, tick sound, nothing recorded  — {"pendTxt":"4 rak‘ahs performed"}
+PASS [C] en: the pending Other voluntary count survives a reload  — 4 rak‘ahs performed
+PASS [C] en: Other voluntary Mark Complete saves one timed entry of 4 rak'ahs  — [{"at":1795420807630,"rakahs":4}]
+PASS [C] bn: ticking Dhuhr Fard only selects it (tick sound, nothing recorded)  — {"o0":0,"o1":2,"pend":{"fard":{"dhuhr":true}}}
+PASS [C] bn: the selection survives a reload and the progress count did not move (০)  — {"kept":true,"ring0":"০"}
+PASS [C] bn: Mark Complete records Dhuhr with the completion sound and clears the selection  — {"fard":{"dhuhr":true},"closed":{"fard:dhuhr":true}}
+PASS [C] bn: two "+2 rak'ahs" taps show 4 performed, tick sound, nothing recorded  — {"pendTxt":"৪ রাকাত আদায়"}
+PASS [C] bn: the pending Other voluntary count survives a reload  — ৪ রাকাত আদায়
+PASS [C] bn: Other voluntary Mark Complete saves one timed entry of 4 rak'ahs  — [{"at":1795420808555,"rakahs":4}]
+PASS [C] en: Friday: selecting Jumu'ah makes Dhuhr exclusive, and nothing is recorded yet  — {"f":{"jum":true,"dhuhrExclusive":true},"r":{}}
+PASS [C] bn: Friday: selecting Jumu'ah makes Dhuhr exclusive, and nothing is recorded yet  — {"f":{"jum":true,"dhuhrExclusive":true},"r":{}}
+PASS [C5] en: two timed entries (10 AM, 7 PM), each with circles 2–12 and 2 filled  — [{"line":"10:00 · 4 rak‘ahs","ticks":6,"done":2,"usable":0},{"line":"19:00 · 4 rak‘ahs","ticks":6,"done":2,"usable":1}]
+PASS [C5] en: at 9 PM the 10 AM entry is locked (its window closed at Asr)  — [{"at":1795406400000,"rakahs":4},{"at":1795438800000,"rakahs":4}]
+PASS [C5] en: unticking the top circle lowers the 7 PM entry 4 → 2; totals update  — {"otherNafl":6,"rakahs":{"other_nafl":6},"otherEntries":[{"at":1795406400000,"rakahs":4},{"at":1795438800000,"rakahs":2}],"fard":{},"voluntary":{},"rakahSets":{"other_nafl":[true,true,true,true,false,false]}}
+PASS [C5] en: at 2 PM the 10 AM entry lowers 4 → 2  — [{"at":1795406400000,"rakahs":2}]
+PASS [C5] en: unticking the last circle removes the entry  — {"otherNafl":0,"rakahs":{},"fard":{},"voluntary":{},"rakahSets":{"other_nafl":[true,true,false,false,false,false]}}
+PASS [C5] en: over 12 shows the "More than 12" box, and it cannot raise the number (30 refused)  — [{"at":1795415400000,"rakahs":24}]
+PASS [C5] en: entering 4 lowers 24 → 4 (a 20-rak'ah reduction) and it turns back into circles  — {"e":[{"at":1795415400000,"rakahs":4}],"circles":2}
+PASS [C5] en: the 7 PM entry is locked once its window closes (next day, after Dhuhr began)  — [{"at":1795438800000,"rakahs":4}]
+PASS [C5] bn: two timed entries (10 AM, 7 PM), each with circles 2–12 and 2 filled  — [{"line":"১০:০০ · ৪ রাকাত","ticks":6,"done":2,"usable":0},{"line":"১৯:০০ · ৪ রাকাত","ticks":6,"done":2,"usable":1}]
+PASS [C5] bn: at 9 PM the 10 AM entry is locked (its window closed at Asr)  — [{"at":1795406400000,"rakahs":4},{"at":1795438800000,"rakahs":4}]
+PASS [C5] bn: unticking the top circle lowers the 7 PM entry 4 → 2; totals update  — {"otherNafl":6,"rakahs":{"other_nafl":6},"otherEntries":[{"at":1795406400000,"rakahs":4},{"at":1795438800000,"rakahs":2}],"fard":{},"voluntary":{},"rakahSets":{"other_nafl":[true,true,true,true,false,false]}}
+PASS [C5] bn: at 2 PM the 10 AM entry lowers 4 → 2  — [{"at":1795406400000,"rakahs":2}]
+PASS [C5] bn: unticking the last circle removes the entry  — {"otherNafl":0,"rakahs":{},"fard":{},"voluntary":{},"rakahSets":{"other_nafl":[true,true,false,false,false,false]}}
+PASS [C5] bn: over 12 shows the "More than 12" box, and it cannot raise the number (30 refused)  — [{"at":1795415400000,"rakahs":24}]
+PASS [C5] bn: entering 4 lowers 24 → 4 (a 20-rak'ah reduction) and it turns back into circles  — {"e":[{"at":1795415400000,"rakahs":4}],"circles":2}
+PASS [C5] bn: the 7 PM entry is locked once its window closes (next day, after Dhuhr began)  — [{"at":1795438800000,"rakahs":4}]
+PASS [D] en: five Fard prayer cards, each with its parts and exactly one Undo; no separate Sunnah/Fard undo  — {"prayers":[{"key":"fajr","undo":1,"parts":2},{"key":"dhuhr","undo":1,"parts":3},{"key":"asr","undo":1,"parts":1},{"key":"maghrib","undo":1,"parts":2},{"key":"isha","undo":1,"parts":2}],"fardUndo":0,"duhaUndo":1}
+PASS [D] en: Duha keeps one card with one Undo  — {"prayers":[{"key":"fajr","undo":1,"parts":2},{"key":"dhuhr","undo":1,"parts":3},{"key":"asr","undo":1,"parts":1},{"key":"maghrib","undo":1,"parts":2},{"key":"isha","undo":1,"parts":2}],"fardUndo":0,"duhaUndo":1}
+PASS [D] bn: five Fard prayer cards, each with its parts and exactly one Undo; no separate Sunnah/Fard undo  — {"prayers":[{"key":"fajr","undo":1,"parts":2},{"key":"dhuhr","undo":1,"parts":3},{"key":"asr","undo":1,"parts":1},{"key":"maghrib","undo":1,"parts":2},{"key":"isha","undo":1,"parts":2}],"fardUndo":0,"duhaUndo":1}
+PASS [D] bn: Duha keeps one card with one Undo  — {"prayers":[{"key":"fajr","undo":1,"parts":2},{"key":"dhuhr","undo":1,"parts":3},{"key":"asr","undo":1,"parts":1},{"key":"maghrib","undo":1,"parts":2},{"key":"isha","undo":1,"parts":2}],"fardUndo":0,"duhaUndo":1}
+PASS [F] en: unrecorded Fajr and Duha (time ended) show no card on their own  — 0
+PASS [F] en: Prayer Completion Recovery is still in Settings
+PASS [D] en: one Undo removes the whole Fajr (Sunnah and Fard)  — {"fard":{"dhuhr":true},"sunnah":{},"closed":{"fard:dhuhr":true},"voluntary":{}}
+PASS [E] en: after Undo only Fajr appears, under "Revise previous prayer"  — {"cards":[{"name":"Fajr","head":"Revise previous prayer"}]}
+PASS [E] en: re-tick + Mark Complete records Fajr with the "recorded after its time" mark and the card leaves  — {"fard":{"dhuhr":true,"fajr":true},"late":{"fard:fajr":true},"cards":0}
+PASS [E] en: undoing Dhuhr while its time is open returns it to its normal card  — {"normal":["Dhuhr"],"late":0}
+PASS [E] en: after Asr began the undone Fajr is no longer offered  — 0
+PASS [F] bn: unrecorded Fajr and Duha (time ended) show no card on their own  — 0
+PASS [F] bn: Prayer Completion Recovery is still in Settings
+PASS [D] bn: one Undo removes the whole Fajr (Sunnah and Fard)  — {"fard":{"dhuhr":true},"sunnah":{},"closed":{"fard:dhuhr":true},"voluntary":{}}
+PASS [E] bn: after Undo only Fajr appears, under "আগের নামাজ সংশোধন করুন"  — {"cards":[{"name":"ফজর","head":"আগের নামাজ সংশোধন করুন"}]}
+PASS [E] bn: re-tick + Mark Complete records Fajr with the "recorded after its time" mark and the card leaves  — {"fard":{"dhuhr":true,"fajr":true},"late":{"fard:fajr":true},"cards":0}
+PASS [E] bn: undoing Dhuhr while its time is open returns it to its normal card  — {"normal":["যোহর"],"late":0}
+PASS [E] bn: after Asr began the undone Fajr is no longer offered  — 0
+PASS [G] en 1280x720 light Asr only: 1 cards in 1 rows, every row filled to the edge, no heading rows  — {"n":1,"rows":1,"gaps":[0],"overflow":false,"headings":0}
+PASS [G] en 1280x720 light available now: 1 cards in 1 rows, every row filled to the edge, no heading rows  — {"n":1,"rows":1,"gaps":[0],"overflow":false,"headings":0}
+PASS [G] en 1280x720 light now + 1 Revise: 2 cards in 1 rows, every row filled to the edge, no heading rows  — {"n":2,"rows":1,"gaps":[0],"overflow":false,"headings":0}
+PASS [G] en 1280x720 light now + 2 Revise: 3 cards in 2 rows, every row filled to the edge, no heading rows  — {"n":3,"rows":2,"gaps":[0,0],"overflow":false,"headings":0}
+PASS [G] en 1280x720 dark Asr only: 1 cards in 1 rows, every row filled to the edge, no heading rows  — {"n":1,"rows":1,"gaps":[0],"overflow":false,"headings":0}
+PASS [G] en 1280x720 dark available now: 1 cards in 1 rows, every row filled to the edge, no heading rows  — {"n":1,"rows":1,"gaps":[0],"overflow":false,"headings":0}
+PASS [G] en 1280x720 dark now + 1 Revise: 2 cards in 1 rows, every row filled to the edge, no heading rows  — {"n":2,"rows":1,"gaps":[0],"overflow":false,"headings":0}
+PASS [G] en 1280x720 dark now + 2 Revise: 3 cards in 2 rows, every row filled to the edge, no heading rows  — {"n":3,"rows":2,"gaps":[0,0],"overflow":false,"headings":0}
+PASS [G] en 900x700 light Asr only: 1 cards in 1 rows, every row filled to the edge, no heading rows  — {"n":1,"rows":1,"gaps":[0],"overflow":false,"headings":0}
+PASS [G] en 900x700 light available now: 1 cards in 1 rows, every row filled to the edge, no heading rows  — {"n":1,"rows":1,"gaps":[0],"overflow":false,"headings":0}
+PASS [G] en 900x700 light now + 1 Revise: 2 cards in 2 rows, every row filled to the edge, no heading rows  — {"n":2,"rows":2,"gaps":[0,0],"overflow":false,"headings":0}
+PASS [G] en 900x700 light now + 2 Revise: 3 cards in 3 rows, every row filled to the edge, no heading rows  — {"n":3,"rows":3,"gaps":[0,0,0],"overflow":false,"headings":0}
+PASS [G] en 900x700 dark Asr only: 1 cards in 1 rows, every row filled to the edge, no heading rows  — {"n":1,"rows":1,"gaps":[0],"overflow":false,"headings":0}
+PASS [G] en 900x700 dark available now: 1 cards in 1 rows, every row filled to the edge, no heading rows  — {"n":1,"rows":1,"gaps":[0],"overflow":false,"headings":0}
+PASS [G] en 900x700 dark now + 1 Revise: 2 cards in 2 rows, every row filled to the edge, no heading rows  — {"n":2,"rows":2,"gaps":[0,0],"overflow":false,"headings":0}
+PASS [G] en 900x700 dark now + 2 Revise: 3 cards in 3 rows, every row filled to the edge, no heading rows  — {"n":3,"rows":3,"gaps":[0,0,0],"overflow":false,"headings":0}
+PASS [G] en 420x700 light Asr only: 1 cards in 1 rows, every row filled to the edge, no heading rows  — {"n":1,"rows":1,"gaps":[0],"overflow":false,"headings":0}
+PASS [G] en 420x700 light available now: 1 cards in 1 rows, every row filled to the edge, no heading rows  — {"n":1,"rows":1,"gaps":[0],"overflow":false,"headings":0}
+PASS [G] en 420x700 light now + 1 Revise: 2 cards in 2 rows, every row filled to the edge, no heading rows  — {"n":2,"rows":2,"gaps":[0,0],"overflow":false,"headings":0}
+PASS [G] en 420x700 light now + 2 Revise: 3 cards in 3 rows, every row filled to the edge, no heading rows  — {"n":3,"rows":3,"gaps":[0,0,0],"overflow":false,"headings":0}
+PASS [G] en 420x700 dark Asr only: 1 cards in 1 rows, every row filled to the edge, no heading rows  — {"n":1,"rows":1,"gaps":[0],"overflow":false,"headings":0}
+PASS [G] en 420x700 dark available now: 1 cards in 1 rows, every row filled to the edge, no heading rows  — {"n":1,"rows":1,"gaps":[0],"overflow":false,"headings":0}
+PASS [G] en 420x700 dark now + 1 Revise: 2 cards in 2 rows, every row filled to the edge, no heading rows  — {"n":2,"rows":2,"gaps":[0,0],"overflow":false,"headings":0}
+PASS [G] en 420x700 dark now + 2 Revise: 3 cards in 3 rows, every row filled to the edge, no heading rows  — {"n":3,"rows":3,"gaps":[0,0,0],"overflow":false,"headings":0}
+PASS [G] bn 1280x720 light Asr only: 1 cards in 1 rows, every row filled to the edge, no heading rows  — {"n":1,"rows":1,"gaps":[0],"overflow":false,"headings":0}
+PASS [G] bn 1280x720 light available now: 1 cards in 1 rows, every row filled to the edge, no heading rows  — {"n":1,"rows":1,"gaps":[0],"overflow":false,"headings":0}
+PASS [G] bn 1280x720 light now + 1 Revise: 2 cards in 1 rows, every row filled to the edge, no heading rows  — {"n":2,"rows":1,"gaps":[0],"overflow":false,"headings":0}
+PASS [G] bn 1280x720 light now + 2 Revise: 3 cards in 2 rows, every row filled to the edge, no heading rows  — {"n":3,"rows":2,"gaps":[0,0],"overflow":false,"headings":0}
+PASS [G] bn 1280x720 dark Asr only: 1 cards in 1 rows, every row filled to the edge, no heading rows  — {"n":1,"rows":1,"gaps":[0],"overflow":false,"headings":0}
+PASS [G] bn 1280x720 dark available now: 1 cards in 1 rows, every row filled to the edge, no heading rows  — {"n":1,"rows":1,"gaps":[0],"overflow":false,"headings":0}
+PASS [G] bn 1280x720 dark now + 1 Revise: 2 cards in 1 rows, every row filled to the edge, no heading rows  — {"n":2,"rows":1,"gaps":[0],"overflow":false,"headings":0}
+PASS [G] bn 1280x720 dark now + 2 Revise: 3 cards in 2 rows, every row filled to the edge, no heading rows  — {"n":3,"rows":2,"gaps":[0,0],"overflow":false,"headings":0}
+PASS [G] bn 900x700 light Asr only: 1 cards in 1 rows, every row filled to the edge, no heading rows  — {"n":1,"rows":1,"gaps":[0],"overflow":false,"headings":0}
+PASS [G] bn 900x700 light available now: 1 cards in 1 rows, every row filled to the edge, no heading rows  — {"n":1,"rows":1,"gaps":[0],"overflow":false,"headings":0}
+PASS [G] bn 900x700 light now + 1 Revise: 2 cards in 2 rows, every row filled to the edge, no heading rows  — {"n":2,"rows":2,"gaps":[0,0],"overflow":false,"headings":0}
+PASS [G] bn 900x700 light now + 2 Revise: 3 cards in 3 rows, every row filled to the edge, no heading rows  — {"n":3,"rows":3,"gaps":[0,0,0],"overflow":false,"headings":0}
+PASS [G] bn 900x700 dark Asr only: 1 cards in 1 rows, every row filled to the edge, no heading rows  — {"n":1,"rows":1,"gaps":[0],"overflow":false,"headings":0}
+PASS [G] bn 900x700 dark available now: 1 cards in 1 rows, every row filled to the edge, no heading rows  — {"n":1,"rows":1,"gaps":[0],"overflow":false,"headings":0}
+PASS [G] bn 900x700 dark now + 1 Revise: 2 cards in 2 rows, every row filled to the edge, no heading rows  — {"n":2,"rows":2,"gaps":[0,0],"overflow":false,"headings":0}
+PASS [G] bn 900x700 dark now + 2 Revise: 3 cards in 3 rows, every row filled to the edge, no heading rows  — {"n":3,"rows":3,"gaps":[0,0,0],"overflow":false,"headings":0}
+PASS [G] bn 420x700 light Asr only: 1 cards in 1 rows, every row filled to the edge, no heading rows  — {"n":1,"rows":1,"gaps":[0],"overflow":false,"headings":0}
+PASS [G] bn 420x700 light available now: 1 cards in 1 rows, every row filled to the edge, no heading rows  — {"n":1,"rows":1,"gaps":[0],"overflow":false,"headings":0}
+PASS [G] bn 420x700 light now + 1 Revise: 2 cards in 2 rows, every row filled to the edge, no heading rows  — {"n":2,"rows":2,"gaps":[0,0],"overflow":false,"headings":0}
+PASS [G] bn 420x700 light now + 2 Revise: 3 cards in 3 rows, every row filled to the edge, no heading rows  — {"n":3,"rows":3,"gaps":[0,0,0],"overflow":false,"headings":0}
+PASS [G] bn 420x700 dark Asr only: 1 cards in 1 rows, every row filled to the edge, no heading rows  — {"n":1,"rows":1,"gaps":[0],"overflow":false,"headings":0}
+PASS [G] bn 420x700 dark available now: 1 cards in 1 rows, every row filled to the edge, no heading rows  — {"n":1,"rows":1,"gaps":[0],"overflow":false,"headings":0}
+PASS [G] bn 420x700 dark now + 1 Revise: 2 cards in 2 rows, every row filled to the edge, no heading rows  — {"n":2,"rows":2,"gaps":[0,0],"overflow":false,"headings":0}
+PASS [G] bn 420x700 dark now + 2 Revise: 3 cards in 3 rows, every row filled to the edge, no heading rows  — {"n":3,"rows":3,"gaps":[0,0,0],"overflow":false,"headings":0}
+PASS [H] en: corner label reads v3.0.4  — v3.0.4
+PASS [H] bn: corner label reads v৩.০.৪  — v৩.০.৪
+PASS [J] en: theme picker lists all 10 dark themes, then all light ones, relative order kept; saved theme still selected  — {"values":["Obsidian","Midnight","Forest","Burgundy","Graphite","Desert Night","Indigo Dusk","Emerald Night","Charcoal Copper","Deep Plum","Porcelain","Ivory","Mist Blue","Sage","Rose","Sandstone","Pearl Mint","Linen","Dawn Peach","Sky Lilac"],"selected":"Pearl Mint"}
+PASS [J] bn: theme picker lists all 10 dark themes, then all light ones, relative order kept; saved theme still selected  — {"values":["Obsidian","Midnight","Forest","Burgundy","Graphite","Desert Night","Indigo Dusk","Emerald Night","Charcoal Copper","Deep Plum","Porcelain","Ivory","Mist Blue","Sage","Rose","Sandstone","Pearl Mint","Linen","Dawn Peach","Sky Lilac"],"selected":"Pearl Mint"}
+PASS [C] en 1280: on the countdown page a tick only selects (nothing recorded, card stays)  — {}
+PASS [K] en 1280: Mark Complete records Dhuhr and leaves only Prayer countdown + Event timing, gap closed (24px = card gap 24px)  — {"before":[{"id":"eventHero","top":428,"bottom":605},{"id":"eventPrayerCard","top":629,"bottom":1022},{"id":"eventTimingCard","top":1042,"bottom":1120}],"after":[{"id":"eventHero","top":428,"bottom":605},{"id":"eventTimingCard","top":629,"bottom":706}]}
+PASS [K] en: after Undo while Dhuhr is open the completion card comes back  — [{"id":"eventHero","top":428,"bottom":605},{"id":"eventPrayerCard","top":629,"bottom":1022},{"id":"eventTimingCard","top":1042,"bottom":1120}]
+PASS [C] en 900: on the countdown page a tick only selects (nothing recorded, card stays)  — {}
+PASS [K] en 900: Mark Complete records Dhuhr and leaves only Prayer countdown + Event timing, gap closed (18px = card gap 18px)  — {"before":[{"id":"eventHero","top":420,"bottom":763},{"id":"eventPrayerCard","top":781,"bottom":1149},{"id":"eventTimingCard","top":1164,"bottom":1229}],"after":[{"id":"eventHero","top":420,"bottom":763},{"id":"eventTimingCard","top":781,"bottom":846}]}
+PASS [C] en 420: on the countdown page a tick only selects (nothing recorded, card stays)  — {}
+PASS [K] en 420: Mark Complete records Dhuhr and leaves only Prayer countdown + Event timing, gap closed (14px = card gap 14px)  — {"before":[{"id":"eventHero","top":630,"bottom":924},{"id":"eventPrayerCard","top":938,"bottom":1501},{"id":"eventTimingCard","top":1512,"bottom":1626}],"after":[{"id":"eventHero","top":630,"bottom":924},{"id":"eventTimingCard","top":938,"bottom":1053}]}
+PASS [C] bn 1280: on the countdown page a tick only selects (nothing recorded, card stays)  — {}
+PASS [K] bn 1280: Mark Complete records Dhuhr and leaves only Prayer countdown + Event timing, gap closed (24px = card gap 24px)  — {"before":[{"id":"eventHero","top":431,"bottom":609},{"id":"eventPrayerCard","top":633,"bottom":1028},{"id":"eventTimingCard","top":1049,"bottom":1128}],"after":[{"id":"eventHero","top":431,"bottom":609},{"id":"eventTimingCard","top":633,"bottom":713}]}
+PASS [K] bn: after Undo while Dhuhr is open the completion card comes back  — [{"id":"eventHero","top":431,"bottom":609},{"id":"eventPrayerCard","top":633,"bottom":1028},{"id":"eventTimingCard","top":1049,"bottom":1128}]
+PASS [C] bn 900: on the countdown page a tick only selects (nothing recorded, card stays)  — {}
+PASS [K] bn 900: Mark Complete records Dhuhr and leaves only Prayer countdown + Event timing, gap closed (18px = card gap 18px)  — {"before":[{"id":"eventHero","top":422,"bottom":770},{"id":"eventPrayerCard","top":788,"bottom":1159},{"id":"eventTimingCard","top":1173,"bottom":1241}],"after":[{"id":"eventHero","top":422,"bottom":770},{"id":"eventTimingCard","top":788,"bottom":855}]}
+PASS [C] bn 420: on the countdown page a tick only selects (nothing recorded, card stays)  — {}
+PASS [K] bn 420: Mark Complete records Dhuhr and leaves only Prayer countdown + Event timing, gap closed (14px = card gap 14px)  — {"before":[{"id":"eventHero","top":624,"bottom":922},{"id":"eventPrayerCard","top":936,"bottom":1471},{"id":"eventTimingCard","top":1482,"bottom":1569}],"after":[{"id":"eventHero","top":624,"bottom":922},{"id":"eventTimingCard","top":936,"bottom":1023}]}
+PASS [L] en: astro opens with the glide from home (homeView)  — {"from":"homeView","to":"astroView","animations":2}
+PASS [L] en: clock opens with the glide from home (homeView)  — {"from":"homeView","to":"timeView","animations":2}
+PASS [L] en: astro opens with the glide from home scrolled (homeView)  — {"from":"homeView","to":"astroView","animations":2}
+PASS [L] en: clock opens with the glide from home scrolled (homeView)  — {"from":"homeView","to":"timeView","animations":2}
+PASS [L] en: astro opens with the glide from countdown (countdownView)  — {"from":"countdownView","to":"astroView","animations":2}
+PASS [L] en: closing the astro page animates back  — 2
+PASS [L] en: clock opens with the glide from countdown (countdownView)  — {"from":"countdownView","to":"timeView","animations":2}
+PASS [L] en: closing the clock page animates back  — 2
+PASS [L] en: astro opens with the glide from settings (settingsView)  — {"from":"settingsView","to":"astroView","animations":2}
+PASS [L] en: clock opens with the glide from settings (settingsView)  — {"from":"settingsView","to":"timeView","animations":2}
+PASS [L] en: astro opens with the glide from prayer record (weekly day) (weeklyDayView)  — {"from":"weeklyDayView","to":"astroView","animations":2}
+PASS [L] en: clock opens with the glide from prayer record (weekly day) (weeklyDayView)  — {"from":"weeklyDayView","to":"timeView","animations":2}
+PASS [L] en: astro opens with the glide from prayer page (prayerView)  — {"from":"prayerView","to":"astroView","animations":2}
+PASS [L] en: clock opens with the glide from prayer page (prayerView)  — {"from":"prayerView","to":"timeView","animations":2}
+PASS [L] en: astro opens with the glide from clock page (timeView)  — {"from":"timeView","to":"astroView","animations":2}
+PASS [L] en: clock opens with the glide from astrolabe page (astroView)  — {"from":"astroView","to":"timeView","animations":2}
+PASS [L] bn: astro opens with the glide from home (homeView)  — {"from":"homeView","to":"astroView","animations":2}
+PASS [L] bn: clock opens with the glide from home (homeView)  — {"from":"homeView","to":"timeView","animations":2}
+PASS [L] bn: astro opens with the glide from home scrolled (homeView)  — {"from":"homeView","to":"astroView","animations":2}
+PASS [L] bn: clock opens with the glide from home scrolled (homeView)  — {"from":"homeView","to":"timeView","animations":2}
+PASS [L] bn: astro opens with the glide from countdown (countdownView)  — {"from":"countdownView","to":"astroView","animations":2}
+PASS [L] bn: closing the astro page animates back  — 2
+PASS [L] bn: clock opens with the glide from countdown (countdownView)  — {"from":"countdownView","to":"timeView","animations":2}
+PASS [L] bn: closing the clock page animates back  — 2
+PASS [L] bn: astro opens with the glide from settings (settingsView)  — {"from":"settingsView","to":"astroView","animations":2}
+PASS [L] bn: clock opens with the glide from settings (settingsView)  — {"from":"settingsView","to":"timeView","animations":2}
+PASS [L] bn: astro opens with the glide from prayer record (weekly day) (weeklyDayView)  — {"from":"weeklyDayView","to":"astroView","animations":2}
+PASS [L] bn: clock opens with the glide from prayer record (weekly day) (weeklyDayView)  — {"from":"weeklyDayView","to":"timeView","animations":2}
+PASS [L] bn: astro opens with the glide from prayer page (prayerView)  — {"from":"prayerView","to":"astroView","animations":2}
+PASS [L] bn: clock opens with the glide from prayer page (prayerView)  — {"from":"prayerView","to":"timeView","animations":2}
+PASS [L] bn: astro opens with the glide from clock page (timeView)  — {"from":"timeView","to":"astroView","animations":2}
+PASS [L] bn: clock opens with the glide from astrolabe page (astroView)  — {"from":"astroView","to":"timeView","animations":2}
+PASS [L] prefers-reduced-motion: the astrolabe page opens from Settings without the glide  — 0
+
+167/167 passed

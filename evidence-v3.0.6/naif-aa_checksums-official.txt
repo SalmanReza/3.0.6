@@ -1,0 +1,1 @@
+cc49327e06088124c0e39d8dde9f0b58 de442s.bsp  (official NAIF aa_checksums.txt, fetched 23 Nov 2026)

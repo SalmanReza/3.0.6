@@ -1,0 +1,11 @@
+lat 55: start minus mean conjunction: 0.5..3.4 days; nulls 0; crescent date missing on 0/1284 sample days
+lat 60: start minus mean conjunction: 0.6..4.1 days; nulls 0; crescent date missing on 0/1284 sample days
+lat 63: start minus mean conjunction: 0.6..4.8 days; nulls 0; crescent date missing on 0/1284 sample days
+lat 65: start minus mean conjunction: 0.7..5.2 days; nulls 0; crescent date missing on 0/1284 sample days
+lat 66: start minus mean conjunction: 0.8..7.1 days; nulls 0; crescent date missing on 0/1284 sample days
+lat 67: start minus mean conjunction: 99.0..-99.0 days; nulls 1596; crescent date missing on 1284/1284 sample days
+lat 68: start minus mean conjunction: 99.0..-99.0 days; nulls 1596; crescent date missing on 1284/1284 sample days
+lat 70: start minus mean conjunction: 99.0..-99.0 days; nulls 1596; crescent date missing on 1284/1284 sample days
+lat 72: start minus mean conjunction: 99.0..-99.0 days; nulls 1596; crescent date missing on 1284/1284 sample days
+lat 75: start minus mean conjunction: 99.0..-99.0 days; nulls 1596; crescent date missing on 1284/1284 sample days
+lat 78: start minus mean conjunction: 99.0..-99.0 days; nulls 1596; crescent date missing on 1284/1284 sample days

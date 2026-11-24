@@ -1,0 +1,154 @@
+info: 23 Nov 2026 Dhaka = 12/6/1448, day 160 of 354, passages 1301–1309 (9), juz 18
+PASS [A] en: “Mark as read” sits under the passage beside Read more / Full section / Today’s portion  — ["Full section","Today's portion","Mark as read"]
+PASS [A] en: the passage shown is one of today’s unread passages  — 1301
+PASS [C] en: “0 of 9 passages read today”, Juz’ of today’s passages  — Juz' 18 · 0 of 9 passages read today
+PASS [A] en: showing a passage does not count it (store empty after load and 3 s)
+PASS [A] en: after pressing, the card shows “Read ✓”  — ["Full section","Today's portion","Read ✓"]
+PASS [A] en: the passage is stored as read for 1448
+PASS [A] en: then the next unread passage is shown  — An-Noor 24:11 → An-Noor 24:12
+PASS [C] en: the count reads 1 of 9  — Juz' 18 · 1 of 9 passages read today
+PASS [A] en: when the whole day is read it shows “Today's portion read ✓”  — {"ref":"An-Noor 24:27–28","subject":"Asking permission to enter; lowering the gaze","buttons":["Read more","Full section","Today's portion","Today's portion read ✓"],"mark":null,"done":null,"allRead":"Today's portion read ✓","featured":null,"progress":"Juz' 18 · 9 of 9 passages read today"}
+PASS [C] en: the count reads 9 of 9  — Juz' 18 · 9 of 9 passages read today
+PASS [C] en: exactly today’s 9 passages are stored as read
+PASS [B] en: Today’s portion lists today’s 9 passages in mushaf order, each with “Undo read”  — [[1301,"Undo read"],[1302,"Undo read"],[1303,"Undo read"],[1304,"Undo read"],[1305,"Undo read"],[1306,"Undo read"],[1307,"Undo read"],[1308,"Undo read"],[1309,"Undo read"]]
+PASS [B] en: Undo read affects only that passage  — [[1301,true],[1302,true],[1303,false],[1304,true],[1305,true],[1306,true],[1307,true],[1308,true],[1309,true]]
+PASS [B] en: it now offers “Mark as read” again and the summary reads 8 of 9  — Juz' 18 · 8 of 9 passages read today
+PASS [B] en: Mark as read in Today’s portion marks it again
+PASS [A] en mark/undo: no page errors
+PASS [A] bn: “পড়েছি” sits under the passage beside Read more / Full section / Today’s portion  — ["পুরো অংশ","আজকের অংশ","পড়েছি"]
+PASS [A] bn: the passage shown is one of today’s unread passages  — 1301
+PASS [C] bn: “0 of 9 passages read today”, Juz’ of today’s passages  — পারা ১৮ · আজ ৯টি অংশের ০টি পড়া হয়েছে
+PASS [A] bn: showing a passage does not count it (store empty after load and 3 s)
+PASS [A] bn: after pressing, the card shows “পড়া হয়েছে ✓”  — ["পুরো অংশ","আজকের অংশ","পড়া হয়েছে ✓"]
+PASS [A] bn: the passage is stored as read for 1448
+PASS [A] bn: then the next unread passage is shown  — আন-নূর ২৪:১১ → আন-নূর ২৪:১২
+PASS [C] bn: the count reads 1 of 9  — পারা ১৮ · আজ ৯টি অংশের ১টি পড়া হয়েছে
+PASS [A] bn: when the whole day is read it shows “আজকের অংশ পড়া শেষ ✓”  — {"ref":"আন-নূর ২৪:২৭–২৮","subject":"অনুমতি নিয়ে প্রবেশ; দৃষ্টি সংযত রাখা","buttons":["আরও পড়ুন","পুরো অংশ","আজকের অংশ","আজকের অংশ পড়া শেষ ✓"],"mark":null,"done":null,"allRead":"আজকের অংশ পড়া শেষ ✓","featured":null,"progress":"পারা ১৮ · আজ ৯টি অংশের ৯টি পড়া হয়েছে"}
+PASS [C] bn: the count reads 9 of 9  — পারা ১৮ · আজ ৯টি অংশের ৯টি পড়া হয়েছে
+PASS [C] bn: exactly today’s 9 passages are stored as read
+PASS [C] bn: the count uses Bangla digits  — পারা ১৮ · আজ ৯টি অংশের ৯টি পড়া হয়েছে
+PASS [B] bn: Today’s portion lists today’s 9 passages in mushaf order, each with “পড়া চিহ্ন সরান”  — [[1301,"পড়া চিহ্ন সরান"],[1302,"পড়া চিহ্ন সরান"],[1303,"পড়া চিহ্ন সরান"],[1304,"পড়া চিহ্ন সরান"],[1305,"পড়া চিহ্ন সরান"],[1306,"পড়া চিহ্ন সরান"],[1307,"পড়া চিহ্ন সরান"],[1308,"পড়া চিহ্ন সরান"],[1309,"পড়া চিহ্ন সরান"]]
+PASS [B] bn: Undo read affects only that passage  — [[1301,true],[1302,true],[1303,false],[1304,true],[1305,true],[1306,true],[1307,true],[1308,true],[1309,true]]
+PASS [B] bn: it now offers “পড়েছি” again and the summary reads 8 of 9  — পারা ১৮ · আজ ৯টি অংশের ৮টি পড়া হয়েছে
+PASS [B] bn: Mark as read in Today’s portion marks it again
+PASS [A] bn mark/undo: no page errors
+PASS [F] en: “1301 passages behind this year” is offered under Today’s portion  — 1301 passages behind this year
+PASS [F] en: today’s portion holds only today (9) — it never grows with unread days
+PASS [F] en: it opens “Earlier unread passages”, oldest first from 1:1, with the same buttons  — Earlier unread passages 1301 Al-Faatiha 1:1–4
+PASS [F] en: marking the oldest one there counts it (behind 1300)  — 1300 passages behind this year
+PASS [F] en: “Back to today's portion” returns to today; count of today unchanged (0)  — Juz' 18 · 0 of 9 passages read today
+PASS [F] en behind list: no page errors
+PASS [F] en: a new Hijri year (2 Muharram 1449, 2027-06-07) starts a fresh plan at the start of the mushaf  — Al-Baqara 2:12–13 Juz' 1 · 0 of 8 passages read today
+PASS [F] en: 1448’s read marks are kept as history
+PASS [F] en: Settings shows the year lines (“1448 AH: 1 of 2,739 passages read”)  — 1449 AH: 0 of 2,739 passages read1448 AH: 1 of 2,739 passages read
+PASS [F] en new year: no page errors
+PASS [F] bn: “এ বছর ১৩০১টি অংশ পিছিয়ে” is offered under Today’s portion  — এ বছর ১৩০১টি অংশ পিছিয়ে
+PASS [F] bn: today’s portion holds only today (9) — it never grows with unread days
+PASS [F] bn: it opens “আগের না-পড়া অংশ”, oldest first from 1:1, with the same buttons  — আগের না-পড়া অংশ 1301 আল-ফাতিহা ১:১–৪
+PASS [F] bn: marking the oldest one there counts it (behind 1300)  — এ বছর ১৩০০টি অংশ পিছিয়ে
+PASS [F] bn: “আজকের অংশে ফিরুন” returns to today; count of today unchanged (0)  — পারা ১৮ · আজ ৯টি অংশের ০টি পড়া হয়েছে
+PASS [F] bn behind list: no page errors
+PASS [F] bn: a new Hijri year (2 Muharram 1449, 2027-06-07) starts a fresh plan at the start of the mushaf  — আল-বাকারা ২:১২–১৩ পারা ১ · আজ ৮টি অংশের ০টি পড়া হয়েছে
+PASS [F] bn: 1448’s read marks are kept as history
+PASS [F] bn: Settings shows the year lines (“১৪৪৮ হিজরি: ২,৭৩৯টি অংশের ১টি পড়া হয়েছে”)  — ১৪৪৯ হিজরি: ২,৭৩৯টি অংশের ০টি পড়া হয়েছে১৪৪৮ হিজরি: ২,৭৩৯টি অংশের ১টি পড়া হয়েছে
+PASS [F] bn new year: no page errors
+PASS [F] export: the backup carries the read marks (data.reading)
+PASS [F] merge: a passage stays read if either side has it read
+PASS [F] replace: the read marks become the backup’s
+PASS [F] a v3.0.5 backup (no read marks) leaves the read marks as they are
+PASS [F] backup: no page errors
+PASS [C] the reminder’s old automatic read counts are cleared on start; nothing counts until marked  — Juz' 18 · 0 of 9 passages read today
+PASS [C] legacy clear: no page errors
+PASS [E] en: 9/12/1448 (2027-05-16) shows the arafah passage first with its one-line note  — Day of Arafah: Al-Ma’idah 5:3 (“This day I have perfected for you your religion”) was revealed on this day. | Al-Maaida 5:3–4
+PASS [E] en: Today’s portion lists the featured passage(s) first, then the unchanged plan; M counts them  — Juz' 30 · 0 of 8 passages read today [{"index":343,"read":false,"featured":"arafah","ref":"Al-Maaida 5:3–4","button":"Mark as read"},{"index":2609,"read":false,"featured":null,"ref":"Al-Mutaffifin 83:18–21","button":"Mark as read"},{"index":2610,"read":false,"featured":null,"ref":"Al-Mutaffifin 83:22–23","button":"Mark as read"}]
+PASS [E] en: the featured passage shares its read mark with the same passage in the plan (plan day 39, 2026-07-25)  — {"index":343,"read":true,"featured":null,"ref":"Al-Maaida 5:3–4","button":"Undo read"}
+PASS [E] shared read: no page errors
+PASS [E] en arafah: no page errors
+PASS [E] en: 17/9/1448 (2027-02-25) shows the badr passage first with its one-line note  — Battle of Badr (approximate date): Al-Anfal 8:41–44, “the day when the two armies met”. | Al-Anfaal 8:41–44
+PASS [E] en: Badr is labelled approximate
+PASS [E] en: Today’s portion lists the featured passage(s) first, then the unchanged plan; M counts them  — Juz' 25 · 0 of 7 passages read today [{"index":605,"read":false,"featured":"badr","ref":"Al-Anfaal 8:41–44","button":"Mark as read"},{"index":2037,"read":false,"featured":null,"ref":"Ad-Dukhaan 44:43–49","button":"Mark as read"},{"index":2038,"read":false,"featured":null,"ref":"Ad-Dukhaan 44:50","button":"Mark as read"}]
+PASS [E] en badr: no page errors
+PASS [E] en: 27/9/1448 (2027-03-07) shows the qadr passage first with its one-line note  — Laylat al-Qadr, commonly held to be the 27th night: Al-‘Alaq 96:1–5, the first verses revealed. | Al-Alaq 96:1–2
+PASS [E] en: 27 Ramadan is labelled commonly held
+PASS [E] en: Today’s portion lists the featured passage(s) first, then the unchanged plan; M counts them  — Juz' 26 · 0 of 10 passages read today [{"index":2689,"read":false,"featured":"qadr","ref":"Al-Alaq 96:1–2","button":"Mark as read"},{"index":2690,"read":false,"featured":"qadr","ref":"Al-Alaq 96:3–5","button":"Mark as read"},{"index":2124,"read":false,"featured":null,"ref":"Qaaf 50:4–5","button":"Mark as read"}]
+PASS [E] en qadr: no page errors
+PASS [E] en: an ordinary day (23 Nov 2026) shows no featured note
+PASS [E] bn: 9/12/1448 (2027-05-16) shows the arafah passage first with its one-line note  — আরাফার দিন: সূরা মায়িদা ৫:৩ (“আজ আমি তোমাদের জন্য তোমাদের দ্বীনকে পূর্ণাঙ্গ করলাম”) এই দিনে নাজিল হয়েছিল। | আল-মায়িদাহ ৫:৩–৪
+PASS [E] bn: Today’s portion lists the featured passage(s) first, then the unchanged plan; M counts them  — পারা ৩০ · আজ ৮টি অংশের ০টি পড়া হয়েছে [{"index":343,"read":false,"featured":"arafah","ref":"আল-মায়িদাহ ৫:৩–৪","button":"পড়েছি"},{"index":2609,"read":false,"featured":null,"ref":"আত-তাতফীফ ৮৩:১৮–২১","button":"পড়েছি"},{"index":2610,"read":false,"featured":null,"ref":"আত-তাতফীফ ৮৩:২২–২৩","button":"পড়েছি"}]
+PASS [E] bn arafah: no page errors
+PASS [E] bn: 17/9/1448 (2027-02-25) shows the badr passage first with its one-line note  — বদর যুদ্ধ (আনুমানিক তারিখ): সূরা আনফাল ৮:৪১–৪৪, “যেদিন দুই দল মুখোমুখি হয়েছিল”। | আল-আনফাল ৮:৪১–৪৪
+PASS [E] bn: Badr is labelled approximate
+PASS [E] bn: Today’s portion lists the featured passage(s) first, then the unchanged plan; M counts them  — পারা ২৫ · আজ ৭টি অংশের ০টি পড়া হয়েছে [{"index":605,"read":false,"featured":"badr","ref":"আল-আনফাল ৮:৪১–৪৪","button":"পড়েছি"},{"index":2037,"read":false,"featured":null,"ref":"আদ-দুখান ৪৪:৪৩–৪৯","button":"পড়েছি"},{"index":2038,"read":false,"featured":null,"ref":"আদ-দুখান ৪৪:৫০","button":"পড়েছি"}]
+PASS [E] bn badr: no page errors
+PASS [E] bn: 27/9/1448 (2027-03-07) shows the qadr passage first with its one-line note  — লাইলাতুল কদর, প্রচলিত মতে ২৭তম রাত: সূরা আলাক ৯৬:১–৫, প্রথম নাজিল হওয়া আয়াত। | আল-আলাক ৯৬:১–২
+PASS [E] bn: 27 Ramadan is labelled commonly held
+PASS [E] bn: Today’s portion lists the featured passage(s) first, then the unchanged plan; M counts them  — পারা ২৬ · আজ ১০টি অংশের ০টি পড়া হয়েছে [{"index":2689,"read":false,"featured":"qadr","ref":"আল-আলাক ৯৬:১–২","button":"পড়েছি"},{"index":2690,"read":false,"featured":"qadr","ref":"আল-আলাক ৯৬:৩–৫","button":"পড়েছি"},{"index":2124,"read":false,"featured":null,"ref":"ক্বাফ ৫০:৪–৫","button":"পড়েছি"}]
+PASS [E] bn qadr: no page errors
+PASS [E] bn: an ordinary day (23 Nov 2026) shows no featured note
+PASS [G] 2026-11-24T05:50:00+06:00: no page errors
+PASS [G] 2026-11-24T06:10:00+06:00: no page errors
+PASS [G] 2026-11-24T01:00:00+06:00: no page errors
+PASS [G] London location, Dhaka device: 19:00 and 23:50 London time are the same reading day  — 1301 / 1301
+PASS [G] London location: the reading day changes at midnight London time (00:10 gives the next portion)  — 1309 → 1310
+PASS [G] 2026-11-23T23:50:00+06:00: no page errors
+PASS [G] 2026-11-24T00:10:00+06:00: no page errors
+PASS [G] Dhaka location: the reading day changes at midnight Dhaka time  — 1309 → 1310
+PASS [G] 2026-11-24T02:00:00+06:00: no page errors
+PASS [G] 2026-11-24T02:00:00+06:00: no page errors
+PASS [G] same instant, different saved locations: Dhaka is on 24 Nov’s portion, London still on 23 Nov’s  — 1310 / 1301
+PASS [H] en: 23 Nov 2026 14:00 Dhaka reads 12 Jumada II 1448 with the label “Predicted by crescent visibility”  — {"date":"12 Jumada II 1448 AH","label":"Predicted by crescent visibility"}
+PASS [H] en hijri: no page errors
+PASS [H] en: after Maghrib (17:30) the date is 13 Jumada II  — {"date":"13 Jumada II 1448 AH","label":"Predicted by crescent visibility"}
+PASS [H] en: Hijri adjustment -2 applies on top (10)  — {"date":"10 Jumada II 1448 AH","label":"Predicted by crescent visibility"}
+PASS [H] en: Hijri adjustment -1 applies on top (11)  — {"date":"11 Jumada II 1448 AH","label":"Predicted by crescent visibility"}
+PASS [H] en: Hijri adjustment +1 applies on top (13)  — {"date":"13 Jumada II 1448 AH","label":"Predicted by crescent visibility"}
+PASS [H] en: Hijri adjustment +2 applies on top (14)  — {"date":"14 Jumada II 1448 AH","label":"Predicted by crescent visibility"}
+PASS [H] en: the date depends on the location (11 Nov 2026: Mecca 1 Jumada II, Dhaka 30 Jumada I)  — 1 Jumada II 1448 AH | 30 Jumada I 1448 AH
+PASS [H] en: beyond the polar circle (Tromsø) the Umm al-Qura date is shown without the label (13 Jumada II)  — {"date":"13 Jumada II 1448 AH","label":null}
+PASS [H] en Tromsø: no page errors
+PASS [H] bn: 23 Nov 2026 14:00 Dhaka reads 12 Jumada II 1448 with the label “নতুন চাঁদ দেখা যাওয়ার পূর্বাভাস অনুযায়ী”  — {"date":"১২ জমাদিউস সানি, ১৪৪৮ হিজরি","label":"নতুন চাঁদ দেখা যাওয়ার পূর্বাভাস অনুযায়ী"}
+PASS [H] bn hijri: no page errors
+PASS [H] bn: after Maghrib (17:30) the date is 13 Jumada II  — {"date":"১৩ জমাদিউস সানি, ১৪৪৮ হিজরি","label":"নতুন চাঁদ দেখা যাওয়ার পূর্বাভাস অনুযায়ী"}
+PASS [H] bn: Hijri adjustment -2 applies on top (10)  — {"date":"১০ জমাদিউস সানি, ১৪৪৮ হিজরি","label":"নতুন চাঁদ দেখা যাওয়ার পূর্বাভাস অনুযায়ী"}
+PASS [H] bn: Hijri adjustment -1 applies on top (11)  — {"date":"১১ জমাদিউস সানি, ১৪৪৮ হিজরি","label":"নতুন চাঁদ দেখা যাওয়ার পূর্বাভাস অনুযায়ী"}
+PASS [H] bn: Hijri adjustment +1 applies on top (13)  — {"date":"১৩ জমাদিউস সানি, ১৪৪৮ হিজরি","label":"নতুন চাঁদ দেখা যাওয়ার পূর্বাভাস অনুযায়ী"}
+PASS [H] bn: Hijri adjustment +2 applies on top (14)  — {"date":"১৪ জমাদিউস সানি, ১৪৪৮ হিজরি","label":"নতুন চাঁদ দেখা যাওয়ার পূর্বাভাস অনুযায়ী"}
+PASS [H] bn: the date depends on the location (11 Nov 2026: Mecca 1 Jumada II, Dhaka 30 Jumada I)  — ১ জমাদিউস সানি, ১৪৪৮ হিজরি | ৩০ জমাদিউল আউয়াল, ১৪৪৮ হিজরি
+PASS [H] bn: beyond the polar circle (Tromsø) the Umm al-Qura date is shown without the label (13 Jumada II)  — {"date":"১৩ জমাদিউস সানি, ১৪৪৮ হিজরি","label":null}
+PASS [H] bn Tromsø: no page errors
+PASS [I] en: no online / sync button anywhere  — []
+PASS [K] en: version label v3.0.6  — v3.0.6
+PASS [J] en: privacy text unchanged  — Prayer history, preferences, themes and location stay in this application's local profile. Nothing is uploaded or synchronised.
+PASS [J] en: About credits moon-sighting (MIT), DE442S and tz-lookup
+PASS [H] en: About states the polar limit (66.56°) and the unlabelled Umm al-Qura fallback
+PASS [IJK] en settings: no page errors
+PASS [I] bn: no online / sync button anywhere  — []
+PASS [K] bn: version label v৩.০.৬  — v৩.০.৬
+PASS [J] bn: privacy text unchanged  — নামাজের ইতিহাস, পছন্দ, থিম ও অবস্থান অ্যাপের স্থানীয় প্রোফাইলে থাকে। কোনো তথ্য আপলোড বা সিঙ্ক করা হয় না।
+PASS [J] bn: About credits moon-sighting (MIT), DE442S and tz-lookup
+PASS [H] bn: About states the polar limit (66.56°) and the unlabelled Umm al-Qura fallback
+PASS [IJK] bn settings: no page errors
+PASS [M] en 2026-11-23T14:00: Sun height = DE442S value (35° vs 34.90°)
+PASS [M] en 2026-11-23T14:00: Moon height/direction = DE442S (-23°/54° vs -22.52°/54.15°; old series -22.26°/54.17°)
+PASS [M] en 2026-11-23T14:00: illumination = DE442S (97% vs 97.43%)
+PASS [M] en 2026-11-23T14:00: moonrise = DE442S (15:52 vs 15:52)
+PASS [M] en astrolabe page: no page errors
+PASS [M] en 2026-11-24T02:00: Sun height = DE442S value (-59° vs -58.61°)
+PASS [M] en 2026-11-24T02:00: Moon height/direction = DE442S (47°/278° vs 46.76°/278.22°; old series 46.31°/278.38°)
+PASS [M] en 2026-11-24T02:00: illumination = DE442S (99% vs 98.90%)
+PASS [M] en 2026-11-24T02:00: moonrise = DE442S (15:52 vs 15:52)
+PASS [M] en astrolabe page: no page errors
+PASS [M] bn 2026-11-23T14:00: Sun height = DE442S value (35° vs 34.90°)
+PASS [M] bn 2026-11-23T14:00: Moon height/direction = DE442S (-23°/54° vs -22.52°/54.15°; old series -22.26°/54.17°)
+PASS [M] bn 2026-11-23T14:00: illumination = DE442S (97% vs 97.43%)
+PASS [M] bn 2026-11-23T14:00: moonrise = DE442S (১৫:৫২ vs ১৫:৫২)
+PASS [M] bn astrolabe page: no page errors
+PASS [M] bn 2026-11-24T02:00: Sun height = DE442S value (-59° vs -58.61°)
+PASS [M] bn 2026-11-24T02:00: Moon height/direction = DE442S (47°/278° vs 46.76°/278.22°; old series 46.31°/278.38°)
+PASS [M] bn 2026-11-24T02:00: illumination = DE442S (99% vs 98.90%)
+PASS [M] bn 2026-11-24T02:00: moonrise = DE442S (১৫:৫২ vs ১৫:৫২)
+PASS [M] bn astrolabe page: no page errors
+PASS [L] the bundled DE442S kernel was read from the app’s own files  — 48 loads
+PASS [I] no request left the app during the whole run (48 pages)
+
+151 passed, 0 failed

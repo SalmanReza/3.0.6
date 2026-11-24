@@ -1,0 +1,526 @@
+[
+ {
+  "view": "home",
+  "lang": "en",
+  "size": "1280x720",
+  "removed": [
+   "v3.0.2"
+  ],
+  "added": [
+   "VOLUNTARY",
+   "06:38 – 11:38",
+   "✓",
+   "2 rak‘ahs",
+   "More than 12 rak‘ahs? Enter the total",
+   "Set total",
+   "v3.0.3"
+  ],
+  "errs302": [],
+  "errs303": [],
+  "shots": [
+   "/workspace/prayer/compare303/home-en-1280-302.png",
+   "/workspace/prayer/compare303/home-en-1280-303.png"
+  ]
+ },
+ {
+  "view": "settings",
+  "lang": "en",
+  "size": "1280x720",
+  "removed": [
+   "v3.0.2"
+  ],
+  "added": [
+   "Hijri date adjustment",
+   "−2 days",
+   "−1 day",
+   "0 (as calculated)",
+   "+1 day",
+   "+2 days",
+   "Moves every Hijri date in the app by whole days to match your local moon sighting. Prayer times do not change.",
+   "v3.0.3"
+  ],
+  "errs302": [],
+  "errs303": [],
+  "shots": [
+   "/workspace/prayer/compare303/settings-en-1280-302.png",
+   "/workspace/prayer/compare303/settings-en-1280-303.png"
+  ]
+ },
+ {
+  "view": "countdown",
+  "lang": "en",
+  "size": "1280x720",
+  "removed": [
+   "v3.0.2"
+  ],
+  "added": [
+   "v3.0.3"
+  ],
+  "errs302": [],
+  "errs303": [],
+  "shots": [
+   "/workspace/prayer/compare303/countdown-en-1280-302.png",
+   "/workspace/prayer/compare303/countdown-en-1280-303.png"
+  ]
+ },
+ {
+  "view": "weekly",
+  "lang": "en",
+  "size": "1280x720",
+  "removed": [
+   "v3.0.2"
+  ],
+  "added": [
+   "v3.0.3"
+  ],
+  "errs302": [],
+  "errs303": [],
+  "shots": [
+   "/workspace/prayer/compare303/weekly-en-1280-302.png",
+   "/workspace/prayer/compare303/weekly-en-1280-303.png"
+  ]
+ },
+ {
+  "view": "clock",
+  "lang": "en",
+  "size": "1280x720",
+  "removed": [
+   "v3.0.2"
+  ],
+  "added": [
+   "v3.0.3"
+  ],
+  "errs302": [],
+  "errs303": [],
+  "shots": [
+   "/workspace/prayer/compare303/clock-en-1280-302.png",
+   "/workspace/prayer/compare303/clock-en-1280-303.png"
+  ]
+ },
+ {
+  "view": "portion",
+  "lang": "en",
+  "size": "1280x720",
+  "removed": [
+   "Yusuf 12:101–104",
+   "Ibrahim 14:42",
+   "Ibrahim 14:43–44",
+   "Ibrahim 14:45–46",
+   "Ibrahim 14:47–48",
+   "v3.0.2"
+  ],
+  "added": [
+   "VOLUNTARY",
+   "06:38 – 11:38",
+   "✓",
+   "2 rak‘ahs",
+   "More than 12 rak‘ahs? Enter the total",
+   "Set total",
+   "Yusuf 12:101–102",
+   "Yusuf 12:103–104",
+   "Ibrahim 14:42–43",
+   "Ibrahim 14:44–45",
+   "Ibrahim 14:46–48",
+   "v3.0.3"
+  ],
+  "errs302": [],
+  "errs303": [],
+  "shots": [
+   "/workspace/prayer/compare303/portion-en-1280-302.png",
+   "/workspace/prayer/compare303/portion-en-1280-303.png"
+  ]
+ },
+ {
+  "view": "home",
+  "lang": "en",
+  "size": "420x700",
+  "removed": [
+   "v3.0.2"
+  ],
+  "added": [
+   "VOLUNTARY",
+   "06:38 – 11:38",
+   "✓",
+   "2 rak‘ahs",
+   "More than 12 rak‘ahs? Enter the total",
+   "Set total",
+   "v3.0.3"
+  ],
+  "errs302": [],
+  "errs303": [],
+  "shots": [
+   "/workspace/prayer/compare303/home-en-420-302.png",
+   "/workspace/prayer/compare303/home-en-420-303.png"
+  ]
+ },
+ {
+  "view": "settings",
+  "lang": "en",
+  "size": "420x700",
+  "removed": [
+   "v3.0.2"
+  ],
+  "added": [
+   "Hijri date adjustment",
+   "−2 days",
+   "−1 day",
+   "0 (as calculated)",
+   "+1 day",
+   "+2 days",
+   "Moves every Hijri date in the app by whole days to match your local moon sighting. Prayer times do not change.",
+   "v3.0.3"
+  ],
+  "errs302": [],
+  "errs303": [],
+  "shots": [
+   "/workspace/prayer/compare303/settings-en-420-302.png",
+   "/workspace/prayer/compare303/settings-en-420-303.png"
+  ]
+ },
+ {
+  "view": "countdown",
+  "lang": "en",
+  "size": "420x700",
+  "removed": [
+   "v3.0.2"
+  ],
+  "added": [
+   "v3.0.3"
+  ],
+  "errs302": [],
+  "errs303": [],
+  "shots": [
+   "/workspace/prayer/compare303/countdown-en-420-302.png",
+   "/workspace/prayer/compare303/countdown-en-420-303.png"
+  ]
+ },
+ {
+  "view": "weekly",
+  "lang": "en",
+  "size": "420x700",
+  "removed": [
+   "v3.0.2"
+  ],
+  "added": [
+   "v3.0.3"
+  ],
+  "errs302": [],
+  "errs303": [],
+  "shots": [
+   "/workspace/prayer/compare303/weekly-en-420-302.png",
+   "/workspace/prayer/compare303/weekly-en-420-303.png"
+  ]
+ },
+ {
+  "view": "clock",
+  "lang": "en",
+  "size": "420x700",
+  "removed": [
+   "v3.0.2"
+  ],
+  "added": [
+   "v3.0.3"
+  ],
+  "errs302": [],
+  "errs303": [],
+  "shots": [
+   "/workspace/prayer/compare303/clock-en-420-302.png",
+   "/workspace/prayer/compare303/clock-en-420-303.png"
+  ]
+ },
+ {
+  "view": "portion",
+  "lang": "en",
+  "size": "420x700",
+  "removed": [
+   "Yusuf 12:101–104",
+   "Ibrahim 14:42",
+   "Ibrahim 14:43–44",
+   "Ibrahim 14:45–46",
+   "Ibrahim 14:47–48",
+   "v3.0.2"
+  ],
+  "added": [
+   "VOLUNTARY",
+   "06:38 – 11:38",
+   "✓",
+   "2 rak‘ahs",
+   "More than 12 rak‘ahs? Enter the total",
+   "Set total",
+   "Yusuf 12:101–102",
+   "Yusuf 12:103–104",
+   "Ibrahim 14:42–43",
+   "Ibrahim 14:44–45",
+   "Ibrahim 14:46–48",
+   "v3.0.3"
+  ],
+  "errs302": [],
+  "errs303": [],
+  "shots": [
+   "/workspace/prayer/compare303/portion-en-420-302.png",
+   "/workspace/prayer/compare303/portion-en-420-303.png"
+  ]
+ },
+ {
+  "view": "home",
+  "lang": "bn",
+  "size": "1280x720",
+  "removed": [
+   "v৩.০.২"
+  ],
+  "added": [
+   "নফল",
+   "০৬:৩৮ – ১১:৩৮",
+   "✓",
+   "২ রাকাত",
+   "১২ রাকাতের বেশি হলে সংখ্যা লিখুন",
+   "নিশ্চিত করুন",
+   "v৩.০.৩"
+  ],
+  "errs302": [],
+  "errs303": [],
+  "shots": [
+   "/workspace/prayer/compare303/home-bn-1280-302.png",
+   "/workspace/prayer/compare303/home-bn-1280-303.png"
+  ]
+ },
+ {
+  "view": "settings",
+  "lang": "bn",
+  "size": "1280x720",
+  "removed": [
+   "v৩.০.২"
+  ],
+  "added": [
+   "হিজরি তারিখ সমন্বয়",
+   "−২ দিন",
+   "−১ দিন",
+   "০ (হিসাব অনুযায়ী)",
+   "+১ দিন",
+   "+২ দিন",
+   "স্থানীয় চাঁদ দেখার সঙ্গে মেলাতে অ্যাপের সব হিজরি তারিখ পুরো দিন হিসেবে সরায়। নামাজের সময় বদলায় না।",
+   "v৩.০.৩"
+  ],
+  "errs302": [],
+  "errs303": [],
+  "shots": [
+   "/workspace/prayer/compare303/settings-bn-1280-302.png",
+   "/workspace/prayer/compare303/settings-bn-1280-303.png"
+  ]
+ },
+ {
+  "view": "countdown",
+  "lang": "bn",
+  "size": "1280x720",
+  "removed": [
+   "v৩.০.২"
+  ],
+  "added": [
+   "v৩.০.৩"
+  ],
+  "errs302": [],
+  "errs303": [],
+  "shots": [
+   "/workspace/prayer/compare303/countdown-bn-1280-302.png",
+   "/workspace/prayer/compare303/countdown-bn-1280-303.png"
+  ]
+ },
+ {
+  "view": "weekly",
+  "lang": "bn",
+  "size": "1280x720",
+  "removed": [
+   "v৩.০.২"
+  ],
+  "added": [
+   "v৩.০.৩"
+  ],
+  "errs302": [],
+  "errs303": [],
+  "shots": [
+   "/workspace/prayer/compare303/weekly-bn-1280-302.png",
+   "/workspace/prayer/compare303/weekly-bn-1280-303.png"
+  ]
+ },
+ {
+  "view": "clock",
+  "lang": "bn",
+  "size": "1280x720",
+  "removed": [
+   "v৩.০.২"
+  ],
+  "added": [
+   "v৩.০.৩"
+  ],
+  "errs302": [],
+  "errs303": [],
+  "shots": [
+   "/workspace/prayer/compare303/clock-bn-1280-302.png",
+   "/workspace/prayer/compare303/clock-bn-1280-303.png"
+  ]
+ },
+ {
+  "view": "portion",
+  "lang": "bn",
+  "size": "1280x720",
+  "removed": [
+   "ইউসুফ ১২:১০১–১০৪",
+   "ইবরাহীম ১৪:৪২",
+   "ইবরাহীম ১৪:৪৩–৪৪",
+   "ইবরাহীম ১৪:৪৫–৪৬",
+   "ইবরাহীম ১৪:৪৭–৪৮",
+   "v৩.০.২"
+  ],
+  "added": [
+   "নফল",
+   "০৬:৩৮ – ১১:৩৮",
+   "✓",
+   "২ রাকাত",
+   "১২ রাকাতের বেশি হলে সংখ্যা লিখুন",
+   "নিশ্চিত করুন",
+   "ইউসুফ ১২:১০১–১০২",
+   "ইউসুফ ১২:১০৩–১০৪",
+   "ইবরাহীম ১৪:৪২–৪৩",
+   "ইবরাহীম ১৪:৪৪–৪৫",
+   "ইবরাহীম ১৪:৪৬–৪৮",
+   "v৩.০.৩"
+  ],
+  "errs302": [],
+  "errs303": [],
+  "shots": [
+   "/workspace/prayer/compare303/portion-bn-1280-302.png",
+   "/workspace/prayer/compare303/portion-bn-1280-303.png"
+  ]
+ },
+ {
+  "view": "home",
+  "lang": "bn",
+  "size": "420x700",
+  "removed": [
+   "v৩.০.২"
+  ],
+  "added": [
+   "নফল",
+   "০৬:৩৮ – ১১:৩৮",
+   "✓",
+   "২ রাকাত",
+   "১২ রাকাতের বেশি হলে সংখ্যা লিখুন",
+   "নিশ্চিত করুন",
+   "v৩.০.৩"
+  ],
+  "errs302": [],
+  "errs303": [],
+  "shots": [
+   "/workspace/prayer/compare303/home-bn-420-302.png",
+   "/workspace/prayer/compare303/home-bn-420-303.png"
+  ]
+ },
+ {
+  "view": "settings",
+  "lang": "bn",
+  "size": "420x700",
+  "removed": [
+   "v৩.০.২"
+  ],
+  "added": [
+   "হিজরি তারিখ সমন্বয়",
+   "−২ দিন",
+   "−১ দিন",
+   "০ (হিসাব অনুযায়ী)",
+   "+১ দিন",
+   "+২ দিন",
+   "স্থানীয় চাঁদ দেখার সঙ্গে মেলাতে অ্যাপের সব হিজরি তারিখ পুরো দিন হিসেবে সরায়। নামাজের সময় বদলায় না।",
+   "v৩.০.৩"
+  ],
+  "errs302": [],
+  "errs303": [],
+  "shots": [
+   "/workspace/prayer/compare303/settings-bn-420-302.png",
+   "/workspace/prayer/compare303/settings-bn-420-303.png"
+  ]
+ },
+ {
+  "view": "countdown",
+  "lang": "bn",
+  "size": "420x700",
+  "removed": [
+   "v৩.০.২"
+  ],
+  "added": [
+   "v৩.০.৩"
+  ],
+  "errs302": [],
+  "errs303": [],
+  "shots": [
+   "/workspace/prayer/compare303/countdown-bn-420-302.png",
+   "/workspace/prayer/compare303/countdown-bn-420-303.png"
+  ]
+ },
+ {
+  "view": "weekly",
+  "lang": "bn",
+  "size": "420x700",
+  "removed": [
+   "v৩.০.২"
+  ],
+  "added": [
+   "v৩.০.৩"
+  ],
+  "errs302": [],
+  "errs303": [],
+  "shots": [
+   "/workspace/prayer/compare303/weekly-bn-420-302.png",
+   "/workspace/prayer/compare303/weekly-bn-420-303.png"
+  ]
+ },
+ {
+  "view": "clock",
+  "lang": "bn",
+  "size": "420x700",
+  "removed": [
+   "v৩.০.২"
+  ],
+  "added": [
+   "v৩.০.৩"
+  ],
+  "errs302": [],
+  "errs303": [],
+  "shots": [
+   "/workspace/prayer/compare303/clock-bn-420-302.png",
+   "/workspace/prayer/compare303/clock-bn-420-303.png"
+  ]
+ },
+ {
+  "view": "portion",
+  "lang": "bn",
+  "size": "420x700",
+  "removed": [
+   "ইউসুফ ১২:১০১–১০৪",
+   "ইবরাহীম ১৪:৪২",
+   "ইবরাহীম ১৪:৪৩–৪৪",
+   "ইবরাহীম ১৪:৪৫–৪৬",
+   "ইবরাহীম ১৪:৪৭–৪৮",
+   "v৩.০.২"
+  ],
+  "added": [
+   "নফল",
+   "০৬:৩৮ – ১১:৩৮",
+   "✓",
+   "২ রাকাত",
+   "১২ রাকাতের বেশি হলে সংখ্যা লিখুন",
+   "নিশ্চিত করুন",
+   "ইউসুফ ১২:১০১–১০২",
+   "ইউসুফ ১২:১০৩–১০৪",
+   "ইবরাহীম ১৪:৪২–৪৩",
+   "ইবরাহীম ১৪:৪৪–৪৫",
+   "ইবরাহীম ১৪:৪৬–৪৮",
+   "v৩.০.৩"
+  ],
+  "errs302": [],
+  "errs303": [],
+  "shots": [
+   "/workspace/prayer/compare303/portion-bn-420-302.png",
+   "/workspace/prayer/compare303/portion-bn-420-303.png"
+  ]
+ }
+]

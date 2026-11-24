@@ -1,0 +1,114 @@
+PASS [1] en: Settings has ONE font dropdown (no English font picker)  — {"selects":["uiFontSelect"],"label":"Font"}
+PASS [1] en: it holds System default + 10 English + 10 Bangla fonts, grouped  — [{"label":"English","n":10},{"label":"Bangla","n":10}]
+PASS [1] en: option labels are localised  — {"sys":"System default","kal":"Kalpurush · clear text"}
+PASS [1] en: the honest note about English fonts and Hind Siliguri is shown  — English fonts have no Bangla letters, so with an English font Bangla text uses Hind Siliguri.
+PASS [1] en: Lato chosen -> every text uses Lato first, Bangla glyphs fall back to Hind Siliguri  — Lato, "Hind Siliguri", "Segoe UI Variable", "Segoe UI", "Nirmala UI", Amiri, system-ui, sans-serif
+PASS [1] en: headings, labels and the clock follow the one font
+PASS [1] en: Kalpurush chosen -> Kalpurush draws everything it can (its own Latin), saved as one key  — {"ff":"Kalpurush, \"Segoe UI Variable\", \"Segoe UI\", \"Nirmala UI\", Amiri, system-ui, sans-serif","font":"kalpurush"}
+PASS [1] en: the choice survives a reload
+PASS [1] en settings: no page errors
+PASS [1] en: migrate {"uiFont":"solaiman","enFont":"lato"} -> lato (Bangla choice in Bangla, English choice in English)  — {"got":{"value":"lato","body":"Lato, \"Hind Siliguri\", \"Segoe UI Variable\", \"Segoe UI\", \"Nirmala UI\", Amiri, system-ui, sans-serif"},"font":"lato"}
+PASS [1] en: migrate {"uiFont":"tiro"} -> tiro (English font was System default: the Bangla font that drew the text)  — {"got":{"value":"tiro","body":"\"Tiro Bangla\", \"Segoe UI Variable\", \"Segoe UI\", \"Nirmala UI\", Amiri, system-ui, sans-serif"},"font":"tiro"}
+PASS [1] en: migrate {"uiFont":"baloo","enFont":"system"} -> hind (removed Baloo Da 2 -> Hind Siliguri as before)  — {"got":{"value":"hind","body":"\"Hind Siliguri\", \"Segoe UI Variable\", \"Segoe UI\", \"Nirmala UI\", Amiri, system-ui, sans-serif"},"font":"hind"}
+PASS [1] en: migrate {"uiFont":"lohit"} -> bornomala (old Lohit -> Bornomala as before)  — {"got":{"value":"bornomala","body":"Bornomala, \"Segoe UI Variable\", \"Segoe UI\", \"Nirmala UI\", Amiri, system-ui, sans-serif"},"font":"bornomala"}
+PASS [1] en: migrate {} -> system (nothing saved -> System default)  — {"got":{"value":"system","body":"\"Segoe UI Variable\", \"Segoe UI\", \"Nirmala UI\", Amiri, system-ui, sans-serif"},"font":"system"}
+PASS [1] en: Replace with a v3.0.4 backup (uiFont tiro, enFont lora) -> font lora, nothing reported unknown  — {"font":"lora","status":"Replaced. The previous data is in the safety copy."}
+PASS [3] en: the Qiyam split (qiyamPart) travels in a backup  — {"voluntary":{"qiyam":true},"rakahs":{"qiyam":2},"rakahSets":{"qiyam":[true,false,false,false,false,false]},"qiyamPart":"tahajjud","fard":{}}
+PASS [1] en: Replace with a v3.0.5 backup (font nunito) -> nunito  — {"font":"nunito","status":"Replaced. The previous data is in the safety copy."}
+PASS [1] en backup: no page errors
+PASS [1] bn: Settings has ONE font dropdown (no English font picker)  — {"selects":["uiFontSelect"],"label":"ফন্ট"}
+PASS [1] bn: it holds System default + 10 English + 10 Bangla fonts, grouped  — [{"label":"ইংরেজি","n":10},{"label":"বাংলা","n":10}]
+PASS [1] bn: option labels are localised  — {"sys":"সিস্টেম ডিফল্ট","kal":"কালপুরুষ · স্পষ্ট লেখা"}
+PASS [1] bn: the honest note about English fonts and Hind Siliguri is shown  — ইংরেজি ফন্টে বাংলা অক্ষর নেই, তাই ইংরেজি ফন্ট বেছে নিলে বাংলা লেখা Hind Siliguri ফন্টে দেখায়।
+PASS [1] bn: Lato chosen -> every text uses Lato first, Bangla glyphs fall back to Hind Siliguri  — Lato, "Hind Siliguri", "Segoe UI Variable", "Segoe UI", "Nirmala UI", Amiri, system-ui, sans-serif
+PASS [1] bn: headings, labels and the clock follow the one font
+PASS [1] bn: Kalpurush chosen -> Kalpurush draws everything it can (its own Latin), saved as one key  — {"ff":"Kalpurush, \"Segoe UI Variable\", \"Segoe UI\", \"Nirmala UI\", Amiri, system-ui, sans-serif","font":"kalpurush"}
+PASS [1] bn: the choice survives a reload
+PASS [1] bn settings: no page errors
+PASS [1] bn: migrate {"uiFont":"solaiman","enFont":"lato"} -> solaiman (Bangla choice in Bangla, English choice in English)  — {"got":{"value":"solaiman","body":"SolaimanLipi, \"Segoe UI Variable\", \"Segoe UI\", \"Nirmala UI\", Amiri, system-ui, sans-serif"},"font":"solaiman"}
+PASS [1] bn: migrate {"uiFont":"tiro"} -> tiro (English font was System default: the Bangla font that drew the text)  — {"got":{"value":"tiro","body":"\"Tiro Bangla\", \"Segoe UI Variable\", \"Segoe UI\", \"Nirmala UI\", Amiri, system-ui, sans-serif"},"font":"tiro"}
+PASS [1] bn: migrate {"uiFont":"baloo","enFont":"system"} -> hind (removed Baloo Da 2 -> Hind Siliguri as before)  — {"got":{"value":"hind","body":"\"Hind Siliguri\", \"Segoe UI Variable\", \"Segoe UI\", \"Nirmala UI\", Amiri, system-ui, sans-serif"},"font":"hind"}
+PASS [1] bn: migrate {"uiFont":"lohit"} -> bornomala (old Lohit -> Bornomala as before)  — {"got":{"value":"bornomala","body":"Bornomala, \"Segoe UI Variable\", \"Segoe UI\", \"Nirmala UI\", Amiri, system-ui, sans-serif"},"font":"bornomala"}
+PASS [1] bn: migrate {} -> system (nothing saved -> System default)  — {"got":{"value":"system","body":"\"Segoe UI Variable\", \"Segoe UI\", \"Nirmala UI\", Amiri, system-ui, sans-serif"},"font":"system"}
+PASS [1] bn: Replace with a v3.0.4 backup (uiFont tiro, enFont lora) -> font tiro, nothing reported unknown  — {"font":"tiro","status":"Replaced. The previous data is in the safety copy."}
+PASS [3] bn: the Qiyam split (qiyamPart) travels in a backup  — {"voluntary":{"qiyam":true},"rakahs":{"qiyam":2},"rakahSets":{"qiyam":[true,false,false,false,false,false]},"qiyamPart":"tahajjud","fard":{}}
+PASS [1] bn: Replace with a v3.0.5 backup (font nunito) -> nunito  — {"font":"nunito","status":"Replaced. The previous data is in the safety copy."}
+PASS [1] bn backup: no page errors
+PASS [2] en: Isha card circles in order: 4 before (optional) | 4 Fard | 2 Sunnah after | 2 Nafl  — [{"layer":"nafl","key":"isha_before","label":"4 before (optional)","done":false,"disabled":false,"aria":null,"order":false,"opacity":1},{"layer":"fard","key":"isha","label":"4 Fard","done":false,"disabled":false,"aria":null,"order":false,"opacity":1},{"layer":"sunnah","key":"isha_after","label":"2 Sunnah after","done":false,"disabled":false,"aria":null,"order":false,"opacity":1},{"layer":"nafl","k
+PASS [2] en: nothing ticked -> "4 before" is open  — {"layer":"nafl","key":"isha_before","label":"4 before (optional)","done":false,"disabled":false,"aria":null,"order":false,"opacity":1}
+PASS [2] en: Fard ticked -> the earlier "4 before" is locked (disabled, aria-disabled, dimmed)  — {"layer":"nafl","key":"isha_before","label":"4 before (optional)","done":false,"disabled":true,"aria":"true","order":true,"opacity":0.45}
+PASS [2] en: later circles (2 Sunnah after, 2 Nafl) stay open  — [{"layer":"sunnah","key":"isha_after","label":"2 Sunnah after","done":false,"disabled":false,"aria":null,"order":false,"opacity":1},{"layer":"nafl","key":"isha_nafl","label":"2 Nafl","done":false,"disabled":false,"aria":null,"order":false,"opacity":1}]
+PASS [2] en: even a forced click on the locked circle selects nothing  — {"fard":{"isha":true}}
+PASS [2] en: Nafl ticked -> the skipped "2 Sunnah after" before it is locked too  — [{"layer":"nafl","key":"isha_before","label":"4 before (optional)","done":false,"disabled":true,"aria":"true","order":true,"opacity":0.45},{"layer":"fard","key":"isha","label":"4 Fard","done":true,"disabled":false,"aria":null,"order":false,"opacity":1},{"layer":"sunnah","key":"isha_after","label":"2 Sunnah after","done":false,"disabled":true,"aria":"true","order":true,"opacity":0.45},{"layer":"naf
+PASS [2] en: unticking the later circles unlocks every earlier one  — [{"layer":"nafl","key":"isha_before","label":"4 before (optional)","done":false,"disabled":false,"aria":null,"order":false,"opacity":1},{"layer":"fard","key":"isha","label":"4 Fard","done":false,"disabled":false,"aria":null,"order":false,"opacity":1},{"layer":"sunnah","key":"isha_after","label":"2 Sunnah after","done":false,"disabled":false,"aria":null,"order":false,"opacity":1},{"layer":"nafl","k
+PASS [2] en: after unticking the Fard, the ticked Sunnah after can still be unticked, then all circles open  — [{"layer":"nafl","key":"isha_before","label":"4 before (optional)","done":false,"disabled":false,"aria":null,"order":false,"opacity":1},{"layer":"fard","key":"isha","label":"4 Fard","done":false,"disabled":false,"aria":null,"order":false,"opacity":1},{"layer":"sunnah","key":"isha_after","label":"2 Sunnah after","done":false,"disabled":false,"aria":null,"order":false,"opacity":1},{"layer":"nafl","k
+PASS [2] en: countdown page shows the same lock ("4 before" locked after Fard)  — [{"layer":"nafl","key":"isha_before","label":"4 before (optional)","done":false,"disabled":true,"aria":"true","order":true,"opacity":0.45},{"layer":"fard","key":"isha","label":"4 Fard","done":true,"disabled":false,"aria":null,"order":false,"opacity":1},{"layer":"sunnah","key":"isha_after","label":"2 Sunnah after","done":false,"disabled":false,"aria":null,"order":false,"opacity":1},{"layer":"nafl",
+PASS [2] en: Mark Complete still records as before (Isha Fard, 4 before left empty)  — {"fard":{"isha":true},"voluntary":{},"at":{"fard:isha":[150,1260]},"closed":{"fard:isha":true}}
+PASS [2] en night: no page errors
+PASS [2] en: Revise previous prayer (Fajr): Fard ticked -> "2 before" locked  — [{"layer":"sunnah","key":"fajr_before","label":"2 Sunnah before","done":false,"disabled":true,"aria":"true","order":true,"opacity":0.45},{"layer":"fard","key":"fajr","label":"2 Fard","done":true,"disabled":false,"aria":null,"order":false,"opacity":1}]
+PASS [2] en revise: no page errors
+PASS [2] en: Friday: Jumu'ah ticked -> the earlier "4 Sunnah before" is locked  — [{"layer":"sunnah","key":"dhuhr_before","label":"4 Sunnah before","done":false,"disabled":true,"aria":"true","order":true,"opacity":0.45},{"layer":"fard","key":"jumuah","label":"2 Jumu’ah","done":true,"disabled":false,"aria":null,"order":false,"opacity":1},{"layer":"fard","key":"dhuhr","label":"4 Dhuhr","done":false,"disabled":false,"aria":"true","order":false,"opacity":0.45},{"layer":"sunnah","ke
+PASS [2] en: Friday: unticking Jumu'ah unlocks it  — {"layer":"sunnah","key":"dhuhr_before","label":"4 Sunnah before","done":false,"disabled":false,"aria":null,"order":false,"opacity":1}
+PASS [2] en friday: no page errors
+PASS [2] en: older records load unchanged and the Prayer record lists them  — TODAY 15 rak‘ahs recorded OBLIGATORY PRAYER Fajr And the dawn recitation: the recitation of dawn is ever witnessed. Qur’an 17:78 Fajr Rak‘ahs: 2 Sunnah mu’akka
+PASS [2] en old record: no page errors
+PASS [2] bn: Isha card circles in order: আগে ৪ (ঐচ্ছিক) | ৪ ফরজ | পরে ২ রাকাত সুন্নাত | ২ নফল  — [{"layer":"nafl","key":"isha_before","label":"আগে ৪ (ঐচ্ছিক)","done":false,"disabled":false,"aria":null,"order":false,"opacity":1},{"layer":"fard","key":"isha","label":"৪ ফরজ","done":false,"disabled":false,"aria":null,"order":false,"opacity":1},{"layer":"sunnah","key":"isha_after","label":"পরে ২ রাকাত সুন্নাত","done":false,"disabled":false,"aria":null,"order":false,"opacity":1},{"layer":"nafl","ke
+PASS [2] bn: nothing ticked -> "4 before" is open  — {"layer":"nafl","key":"isha_before","label":"আগে ৪ (ঐচ্ছিক)","done":false,"disabled":false,"aria":null,"order":false,"opacity":1}
+PASS [2] bn: Fard ticked -> the earlier "4 before" is locked (disabled, aria-disabled, dimmed)  — {"layer":"nafl","key":"isha_before","label":"আগে ৪ (ঐচ্ছিক)","done":false,"disabled":true,"aria":"true","order":true,"opacity":0.45}
+PASS [2] bn: later circles (2 Sunnah after, 2 Nafl) stay open  — [{"layer":"sunnah","key":"isha_after","label":"পরে ২ রাকাত সুন্নাত","done":false,"disabled":false,"aria":null,"order":false,"opacity":1},{"layer":"nafl","key":"isha_nafl","label":"২ নফল","done":false,"disabled":false,"aria":null,"order":false,"opacity":1}]
+PASS [2] bn: even a forced click on the locked circle selects nothing  — {"fard":{"isha":true}}
+PASS [2] bn: Nafl ticked -> the skipped "2 Sunnah after" before it is locked too  — [{"layer":"nafl","key":"isha_before","label":"আগে ৪ (ঐচ্ছিক)","done":false,"disabled":true,"aria":"true","order":true,"opacity":0.45},{"layer":"fard","key":"isha","label":"৪ ফরজ","done":true,"disabled":false,"aria":null,"order":false,"opacity":1},{"layer":"sunnah","key":"isha_after","label":"পরে ২ রাকাত সুন্নাত","done":false,"disabled":true,"aria":"true","order":true,"opacity":0.45},{"layer":"nafl
+PASS [2] bn: unticking the later circles unlocks every earlier one  — [{"layer":"nafl","key":"isha_before","label":"আগে ৪ (ঐচ্ছিক)","done":false,"disabled":false,"aria":null,"order":false,"opacity":1},{"layer":"fard","key":"isha","label":"৪ ফরজ","done":false,"disabled":false,"aria":null,"order":false,"opacity":1},{"layer":"sunnah","key":"isha_after","label":"পরে ২ রাকাত সুন্নাত","done":false,"disabled":false,"aria":null,"order":false,"opacity":1},{"layer":"nafl","ke
+PASS [2] bn: after unticking the Fard, the ticked Sunnah after can still be unticked, then all circles open  — [{"layer":"nafl","key":"isha_before","label":"আগে ৪ (ঐচ্ছিক)","done":false,"disabled":false,"aria":null,"order":false,"opacity":1},{"layer":"fard","key":"isha","label":"৪ ফরজ","done":false,"disabled":false,"aria":null,"order":false,"opacity":1},{"layer":"sunnah","key":"isha_after","label":"পরে ২ রাকাত সুন্নাত","done":false,"disabled":false,"aria":null,"order":false,"opacity":1},{"layer":"nafl","ke
+PASS [2] bn: countdown page shows the same lock ("4 before" locked after Fard)  — [{"layer":"nafl","key":"isha_before","label":"আগে ৪ (ঐচ্ছিক)","done":false,"disabled":true,"aria":"true","order":true,"opacity":0.45},{"layer":"fard","key":"isha","label":"৪ ফরজ","done":true,"disabled":false,"aria":null,"order":false,"opacity":1},{"layer":"sunnah","key":"isha_after","label":"পরে ২ রাকাত সুন্নাত","done":false,"disabled":false,"aria":null,"order":false,"opacity":1},{"layer":"nafl","
+PASS [2] bn: Mark Complete still records as before (Isha Fard, 4 before left empty)  — {"fard":{"isha":true},"voluntary":{},"at":{"fard:isha":[150,1260]},"closed":{"fard:isha":true}}
+PASS [2] bn night: no page errors
+PASS [2] bn: Revise previous prayer (Fajr): Fard ticked -> "2 before" locked  — [{"layer":"sunnah","key":"fajr_before","label":"আগে ২ রাকাত সুন্নাত","done":false,"disabled":true,"aria":"true","order":true,"opacity":0.45},{"layer":"fard","key":"fajr","label":"২ ফরজ","done":true,"disabled":false,"aria":null,"order":false,"opacity":1}]
+PASS [2] bn revise: no page errors
+PASS [2] bn: Friday: Jumu'ah ticked -> the earlier "4 Sunnah before" is locked  — [{"layer":"sunnah","key":"dhuhr_before","label":"আগে ৪ রাকাত সুন্নাত","done":false,"disabled":true,"aria":"true","order":true,"opacity":0.45},{"layer":"fard","key":"jumuah","label":"২ জুমা","done":true,"disabled":false,"aria":null,"order":false,"opacity":1},{"layer":"fard","key":"dhuhr","label":"৪ যোহর","done":false,"disabled":false,"aria":"true","order":false,"opacity":0.45},{"layer":"sunnah","ke
+PASS [2] bn: Friday: unticking Jumu'ah unlocks it  — {"layer":"sunnah","key":"dhuhr_before","label":"আগে ৪ রাকাত সুন্নাত","done":false,"disabled":false,"aria":null,"order":false,"opacity":1}
+PASS [2] bn friday: no page errors
+PASS [2] bn: older records load unchanged and the Prayer record lists them  — আজ মোট ১৫ রাকাত রেকর্ড ফরজ ফজর আর ভোরের কুরআন পাঠ: ভোরের পাঠে সাক্ষী রাখা হয়। কুরআন ১৭:৭৮ ফজর রাকাত: ২ রাকাত সুন্নাতে মুয়াক্কাদা + ২ রাকাত ফরজ দুই রাকাত সুন
+PASS [2] bn old record: no page errors
+PASS [3] en: 22:00 (before Tahajjud), Qiyam 2 + Witr 3 -> "Qiyam al-Layl 5 rak‘ahs: Tahajjud 0, Witr 3, other 2"  — Qiyam al-Layl 5 rak‘ahs: Tahajjud 0, Witr 3, other 2
+PASS [3] en: Mark Complete before Tahajjud saves qiyamPart "other"  — {"fard":{},"voluntary":{"witr":true,"qiyam":true},"rakahs":{"witr":3,"qiyam":2},"rakahSets":{"witr":[true,true,false,false,false,false],"qiyam":[true,false,false,false,false,false]},"closed":{"voluntary:witr":true,"voluntary:qiyam":true},"at":{"voluntary:witr":[100,1300],"voluntary:qiyam":[210,1320]},"qiyamPart":"other"}
+PASS [3] en: weekly stats: Witr already counted Qiyam al-Layl as done (all Witr is Qiyam); "other" Qiyam does not add Tahajjud  — {"tile0":"0/5 · 2/5","tile1":"0/5 · 2/5"}
+PASS [3] en: Prayer record shows the same split (other 2)  — Qiyam al-Layl 5 rak‘ahs: Tahajjud 0, Witr 3, other 2
+PASS [3] en evening: no page errors
+PASS [3] en: 02:30 (Tahajjud time), Qiyam 2 + Witr 3 -> "Qiyam al-Layl 5 rak‘ahs: Tahajjud 2, Witr 3, other 0"  — Qiyam al-Layl 5 rak‘ahs: Tahajjud 2, Witr 3, other 0
+PASS [3] en: Mark Complete in Tahajjud time saves qiyamPart "tahajjud"  — {"fard":{},"voluntary":{"witr":true,"qiyam":true},"rakahs":{"witr":3,"qiyam":2},"rakahSets":{"witr":[true,true,false,false,false,false],"qiyam":[true,false,false,false,false,false]},"closed":{"voluntary:witr":true,"voluntary:qiyam":true},"at":{"voluntary:witr":[100,1300],"voluntary:qiyam":[480,150]},"qiyamPart":"tahajjud"}
+PASS [3] en: progress/stats: Qiyam in Tahajjud time also counts Tahajjud as done (3/5 voluntary)  — 0/5 · 3/5
+PASS [3] en: totals still count each rak'ah once (5, not 7)  — Fard 0/5 · Sunnah 0/5 · Nafl 0/5 · Voluntary 5 rak‘ahs
+PASS [3] en: Prayer record shows Tahajjud 2, Witr 3, other 0  — Qiyam al-Layl 5 rak‘ahs: Tahajjud 2, Witr 3, other 0
+PASS [3] en: Undo on the Qiyam record removes it and its split  — {"fard":{},"voluntary":{"witr":true},"rakahs":{"witr":3},"rakahSets":{"witr":[true,true,false,false,false,false]},"closed":{"voluntary:witr":true},"at":{"voluntary:witr":[100,1300]}}
+PASS [3] en late night: no page errors
+PASS [3] en: Tahajjud card 2 + Witr 3 + Qiyam 2 before Tahajjud -> "Qiyam al-Layl 7 rak‘ahs: Tahajjud 2, Witr 3, other 2"  — Qiyam al-Layl 7 rak‘ahs: Tahajjud 2, Witr 3, other 2
+PASS [3] en: older Qiyam record (saved 6h40 after Isha = in Tahajjud time) -> Tahajjud 4, other 0  — Qiyam al-Layl 4 rak‘ahs: Tahajjud 4, Witr 0, other 0
+PASS [3] en older record: no page errors
+PASS [3] en: older Qiyam record (saved 1h after Isha) -> Tahajjud 0, other 4  — Qiyam al-Layl 4 rak‘ahs: Tahajjud 0, Witr 0, other 4
+PASS [3] en older record: no page errors
+PASS [3] en: older Qiyam record (no saved time) -> Tahajjud 0, other 4  — Qiyam al-Layl 4 rak‘ahs: Tahajjud 0, Witr 0, other 4
+PASS [3] en older record: no page errors
+PASS [3] bn: 22:00 (before Tahajjud), Qiyam 2 + Witr 3 -> "কিয়ামুল লাইল ৫ রাকাত: তাহাজ্জুদ ০, বিতর ৩, অন্যান্য ২"  — কিয়ামুল লাইল ৫ রাকাত: তাহাজ্জুদ ০, বিতর ৩, অন্যান্য ২
+PASS [3] bn: Mark Complete before Tahajjud saves qiyamPart "other"  — {"fard":{},"voluntary":{"witr":true,"qiyam":true},"rakahs":{"witr":3,"qiyam":2},"rakahSets":{"witr":[true,true,false,false,false,false],"qiyam":[true,false,false,false,false,false]},"closed":{"voluntary:witr":true,"voluntary:qiyam":true},"at":{"voluntary:witr":[100,1300],"voluntary:qiyam":[210,1320]},"qiyamPart":"other"}
+PASS [3] bn: weekly stats: Witr already counted Qiyam al-Layl as done (all Witr is Qiyam); "other" Qiyam does not add Tahajjud  — {"tile0":"০/৫ · ২/৫","tile1":"০/৫ · ২/৫"}
+PASS [3] bn: Prayer record shows the same split (other 2)  — কিয়ামুল লাইল ৫ রাকাত: তাহাজ্জুদ ০, বিতর ৩, অন্যান্য ২
+PASS [3] bn evening: no page errors
+PASS [3] bn: 02:30 (Tahajjud time), Qiyam 2 + Witr 3 -> "কিয়ামুল লাইল ৫ রাকাত: তাহাজ্জুদ ২, বিতর ৩, অন্যান্য ০"  — কিয়ামুল লাইল ৫ রাকাত: তাহাজ্জুদ ২, বিতর ৩, অন্যান্য ০
+PASS [3] bn: Mark Complete in Tahajjud time saves qiyamPart "tahajjud"  — {"fard":{},"voluntary":{"witr":true,"qiyam":true},"rakahs":{"witr":3,"qiyam":2},"rakahSets":{"witr":[true,true,false,false,false,false],"qiyam":[true,false,false,false,false,false]},"closed":{"voluntary:witr":true,"voluntary:qiyam":true},"at":{"voluntary:witr":[100,1300],"voluntary:qiyam":[480,150]},"qiyamPart":"tahajjud"}
+PASS [3] bn: progress/stats: Qiyam in Tahajjud time also counts Tahajjud as done (3/5 voluntary)  — ০/৫ · ৩/৫
+PASS [3] bn: totals still count each rak'ah once (5, not 7)  — ফরজ ০/৫ · সুন্নাত ০/৫ · নফল ০/৫ · ঐচ্ছিক ৫ রাকাত
+PASS [3] bn: Prayer record shows Tahajjud 2, Witr 3, other 0  — কিয়ামুল লাইল ৫ রাকাত: তাহাজ্জুদ ২, বিতর ৩, অন্যান্য ০
+PASS [3] bn: Undo on the Qiyam record removes it and its split  — {"fard":{},"voluntary":{"witr":true},"rakahs":{"witr":3},"rakahSets":{"witr":[true,true,false,false,false,false]},"closed":{"voluntary:witr":true},"at":{"voluntary:witr":[100,1300]}}
+PASS [3] bn late night: no page errors
+PASS [3] bn: Tahajjud card 2 + Witr 3 + Qiyam 2 before Tahajjud -> "কিয়ামুল লাইল ৭ রাকাত: তাহাজ্জুদ ২, বিতর ৩, অন্যান্য ২"  — কিয়ামুল লাইল ৭ রাকাত: তাহাজ্জুদ ২, বিতর ৩, অন্যান্য ২
+PASS [3] bn: older Qiyam record (saved 6h40 after Isha = in Tahajjud time) -> Tahajjud 4, other 0  — কিয়ামুল লাইল ৪ রাকাত: তাহাজ্জুদ ৪, বিতর ০, অন্যান্য ০
+PASS [3] bn older record: no page errors
+PASS [3] bn: older Qiyam record (saved 1h after Isha) -> Tahajjud 0, other 4  — কিয়ামুল লাইল ৪ রাকাত: তাহাজ্জুদ ০, বিতর ০, অন্যান্য ৪
+PASS [3] bn older record: no page errors
+PASS [3] bn: older Qiyam record (no saved time) -> Tahajjud 0, other 4  — কিয়ামুল লাইল ৪ রাকাত: তাহাজ্জুদ ০, বিতর ০, অন্যান্য ৪
+PASS [3] bn older record: no page errors
+PASS [4] en: corner label reads v3.0.5  — v3.0.5
+PASS [4] bn: corner label reads v৩.০.৫  — v৩.০.৫
+
+112/112 passed

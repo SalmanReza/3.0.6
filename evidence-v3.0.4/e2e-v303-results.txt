@@ -1,0 +1,107 @@
+URL: http://127.0.0.1:1426/
+PASS [1] en: every Revise previous prayer card (Fard and voluntary) has Mark Complete  — {"n":2,"mc":2,"label":"Mark Complete"}
+PASS [1] en: late voluntary Mark Complete records the chosen rak'ahs (4), marks it late, closes the card, sound and reward  — {"d":{"fard":{},"voluntary":{"duha":true},"late":{"voluntary:duha":true},"at":{"voluntary:duha":[442,840]},"rakahSets":{"duha":[true,true,false,false,false,false]},"rakahs":{"duha":4},"closed":{"voluntary:duha":true}},"volFx":{"osc":2,"reward":true}}
+PASS [1] en: late Fard Mark Complete records Fajr "recorded after its time", plays the sound, shows the toast, closes the card  — {"d":{"fard":{"fajr":true},"voluntary":{"duha":true},"late":{"voluntary:duha":true,"fard:fajr":true},"at":{"voluntary:duha":[442,840],"fard:fajr":[541,840]},"rakahSets":{"duha":[true,true,false,false,false,false]},"rakahs":{"duha":4},"closed":{"voluntary:duha":true,"fard:fajr":true}},"after":{"osc":2,"toast":"Prayer marked complete","names":[]}}
+PASS [1] en: the daily record says "recorded after its time" for both  — TODAY
+6
+rak‘ahs recorded
+OBLIGATORY PRAYER
+Fajr
+And the dawn recitation: the recitation of dawn is ever witnessed.
+Qur’an 17:78
+Fajr
+
+Rak‘ahs: 2 Sunnah mu’akkadah + 2 Fard
+
+Pray the two Sunnah rak‘ahs before the two obligatory rak‘ahs. The Fard prayer is two rak‘ahs.
+
+2 Fard completed · 04:59 · reco
+PASS [1] en: Friday late Mark Complete follows the Friday rule (Jumu'ah, Dhuhr stays clear) and marks late  — {"fard":{"jumuah":true},"voluntary":{},"fridayFard":"jumuah","late":{"fard:dhuhr":true},"at":{"fard:dhuhr":[260,970]},"closed":{"fard:dhuhr":true}}
+PASS [1] en: late circles still tick in order (a skipped circle is refused)
+PASS [1] en: after the record-window lock there is no Fajr/Duha card to complete  — []
+PASS [1] bn: every Revise previous prayer card (Fard and voluntary) has Mark Complete  — {"n":2,"mc":2,"label":"সম্পন্ন করুন"}
+PASS [1] bn: late voluntary Mark Complete records the chosen rak'ahs (4), marks it late, closes the card, sound and reward  — {"d":{"fard":{},"voluntary":{"duha":true},"late":{"voluntary:duha":true},"at":{"voluntary:duha":[442,840]},"rakahSets":{"duha":[true,true,false,false,false,false]},"rakahs":{"duha":4},"closed":{"voluntary:duha":true}},"volFx":{"osc":2,"reward":true}}
+PASS [1] bn: late Fard Mark Complete records Fajr "recorded after its time", plays the sound, shows the toast, closes the card  — {"d":{"fard":{"fajr":true},"voluntary":{"duha":true},"late":{"voluntary:duha":true,"fard:fajr":true},"at":{"voluntary:duha":[442,840],"fard:fajr":[541,840]},"rakahSets":{"duha":[true,true,false,false,false,false]},"rakahs":{"duha":4},"closed":{"voluntary:duha":true,"fard:fajr":true}},"after":{"osc":2,"toast":"নামাজ পড়া হলো, টিক পড়ল","names":[]}}
+PASS [1] bn: the daily record says "সময়ের পরে রেকর্ড" for both  — আজ মোট
+৬
+রাকাত রেকর্ড
+ফরজ
+ফজর
+আর ভোরের কুরআন পাঠ: ভোরের পাঠে সাক্ষী রাখা হয়।
+কুরআন ১৭:৭৮
+ফজর
+
+রাকাত: ২ রাকাত সুন্নাতে মুয়াক্কাদা + ২ রাকাত ফরজ
+
+দুই রাকাত সুন্নাত আগে, এরপর দুই রাকাত ফরজ আদায় করুন।
+
+২ ফরজ সম্পন্ন · ০৪:৫৯ · সময়ের পরে রেকর্ড
+
+নামাজ বাতিল
+দৈনিক নফল
+ইশরাক / দুহা
+আমি পর্বতমালাকে তার স
+PASS [1] bn: Friday late Mark Complete follows the Friday rule (Jumu'ah, Dhuhr stays clear) and marks late  — {"fard":{"jumuah":true},"voluntary":{},"fridayFard":"jumuah","late":{"fard:dhuhr":true},"at":{"fard:dhuhr":[260,970]},"closed":{"fard:dhuhr":true}}
+PASS [1] bn: late circles still tick in order (a skipped circle is refused)
+PASS [1] bn: after the record-window lock there is no Fajr/Duha card to complete  — []
+PASS [2] en: undoing Fajr brings back the Fajr card only (Duha stays closed, nothing else surfaces)  — {"before":[],"names":["Fajr"],"live":["Dhuhr","Fajr"]}
+PASS [2] en: undoing the open Dhuhr re-opens Dhuhr under the normal heading only  — {"liveBefore":0,"live":["Dhuhr"],"late":[]}
+PASS [2] bn: undoing Fajr brings back the Fajr card only (Duha stays closed, nothing else surfaces)  — {"before":[],"names":["ফজর"],"live":["যোহর","ফজর"]}
+PASS [2] bn: undoing the open Dhuhr re-opens Dhuhr under the normal heading only  — {"liveBefore":0,"live":["যোহর"],"late":[]}
+PASS [3] en: a partly ticked revise Duha (2 of up to 8) stays under Revise previous prayer, also after a reload (selected, not recorded)  — {"stays":true,"staysAfterReload":true,"pend":{"rakahSets":{"duha":[true,false,false,false,false,false]},"rakahs":{"duha":2}}}
+PASS [3] en: an undone late voluntary returns under Revise previous prayer (only that one)  — {"gone":true,"undo":true,"back":["Fajr","Ishraq / Duha"]}
+PASS [3] en: after the record window closes the partly ticked Duha is gone  — []
+PASS [3] bn: a partly ticked revise Duha (2 of up to 8) stays under Revise previous prayer, also after a reload (selected, not recorded)  — {"stays":true,"staysAfterReload":true,"pend":{"rakahSets":{"duha":[true,false,false,false,false,false]},"rakahs":{"duha":2}}}
+PASS [3] bn: an undone late voluntary returns under Revise previous prayer (only that one)  — {"gone":true,"undo":true,"back":["ফজর","ইশরাক / দুহা"]}
+PASS [3] bn: after the record window closes the partly ticked Duha is gone  — []
+PASS [4] passages: 2739 covering 6236 verses, none over 10 (max 10), juz' never crossed  — {"count":2739,"total":6236,"dist":{"1":679,"2":1176,"3":538,"4":259,"5-10":87,"over10":0},"max":10,"crossJuz":0,"perJuz":[69,54,73,65,67,56,81,71,69,67,63,74,69,94,83,110,84,91,133,80,82,87,146,82,112,90,145,76,176,190],"day29of29":366}
+PASS [4] distribution 1/2/3/4/5–10 = 679/1176/538/259/87  — {"1":679,"2":1176,"3":538,"4":259,"5-10":87,"over10":0}
+PASS [4/9] adjust 0: 29-day month (Jumada II 1448) shows all 6,236 verses exactly once; day 1 juz' 1, day 29 juz' 29–30  — {"size":6236,"d1":{"k":1,"at":"2026-11-11","n":69,"summary":"Juz' 1 · 1 of 69 passages read today","hijri":"1 Jumada II 1448 AH"},"d29":{"k":29,"at":"2026-12-09","n":366,"summary":"Juz' 29–30 · 1 of 366 passages read today","hijri":"29 Jumada II 1448 AH"}}
+PASS [4/9] adjust 0: 30-day month (Rajab 1448) shows all 6,236 verses exactly once; day 30 juz' 30  — {"size":6236,"d1":{"k":1,"at":"2026-12-10","n":69,"summary":"Juz' 1 · 1 of 69 passages read today","hijri":"1 Rajab 1448 AH"},"d30":{"k":30,"at":"2027-01-08","n":190,"summary":"Juz' 30 · 1 of 190 passages read today","hijri":"30 Rajab 1448 AH"}}
+PASS [4/9] adjust +1: 29-day month (Jumada II 1448) shows all 6,236 verses exactly once; day 1 juz' 1, day 29 juz' 29–30  — {"size":6236,"d1":{"k":1,"at":"2026-11-10","n":69,"summary":"Juz' 1 · 1 of 69 passages read today","hijri":"1 Jumada II 1448 AH"},"d29":{"k":29,"at":"2026-12-08","n":366,"summary":"Juz' 29–30 · 1 of 366 passages read today","hijri":"29 Jumada II 1448 AH"}}
+PASS [4/9] adjust +1: 30-day month (Rajab 1448) shows all 6,236 verses exactly once; day 30 juz' 30  — {"size":6236,"d1":{"k":1,"at":"2026-12-09","n":69,"summary":"Juz' 1 · 1 of 69 passages read today","hijri":"1 Rajab 1448 AH"},"d30":{"k":30,"at":"2027-01-07","n":190,"summary":"Juz' 30 · 1 of 190 passages read today","hijri":"30 Rajab 1448 AH"}}
+PASS [4/9] adjust -1: 29-day month (Jumada II 1448) shows all 6,236 verses exactly once; day 1 juz' 1, day 29 juz' 29–30  — {"size":6236,"d1":{"k":1,"at":"2026-11-12","n":69,"summary":"Juz' 1 · 1 of 69 passages read today","hijri":"1 Jumada II 1448 AH"},"d29":{"k":29,"at":"2026-12-10","n":366,"summary":"Juz' 29–30 · 1 of 366 passages read today","hijri":"29 Jumada II 1448 AH"}}
+PASS [4/9] adjust -1: 30-day month (Rajab 1448) shows all 6,236 verses exactly once; day 30 juz' 30  — {"size":6236,"d1":{"k":1,"at":"2026-12-11","n":69,"summary":"Juz' 1 · 1 of 69 passages read today","hijri":"1 Rajab 1448 AH"},"d30":{"k":30,"at":"2027-01-09","n":190,"summary":"Juz' 30 · 1 of 190 passages read today","hijri":"30 Rajab 1448 AH"}}
+PASS [5] en: reminder shows 2:282 as a short preview ending in "…" with Read more  — {"ref":"Al-Baqara 2:282–283","longest":223,"more":"Read more"}
+PASS [5] en: Read more expands the whole verse (over 1,000 characters, no ellipsis)  — {"longest":1338,"ellipsis":false}
+PASS [5] en: Today's portion shows the same preview and Read more expands it  — {"prev":true,"more":true,"expanded":1338}
+PASS [5] bn: reminder shows 2:282 as a short preview ending in "…" with Read more  — {"ref":"আল-বাকারা ২:২৮২–২৮৩","longest":223,"more":"আরও পড়ুন"}
+PASS [5] bn: Read more expands the whole verse (over 1,000 characters, no ellipsis)  — {"longest":1269,"ellipsis":false}
+PASS [5] bn: Today's portion shows the same preview and Read more expands it  — {"prev":true,"more":true,"expanded":1269}
+PASS [6] en: Settings › Time adjustments has "Hijri date adjustment" with −2, −1, 0, +1, +2 days, default 0  — {"exists":true,"value":"0","options":["-2=−2 days","-1=−1 day","0=0 (as calculated)","1=+1 day","2=+2 days"],"label":"Hijri date adjustment","card":"TIME ADJUSTMENTS","note":"Moves every Hijri date in the app by whole days to match your local moon sighting. Prayer times do not change."}
+PASS [6] en: +1 moves the Hijri date by one day and the day's juz' 13 → 14; saved and kept after a reload  — {"base":{"hijri":"13 Jumada II 1448 AH","juz":"Juz' 13 · 1 of 69 passages read today","times":"04:59|11:50|15:35|17:10|18:30"},"plus":{"hijri":"14 Jumada II 1448 AH","juz":"Juz' 14 · 1 of 94 passages read today","times":"04:59|11:50|15:35|17:10|18:30"},"saved":1,"reloaded":"14 Jumada II 1448 AH"}
+PASS [6] en: prayer times are unchanged by the adjustment  — {"a":"04:59|11:50|15:35|17:10|18:30","b":"04:59|11:50|15:35|17:10|18:30"}
+PASS [6] en: −1 shows the previous Hijri day and juz' 12  — {"base":"13 Jumada II 1448 AH","minus":{"hijri":"12 Jumada II 1448 AH","juz":"Juz' 12 · 1 of 74 passages read today"}}
+PASS [6] bn: Settings › Time adjustments has "হিজরি তারিখ সমন্বয়" with −2, −1, 0, +1, +2 days, default 0  — {"exists":true,"value":"0","options":["-2=−২ দিন","-1=−১ দিন","0=০ (হিসাব অনুযায়ী)","1=+১ দিন","2=+২ দিন"],"label":"হিজরি তারিখ সমন্বয়","card":"সময়ের সমন্বয়","note":"স্থানীয় চাঁদ দেখার সঙ্গে মেলাতে অ্যাপের সব হিজরি তারিখ পুরো দিন হিসেবে সরায়। নামাজের সময় বদলায় না।"}
+PASS [6] bn: +1 moves the Hijri date by one day and the day's juz' 13 → 14; saved and kept after a reload  — {"base":{"hijri":"১৩ জমাদিউস সানি, ১৪৪৮ হিজরি","juz":"পারা ১৩ · আজ ৬৯টি অংশের ১টি পড়া হয়েছে","times":"০৪:৫৯|১১:৫০|১৫:৩৫|১৭:১০|১৮:৩০"},"plus":{"hijri":"১৪ জমাদিউস সানি, ১৪৪৮ হিজরি","juz":"পারা ১৪ · আজ ৯৪টি অংশের ১টি পড়া হয়েছে","times":"০৪:৫৯|১১:৫০|১৫:৩৫|১৭:১০|১৮:৩০"},"saved":1,"reloaded":"১৪ জমাদিউস সানি, ১৪৪৮ হিজরি"}
+PASS [6] bn: prayer times are unchanged by the adjustment  — {"a":"০৪:৫৯|১১:৫০|১৫:৩৫|১৭:১০|১৮:৩০","b":"০৪:৫৯|১১:৫০|১৫:৩৫|১৭:১০|১৮:৩০"}
+PASS [6] bn: −1 shows the previous Hijri day and juz' 12  — {"base":"১৩ জমাদিউস সানি, ১৪৪৮ হিজরি","minus":{"hijri":"১২ জমাদিউস সানি, ১৪৪৮ হিজরি","juz":"পারা ১২ · আজ ৭৪টি অংশের ১টি পড়া হয়েছে"}}
+PASS [6] every adjustment −2..+2 shows the umalqura date shifted by that many days  — [{"adj":-2,"h":"11 Jumada II 1448 AH","want":"11","ok":true},{"adj":-1,"h":"12 Jumada II 1448 AH","want":"12","ok":true},{"adj":0,"h":"13 Jumada II 1448 AH","want":"13","ok":true},{"adj":1,"h":"14 Jumada II 1448 AH","want":"14","ok":true},{"adj":2,"h":"15 Jumada II 1448 AH","want":"15","ok":true}]
+PASS [7] en: export includes the progress-line switch and the Hijri adjustment  — {"blessedProgress":false,"hijriAdjust":2}
+PASS [7] en: importing a v3.0.3 backup (Replace) restores both settings (neither reported as unavailable)  — {"blessedProgress":true,"hijriAdjust":-1,"st1":"Replaced. Not available in this version: tickSound, enFont, prefReminders, astro, closeFlagsSeeded. The previous data is in the safety copy."}
+PASS [7] en: an older backup without them still imports, with the defaults (switch on, adjustment 0)  — {"blessedProgress":true,"hijriAdjust":0,"st2":"Replaced. Not available in this version: tickSound, enFont, prefReminders, astro, closeFlagsSeeded. The previous data is in the safety copy.","errs":[]}
+PASS [7] bn: export includes the progress-line switch and the Hijri adjustment  — {"blessedProgress":false,"hijriAdjust":2}
+PASS [7] bn: importing a v3.0.3 backup (Replace) restores both settings (neither reported as unavailable)  — {"blessedProgress":true,"hijriAdjust":-1,"st1":"Replaced. Not available in this version: tickSound, enFont, prefReminders, astro, closeFlagsSeeded. The previous data is in the safety copy."}
+PASS [7] bn: an older backup without them still imports, with the defaults (switch on, adjustment 0)  — {"blessedProgress":true,"hijriAdjust":0,"st2":"Replaced. Not available in this version: tickSound, enFont, prefReminders, astro, closeFlagsSeeded. The previous data is in the safety copy.","errs":[]}
+PASS [8] en: corner label reads v3.0.4  — v3.0.4
+PASS [8] en: the reminder's progress line is shown  — Juz' 13 · 1 of 69 passages read today
+PASS [8] bn: corner label reads v৩.০.৪  — v৩.০.৪
+PASS [8] bn: the reminder's progress line is shown  — পারা ১৩ · আজ ৬৯টি অংশের ১টি পড়া হয়েছে
+PASS [Layout] en 1280x720 light: home (with Revise previous prayer cards and Mark Complete) does not overflow  — {"pageOverflow":false,"bad":[],"errs":[]}
+PASS [Layout] en 1280x720 light: Settings with the Hijri adjustment does not overflow  — {"pageOverflow":false,"bad":[]}
+PASS [Layout] en 1280x720 dark: home (with Revise previous prayer cards and Mark Complete) does not overflow  — {"pageOverflow":false,"bad":[],"errs":[]}
+PASS [Layout] en 1280x720 dark: Settings with the Hijri adjustment does not overflow  — {"pageOverflow":false,"bad":[]}
+PASS [Layout] en 420x700 light: home (with Revise previous prayer cards and Mark Complete) does not overflow  — {"pageOverflow":false,"bad":[],"errs":[]}
+PASS [Layout] en 420x700 light: Settings with the Hijri adjustment does not overflow  — {"pageOverflow":false,"bad":[]}
+PASS [Layout] en 420x700 dark: home (with Revise previous prayer cards and Mark Complete) does not overflow  — {"pageOverflow":false,"bad":[],"errs":[]}
+PASS [Layout] en 420x700 dark: Settings with the Hijri adjustment does not overflow  — {"pageOverflow":false,"bad":[]}
+PASS [Layout] bn 1280x720 light: home (with Revise previous prayer cards and Mark Complete) does not overflow  — {"pageOverflow":false,"bad":[],"errs":[]}
+PASS [Layout] bn 1280x720 light: Settings with the Hijri adjustment does not overflow  — {"pageOverflow":false,"bad":[]}
+PASS [Layout] bn 1280x720 dark: home (with Revise previous prayer cards and Mark Complete) does not overflow  — {"pageOverflow":false,"bad":[],"errs":[]}
+PASS [Layout] bn 1280x720 dark: Settings with the Hijri adjustment does not overflow  — {"pageOverflow":false,"bad":[]}
+PASS [Layout] bn 420x700 light: home (with Revise previous prayer cards and Mark Complete) does not overflow  — {"pageOverflow":false,"bad":[],"errs":[]}
+PASS [Layout] bn 420x700 light: Settings with the Hijri adjustment does not overflow  — {"pageOverflow":false,"bad":[]}
+PASS [Layout] bn 420x700 dark: home (with Revise previous prayer cards and Mark Complete) does not overflow  — {"pageOverflow":false,"bad":[],"errs":[]}
+PASS [Layout] bn 420x700 dark: Settings with the Hijri adjustment does not overflow  — {"pageOverflow":false,"bad":[]}
+
+73/73 passed

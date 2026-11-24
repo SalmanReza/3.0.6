@@ -1,0 +1,66 @@
+FILES REMOVED (32, 1426752 bytes):
+  - public/celestial/moon.png 402774
+  - public/celestial/sun.png 484978
+  - scripts/audit-layout-v210.mjs 4910
+  - scripts/audit-layout-v211.mjs 6548
+  - scripts/clock-numerals.mjs 2260
+  - scripts/e2e-v210.mjs 13835
+  - scripts/e2e-v211.mjs 23058
+  - scripts/e2e-v220.mjs 22542
+  - scripts/e2e-v230.mjs 13783
+  - scripts/e2e-v240.mjs 14555
+  - scripts/e2e-v301.mjs 19246
+  - scripts/measure-event-ticks.mjs 2457
+  - scripts/repro-reward.mjs 1384
+  - scripts/shot-astro-zoom.mjs 883
+  - scripts/shot-astro.mjs 1206
+  - scripts/shot-cd.mjs 676
+  - scripts/shot-clip.mjs 809
+  - scripts/shot-forbidden.mjs 1162
+  - scripts/shot-home.mjs 683
+  - scripts/shot-rewards.mjs 2198
+  - scripts/shot-sharp.mjs 1364
+  - src/fonts/ui/OFL-Atma.txt 4386
+  - src/fonts/ui/OFL-Baloo-Da-2.txt 4381
+  - src/fonts/ui/OFL-Galada.txt 4635
+  - src/fonts/ui/OFL-Mina.txt 4467
+  - src/fonts/ui/atma-400.woff2 64584
+  - src/fonts/ui/atma-700.woff2 57768
+  - src/fonts/ui/baloo-da-2-400.woff2 57896
+  - src/fonts/ui/baloo-da-2-700.woff2 64752
+  - src/fonts/ui/galada-400.woff2 52232
+  - src/fonts/ui/mina-400.woff2 45620
+  - src/fonts/ui/mina-700.woff2 44720
+FILES ADDED (14, 265980 bytes):
+  + scripts/compare304.mjs 3906
+  + scripts/e2e-v304.mjs 28260
+  + src/fonts/latin/OFL-ibm-plex-sans.txt 4456
+  + src/fonts/latin/OFL-lato.txt 4407
+  + src/fonts/latin/OFL-lora.txt 4423
+  + src/fonts/latin/OFL-nunito.txt 4385
+  + src/fonts/latin/OFL-source-sans-3.txt 4579
+  + src/fonts/latin/ibmplexsans.woff2 45712
+  + src/fonts/latin/lato-400.woff2 23580
+  + src/fonts/latin/lato-700.woff2 23040
+  + src/fonts/latin/lora.woff2 37788
+  + src/fonts/latin/nunito.woff2 39128
+  + src/fonts/latin/sourcesans3.woff2 28872
+  + tests/v304.test.js 13444
+src/app.js: 4814 -> 4984 lines, 333313 -> 344579 bytes
+src/styles.css: 2183 -> 1826 lines, 153378 -> 148667 bytes
+index.html: 272 -> 271 lines, 32127 -> 32117 bytes
+src/ui-fonts.js: 80 -> 86 lines, 5244 -> 5826 bytes
+
+CODE REMOVED IN I (snapshot before I -> v3.0.4; K and L were added after I):
+  src/sound.js: -8 / +0 lines, 499 bytes
+  src/prayer-layers.js: -4 / +0 lines, 129 bytes
+  src/dial-physics.js: -1 / +0 lines, 57 bytes
+  src/astrolabe.js: -18 / +0 lines, 641 bytes
+  src/tick-lock.js: -1 / +0 lines, 80 bytes
+  src/blessed-reminder.js: -4 / +0 lines, 322 bytes
+  src/app.js: -37 / +34 lines, 983 bytes
+  src/habits.js: -1 / +0 lines, 22 bytes
+  src/styles.css: -409 / +40 lines, 6646 bytes
+  src/backup.js: -3 / +0 lines, 67 bytes
+  src/quran/load.js: -6 / +0 lines, 207 bytes
+  net bytes 9653 (includes K/L/A additions in app.js/styles.css)
