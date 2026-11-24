@@ -1,0 +1,31 @@
+Qur'an data bundled with Prayer Times v3.0.4
+=============================================
+
+No Arabic text is bundled from v3.0.2. A Blessed Reminder shows the selected
+language only, with the surah name and verse numbers.
+
+Section (ruku') and juz' boundaries
+  Source: Tanzil Quran Metadata (quran-data.js, version 1.0), https://tanzil.net/res/text/metadata/
+  License: Creative Commons Attribution 3.0 (https://creativecommons.org/licenses/by/3.0/).
+  Copyright (C) 2008-2009 Tanzil.info (now tanzil.net).
+  Used at build time by scripts/build-passages.mjs (copy in scripts/data/)
+  to split the 556 ruku' sections into reading passages (passages.json).
+  Passages never cross a juz' boundary.
+
+English
+  Translation: Saheeh International (en.sahih), as redistributed by the Tanzil
+  project and AlQuran Cloud.
+  Copyright remains with Saheeh International.
+  Included here, with attribution, in a free offline prayer app.
+  Source listing: https://tanzil.net/trans/
+
+Bangla
+  Translation: Muhiuddin Khan (bn.bengali), as redistributed by the Tanzil
+  project and AlQuran Cloud.
+  Copyright remains with the translator.
+  Included here, with attribution, in a free offline prayer app.
+  Source listing: https://tanzil.net/trans/
+
+Section subject lines (sections.json, English and Bangla) were written for
+this app. The packed translations are src/quran/data.json (6,236 verses).
+They are loaded lazily so the first paint of the app is not blocked.
