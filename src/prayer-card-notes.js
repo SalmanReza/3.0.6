@@ -1,0 +1,40 @@
+/* v2.0.1: every card note is Qur’anic whenever a verse exists (Qur’an → hadith → other notes).
+   One-line note for each Daily prayers card (v1.3.2), switched by school.
+   Sunni schools (Hanafi, Shafi'i, Maliki, Hanbali) share one set: Qur'an or a
+   Bukhari/Muslim hadith accepted by all four. Ja'fari has its own set: Qur'an or
+   al-Kafi (the same narrations as src/prayer-evidence.js). No rulings, no
+   contested tafsir. Entry: key -> {en, bn, ref} (Qur'an, "Q<surah>:<ayah>") or
+   {en, bn, src, srcBn} (hadith). */
+
+import { sourceLabel } from './daily-reflections.js';
+import { evidenceSet } from './prayer-evidence.js';
+
+const BN_DIGITS = '০১২৩৪৫৬৭৮৯';
+const bnNum = text => String(text).replace(/[0-9]/g, d => BN_DIGITS[d]);
+const KAFI = n => [`al-Kāfi, Book of Prayer, no. ${n}`, `আল-কাফি, কিতাবুস নামাজ, নং ${bnNum(n)}`];
+
+export const SUNNI_CARD_NOTES = Object.freeze({
+  fajr: { en: 'The dawn recitation is witnessed.', bn: 'ভোরের কুরআন পাঠে সাক্ষী রাখা হয়।', ref: 'Q17:78' },
+  dhuhr:   { en: 'Establish prayer from the sun’s decline.', bn: 'সূর্য ঢলে পড়ার সময় থেকে নামাজ কায়েম করো।', ref: 'Q17:78' },
+  asr: { en: 'Guard the prayers, and stand in devotion.', bn: 'নামাজগুলোর হেফাজত করো, বিনীত হয়ে দাঁড়াও।', ref: 'Q2:238' },
+  maghrib: { en: 'Prayer at the two ends of the day and the night’s early hours.', bn: 'দিনের দুই প্রান্তে ও রাতের প্রথম প্রহরে নামাজ।', ref: 'Q11:114' },
+  isha: { en: 'Glorify your Lord in the hours of the night.', bn: 'রাতের প্রহরগুলোয় তোমার রবের পবিত্রতা ঘোষণা করো।', ref: 'Q20:130' }
+});
+
+export const JAFARI_CARD_NOTES = Object.freeze({
+  fajr:    { en: 'The dawn recitation is witnessed.', bn: 'ভোরের কুরআন পাঠে সাক্ষী রাখা হয়।', ref: 'Q17:78' },
+  dhuhr:   { en: 'Establish prayer from the sun’s decline.', bn: 'সূর্য ঢলে পড়ার সময় থেকে নামাজ কায়েম করো।', ref: 'Q17:78' },
+  asr:     { en: 'Guard the prayers, and stand in devotion.', bn: 'নামাজগুলোর হেফাজত করো, বিনীত হয়ে দাঁড়াও।', ref: 'Q2:238' },
+  maghrib: { en: 'Prayer at the two ends of the day and the night’s early hours.', bn: 'দিনের দুই প্রান্তে ও রাতের প্রথম প্রহরে নামাজ।', ref: 'Q11:114' },
+  isha: { en: 'Glorify your Lord in the hours of the night.', bn: 'রাতের প্রহরগুলোয় তোমার রবের পবিত্রতা ঘোষণা করো।', ref: 'Q20:130' }
+});
+
+export const PRAYER_CARD_NOTES = SUNNI_CARD_NOTES;
+
+export function cardNote(prayerKey, lang = 'en', school = 'hanafi') {
+  const set = evidenceSet(school) === 'jafari' ? JAFARI_CARD_NOTES : SUNNI_CARD_NOTES;
+  const note = set[prayerKey];
+  if (!note) return null;
+  const bn = lang === 'bn';
+  return { text: bn ? note.bn : note.en, ref: note.ref ? sourceLabel(note.ref, bn ? 'bn' : 'en') : (bn ? note.srcBn : note.src) };
+}

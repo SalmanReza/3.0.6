@@ -1,0 +1,1840 @@
+/* v1.3.1 selectable interface fonts (Settings -> Font): local WOFF2 subsets, SIL OFL; see src/fonts/ui/README.txt */
+@font-face { font-family: "Hind Siliguri"; src: url("./fonts/ui/hind-siliguri-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "Hind Siliguri"; src: url("./fonts/ui/hind-siliguri-700.woff2") format("woff2"); font-weight: 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Noto Sans Bengali"; src: url("./fonts/ui/noto-sans-bengali.woff2") format("woff2"); font-weight: 400 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Noto Serif Bengali"; src: url("./fonts/ui/noto-serif-bengali.woff2") format("woff2"); font-weight: 400 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Anek Bangla"; src: url("./fonts/ui/anek-bangla.woff2") format("woff2"); font-weight: 400 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Tiro Bangla"; src: url("./fonts/ui/tiro-bangla-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+
+/* v3.0.1 English fonts (SIL OFL 1.1) and extra Bangla fonts (see src/fonts/). */
+@font-face { font-family: "Inter"; src: url("./fonts/latin/inter-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Inter"; src: url("./fonts/latin/inter-700.woff2") format("woff2"); font-weight: 600 700; font-style: normal; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Manrope"; src: url("./fonts/latin/manrope-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Manrope"; src: url("./fonts/latin/manrope-700.woff2") format("woff2"); font-weight: 600 700; font-style: normal; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Outfit"; src: url("./fonts/latin/outfit-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Outfit"; src: url("./fonts/latin/outfit-700.woff2") format("woff2"); font-weight: 600 700; font-style: normal; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Plus Jakarta Sans"; src: url("./fonts/latin/plusjakarta-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Plus Jakarta Sans"; src: url("./fonts/latin/plusjakarta-700.woff2") format("woff2"); font-weight: 600 700; font-style: normal; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Fraunces"; src: url("./fonts/latin/fraunces-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Fraunces"; src: url("./fonts/latin/fraunces-700.woff2") format("woff2"); font-weight: 600 700; font-style: normal; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Lato"; src: url("./fonts/latin/lato-400.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Lato"; src: url("./fonts/latin/lato-700.woff2") format("woff2"); font-weight: 600 700; font-style: normal; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Nunito"; src: url("./fonts/latin/nunito.woff2") format("woff2"); font-weight: 400 700; font-style: normal; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Source Sans 3"; src: url("./fonts/latin/sourcesans3.woff2") format("woff2"); font-weight: 400 700; font-style: normal; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "IBM Plex Sans"; src: url("./fonts/latin/ibmplexsans.woff2") format("woff2"); font-weight: 400 700; font-style: normal; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Lora"; src: url("./fonts/latin/lora.woff2") format("woff2"); font-weight: 400 700; font-style: normal; font-display: swap; unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+@font-face { font-family: "Kalpurush"; src: url("./fonts/bn-new/kalpurush.woff2") format("woff2"); font-weight: 400 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Siyam Rupali"; src: url("./fonts/bn-new/siyam-rupali.woff2") format("woff2"); font-weight: 400 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "SolaimanLipi"; src: url("./fonts/bn-new/solaimanlipi.woff2") format("woff2"); font-weight: 400 700; font-style: normal; font-display: swap; }
+@font-face { font-family: "Bornomala"; src: url("./fonts/bn-new/bornomala.woff2") format("woff2"); font-weight: 400; font-style: normal; font-display: swap; }
+@font-face { font-family: "AdorshoLipi"; src: url("./fonts/bn-new/adorsholipi.woff2") format("woff2"); font-weight: 400 700; font-style: normal; font-display: swap; }
+
+/* Local subset of Aref Ruqaa Bold (SIL OFL 1.1) used only for the daily reward phrase. */
+@font-face {
+  font-family: "Alhamdulillah Ruqaa";
+  src: url("./fonts/alhamdulillah-aref-ruqaa.woff") format("woff");
+  font-display: block;
+  unicode-range: U+0020, U+0627, U+062D, U+062F, U+0644, U+0645, U+0647;
+}
+
+:root {
+  color-scheme: dark;
+  --ui-font: "Segoe UI Variable", "Segoe UI", "Nirmala UI", "Amiri", system-ui, sans-serif;
+  --en-font: var(--ui-font);
+  --app-font: var(--ui-font);
+  font-family: var(--app-font, var(--ui-font));
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  --bg: #101719;
+  --surface: #192326;
+  --surface2: #202b2e;
+  --surface3: #263337;
+  --text: #f1f4f0;
+  --muted: #a2b0ab;
+  --line: #334347;
+  --accent: #a9c6b5;
+  --accent2: #283a35;
+  --good: #5dbb83;
+  --gold: #d4b06a;
+  --silver: #c9d3dc;
+  --leaf: clamp(.45rem, 1.1vw, 1rem);
+  --danger: #d47a78;
+  --shadow: 0 0.875rem 2.25rem rgba(0,0,0,.16);
+  --radius: 1.125rem;
+  background: var(--bg);
+  color: var(--text);
+}
+
+* { box-sizing: border-box; }
+
+/* Responsive desktop scale: 1440p and 2160p/4K viewports gain larger text, controls and
+   spacing; restoring or resizing the window smoothly scales the same layout. */
+html { font-size: clamp(14px, calc(12.8px + 0.32vw + 0.18vh), 28px); }
+body { font-size: .875rem; }
+main { min-width: 0; }
+html { min-width: 0; min-height: 100%; background: var(--bg); scroll-behavior: smooth; }
+body {
+  margin: 0;
+  min-width: 0;
+  min-height: 100vh;
+  color: var(--text);
+  background:
+    radial-gradient(ellipse at 7% 0%, color-mix(in srgb, var(--accent) 8%, transparent), transparent 34rem),
+    radial-gradient(ellipse at 95% 12%, color-mix(in srgb, var(--gold) 5%, transparent), transparent 30rem),
+    var(--bg);
+  font-size: 0.875rem;
+  line-height: 1.45;
+}
+button, input, select { font: inherit; }
+button { color: inherit; }
+button:focus-visible, input:focus-visible, select:focus-visible, summary:focus-visible,
+a:focus-visible, [tabindex]:focus-visible, dialog :focus-visible {
+  outline: 0.125rem solid var(--accent); outline-offset: 0.1875rem;
+}
+:focus:not(:focus-visible) { outline: none; }
+[hidden] { display: none !important; }
+
+/* The shell is the responsive sizing container. All rem-based UI dimensions
+   scale with the WebView viewport, while container queries adapt the layout. */
+.app-shell { container: app-shell / inline-size; width: min(3400px, 100%); margin: 0 auto; padding: clamp(1.25rem, 1.55cqi, 2.8rem) clamp(1.4rem, 2.0cqi, 3.5rem) clamp(2rem, 2.25cqi, 3.8rem); }
+.topbar {
+  display: flex; align-items: center; justify-content: space-between; gap: 1.375rem;
+  min-height: 4.5rem; padding: 0 0 1.125rem; border-bottom: 0.0625rem solid var(--line);
+}
+.brand { display: flex; align-items: center; gap: 0.8125rem; min-width: 0; }
+.brand-mark {
+  display: grid; place-items: center; flex: 0 0 3rem; width: 3rem; height: 3rem;
+  border-radius: 0.9375rem; color: white; background: #080a0b;
+  box-shadow: 0 0.375rem 1.125rem rgba(0,0,0,.16);
+}
+.brand-mark svg { width: 2.125rem; height: 2.125rem; fill: none; stroke: currentColor; stroke-width: 2.1; stroke-linecap: round; stroke-linejoin: round; }
+.brand-name { font-size: 1.3125rem; line-height: 1.12; letter-spacing: -.035em; font-weight: 700; }
+.brand-sub { margin-top: 0.3125rem; color: var(--muted); font-size: 0.6875rem; letter-spacing: .015em; }
+
+.icon-button {
+  display: grid; place-items: center; width: 2.625rem; height: 2.625rem; flex: 0 0 2.625rem;
+  border: 0.0625rem solid var(--line); border-radius: 0.8125rem; background: var(--surface);
+  color: var(--text); cursor: pointer; transition: background .16s ease, border-color .16s ease, transform .16s ease;
+}
+.icon-button:hover { background: var(--surface2); border-color: var(--accent); transform: translateY(-0.0625rem); }
+.icon-button svg { width: 1.25rem; height: 1.25rem; fill: none; stroke: currentColor; stroke-width: 1.7; stroke-linecap: round; stroke-linejoin: round; }
+
+.panel { border: 0.0625rem solid var(--line); border-radius: var(--radius); background: var(--surface); box-shadow: var(--shadow); }
+.next-card {
+  position: relative; overflow: hidden; min-height: 14.6875rem; padding: 1.6875rem 1.875rem 1.375rem;
+  background: linear-gradient(132deg, var(--surface), color-mix(in srgb, var(--accent) 9%, var(--surface)) 100%);
+}
+.next-card::after { content:none; display:none; }
+.eyebrow { color: var(--muted); font-size: 0.5625rem; line-height: 1.4; font-weight: 800; letter-spacing: .16em; text-transform: uppercase; }
+.next-name { display: block; position: relative; z-index: 1; margin: 0.5625rem 0 0; padding: 0; border: 0; color: var(--text); background: none; text-align: left; font: 700 1.8125rem/1.18 var(--ui-font); letter-spacing: -.04em; cursor: pointer; }
+.next-name:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 0.25rem; }
+.next-count { display: block; position: relative; z-index: 1; margin: 0.625rem 0 0; padding: 0; border: 0; background: none; color: var(--accent); text-align: left; font: 750 clamp(2.125rem, 5vw, 3.1875rem)/1.08 var(--app-font); letter-spacing: -.04em; font-variant-numeric: tabular-nums; cursor: pointer; }
+.next-count:hover { color: var(--text); }
+.next-meta { position: relative; z-index: 1; margin-top: 0.6875rem; color: var(--muted); font-size: 0.6875rem; }
+.next-foot { position: relative; z-index: 1; display: flex; align-items: center; gap: 0.5rem; margin-top: 1.1875rem; padding-top: 0.8125rem; border-top: 0.0625rem solid var(--line); color: var(--muted); font-size: 0.625rem; }
+.status-dot { width: 0.4375rem; height: 0.4375rem; border-radius: 50%; background: var(--good); box-shadow: 0 0 0 0.25rem color-mix(in srgb, var(--good) 14%, transparent); }
+.progress-panel { min-height: 14.6875rem; padding: 1.4375rem 1.5rem 1.125rem; }
+.progress-head { display: flex; align-items: center; justify-content: space-between; gap: 1.125rem; }
+.progress-head > div:first-child { flex: 1 1 auto; min-width: 0; }
+.progress-title, .progress-status { overflow-wrap: anywhere; }
+.progress-status { max-width: 22rem; margin: 0.375rem 0 0; color: var(--muted); font-size: 0.71875rem; line-height: 1.45; }
+.progress-status:empty { display: none; }
+.compact-mode .progress-title { margin-top: 0.3125rem; font: 700 1.25rem/1.2 var(--ui-font); letter-spacing: -.025em; }
+.progress-visual { position: relative; display: grid; place-items: center; flex: 0 0 8.25rem; width: 8.25rem; height: 8.25rem; }
+/* v1.3.1 progress circles. One set of layer tokens is shared by the figure,
+   the prayer-list tick circles, the live-event ticks and the legend, so the
+   colours never drift apart. Inside → out: white Fard, green Sunnah, black
+   Nafl, red-black striped Hillah (standalone voluntary), saffron (date-specific). */
+body {
+  --layer-fard: #F7F4EC; --layer-fard-line: #F7F4EC; --layer-fard-edge: transparent; --layer-fard-ink: #141414;
+  --layer-fard-track: color-mix(in srgb, #F7F4EC 20%, transparent);
+  --layer-sunnah: #1E8E5A; --layer-sunnah-track: color-mix(in srgb, #1E8E5A 24%, transparent);
+  --layer-nafl: #141414; --layer-nafl-edge: rgba(255,255,255,.42); --layer-nafl-track: color-mix(in srgb, #ffffff 11%, transparent);
+  --layer-hillah-red: #B3122E; --layer-hillah-dark: #141414;
+  --layer-hillah: repeating-linear-gradient(45deg, #B3122E 0 .17rem, #141414 .17rem .27rem);
+  --layer-seasonal: #E8A33D; --layer-seasonal-track: color-mix(in srgb, #E8A33D 24%, transparent);
+}
+body[data-mode="light"] {
+  --layer-fard: #F3EEE2; --layer-fard-line: #BDB6A6; --layer-fard-edge: #BDB6A6;
+  --layer-fard-track: color-mix(in srgb, #BDB6A6 45%, transparent);
+  --layer-nafl-edge: transparent; --layer-nafl-track: color-mix(in srgb, #141414 14%, transparent);
+  --layer-seasonal: #D98B1C; --layer-seasonal-track: color-mix(in srgb, #D98B1C 26%, transparent);
+}
+.progress-figure { position: absolute; inset: 0; width: 100%; height: 100%; }
+.pf { display: block; width: 100%; height: 100%; overflow: visible; }
+.pf-track.fard { stroke: var(--layer-fard-track); }
+.pf-track.sunnah { stroke: var(--layer-sunnah-track); }
+.pf-track.nafl { stroke: var(--layer-nafl-track); }
+.pf-track.voluntary { stroke: url(#hillahStripes); stroke-opacity: .22; }
+.pf-track.seasonal { stroke: var(--layer-seasonal-track); }
+.pf-seg.fard { stroke: var(--layer-fard); }
+.pf-seg.sunnah { stroke: var(--layer-sunnah); }
+.pf-seg.nafl { stroke: var(--layer-nafl); }
+.pf-seg.voluntary { stroke: url(#hillahStripes); }
+.pf-seg.seasonal { stroke: var(--layer-seasonal); }
+.pf-edge { stroke: transparent; }
+.pf-edge.fard { stroke: var(--layer-fard-edge); }
+.pf-edge.nafl { stroke: var(--layer-nafl-edge); }
+.pf-disc { fill: var(--layer-fard); stroke: var(--layer-fard-edge); stroke-width: 1.5; }
+/* A ring is solid with a soft glow only once all of its segments are done. */
+.pf-ring.closed.fard .pf-seg { filter: drop-shadow(0 0 3px color-mix(in srgb, var(--layer-fard) 55%, transparent)); }
+.pf-ring.closed.sunnah .pf-seg { filter: drop-shadow(0 0 3px color-mix(in srgb, var(--layer-sunnah) 70%, transparent)); }
+.pf-ring.closed.nafl .pf-seg { filter: drop-shadow(0 0 3px var(--layer-nafl-edge)); }
+.pf-ring.closed.voluntary .pf-seg { filter: drop-shadow(0 0 3px color-mix(in srgb, var(--layer-hillah-red) 60%, transparent)); }
+.pf-ring.closed.seasonal .pf-seg { filter: drop-shadow(0 0 3px color-mix(in srgb, var(--layer-seasonal) 70%, transparent)); }
+.pf-mini .pf-ring.closed .pf-seg { filter: none; }
+.pf-disc { filter: drop-shadow(0 0 3px color-mix(in srgb, var(--layer-fard) 45%, transparent)); }
+.pf .sweep { animation: pf-sweep .4s cubic-bezier(.2,.8,.2,1) both; }
+.pf .closing { animation: pf-close .5s ease-out both; }
+@keyframes pf-sweep { from { stroke-dasharray: 0 100; } }
+@keyframes pf-close { from { opacity: .45; } }
+.pf-reward { fill: var(--layer-sunnah); font-family: "Alhamdulillah Ruqaa", "Aref Ruqaa", "Amiri", "Arabic Typesetting", "Traditional Arabic", serif; font-weight: 700; pointer-events: none; }
+.pf-reward.fade-in { animation: pf-fade .6s ease-out .15s both; }
+@keyframes pf-fade { from { opacity: 0; } }
+.legend-dot { display: inline-block; width: 0.5625rem; height: 0.5625rem; border-radius: 50%; }
+.legend-dot.fard { background: var(--layer-fard); box-shadow: 0 0 0 0.0625rem var(--layer-fard-line); }
+.legend-dot.sunnah { background: var(--layer-sunnah); }
+.legend-dot.nafl { background: var(--layer-nafl); box-shadow: 0 0 0 0.0625rem var(--layer-nafl-edge); }
+.legend-dot.voluntary { background: var(--layer-hillah); }
+.legend-dot.seasonal { background: var(--layer-seasonal); }
+.progress-legend { flex-wrap: wrap; row-gap: .35rem; }
+/* Prayer parts in performance order: large Fard circle, smaller Sunnah/Nafl. */
+.prayer-parts { display: flex; align-items: flex-start; margin-top: 0.625rem; }
+.part-link { flex: 0 0 0.375rem; height: 0.125rem; margin-top: 0.6875rem; border-radius: 0.0625rem; background: var(--line); }
+.part-tick { flex: 1 1 0; min-width: 0; display: flex; flex-direction: column; align-items: center; gap: 0.25rem; padding: 0.1875rem 0.0625rem; border: 0; border-radius: 0.5rem; background: transparent; color: var(--muted); font-size: 0.5rem; line-height: 1.25; text-align: center; overflow-wrap: anywhere; cursor: pointer; }
+.part-tick i { display: grid; place-items: center; width: 1rem; height: 1rem; margin-top: 0.1875rem; border: 0.125rem solid var(--layer-sunnah); border-radius: 50%; font-style: normal; font-size: 0.5625rem; font-weight: 800; color: #ffffff; transition: background .16s ease, transform .16s ease; }
+.part-tick.fard i { width: 1.33rem; height: 1.33rem; margin-top: 0; border-color: var(--layer-fard-line); font-size: 0.8125rem; color: var(--layer-fard-ink); }
+.part-tick.fard.done i { border-color: var(--layer-fard-line); background: var(--layer-fard); box-shadow: 0 0 0 0.0625rem var(--layer-fard-edge); }
+.part-tick.sunnah.done i { background: var(--layer-sunnah); }
+.part-tick.nafl i { border-color: var(--layer-nafl); box-shadow: 0 0 0 0.0625rem var(--layer-nafl-edge); }
+.part-tick.nafl.done i { background: var(--layer-nafl); }
+.part-tick.done span { color: var(--text); }
+.part-tick:not(:disabled):hover i { transform: scale(1.07); }
+.part-tick:not(:disabled):hover span { color: var(--text); }
+.part-tick:disabled { cursor: default; }
+.prayer-parts.is-closed .part-tick { opacity: .45; }
+
+/* Live-event ticks use their layer's colour (shared tokens). */
+.round-check.layer-fard:hover { border-color: var(--layer-fard-line); }
+.round-check.layer-fard[aria-pressed="true"] { border-color: var(--layer-fard-line); background: var(--layer-fard); color: var(--layer-fard-ink); }
+.round-check.layer-voluntary:hover { border-color: var(--layer-hillah-red); }
+.round-check.layer-voluntary[aria-pressed="true"] { border-color: var(--layer-hillah-red); background: var(--layer-hillah); color: #ffffff; text-shadow: 0 0 0.125rem #000; }
+.round-check.layer-seasonal:hover { border-color: var(--layer-seasonal); }
+.round-check.layer-seasonal[aria-pressed="true"] { border-color: var(--layer-seasonal); background: var(--layer-seasonal); color: #141414; }
+.progress-visual.disc-done .progress-core-label { color: var(--layer-fard-ink); }
+.progress-core-label { position: relative; z-index: 1; color: var(--text); font: 750 0.75rem/1 ui-monospace, Consolas, monospace; font-variant-numeric: tabular-nums; }
+.progress-caption { max-width: 31.25rem; margin-top: 0.875rem; color: var(--muted); font-size: 0.65625rem; line-height: 1.5; }
+.progress-legend { display: flex; align-items: center; gap: 1rem; margin-top: 0.8125rem; color: var(--muted); font-size: 0.5625rem; }
+.progress-legend span { display: inline-flex; align-items: center; gap: 0.375rem; }
+
+.occasion-banner { display: flex; flex-direction: column; gap: 0.1875rem; margin-top: 0.9375rem; padding: 0.875rem 1.0625rem; border: 0.0625rem solid color-mix(in srgb, var(--gold) 42%, var(--line)); border-radius: 0.875rem; background: color-mix(in srgb, var(--gold) 8%, var(--surface)); }
+.occasion-banner strong { color: var(--text); font-size: 0.8125rem; }
+.occasion-banner span { color: var(--muted); font-size: 0.625rem; line-height: 1.45; }
+.section-block { margin-top: 1.6875rem; }
+.section-heading { display: flex; justify-content: space-between; align-items: end; gap: 1rem; margin-bottom: 0.75rem; }
+.section-heading h2, .settings-title h1 { margin: 0.3125rem 0 0; font: 700 1.3125rem/1.15 var(--ui-font); letter-spacing: -.035em; }
+.muted { color: var(--muted); font-size: 0.625rem; line-height: 1.5; }
+.day-switch { display: flex; align-items: center; gap: 0.5625rem; color: var(--muted); font-size: 0.625rem; }
+.day-switch button { display: grid; place-items: center; width: 1.75rem; height: 1.75rem; border: 0.0625rem solid var(--line); border-radius: 0.5625rem; background: var(--surface); color: var(--text); font-size: 1.125rem; cursor: pointer; }
+.day-switch button:hover { border-color: var(--accent); background: var(--surface2); }
+
+.live-name { max-width: 100%; padding: 0; overflow: hidden; border: 0; background: transparent; color: var(--text); text-align: left; text-overflow: ellipsis; white-space: nowrap; font-size: 0.8125rem; font-weight: 700; cursor: pointer; }
+.live-name:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 0.1875rem; }
+
+.round-check { display: grid; place-items: center; flex: 0 0 1.5rem; width: 1.5rem; height: 1.5rem; padding: 0; border: 0.09375rem solid var(--muted); border-radius: 50%; background: transparent; color: white; font-size: 0.875rem; cursor: pointer; transition: background .15s ease, border-color .15s ease, transform .15s ease; }
+.round-check:hover { border-color: var(--good); transform: scale(1.07); }
+.round-check[aria-pressed="true"] { border-color: var(--good); background: var(--good); }
+.live-empty { grid-column: 1 / -1; display: flex; align-items: center; gap: 0.8125rem; padding: 1.0625rem 1.1875rem; border: 0.0625rem dashed var(--line); border-radius: 0.875rem; background: var(--surface); color: var(--muted); font-size: 0.6875rem; }
+.live-empty strong { display: block; color: var(--text); font-size: 0.75rem; }
+.live-empty small { display: block; margin-top: 0.25rem; color: var(--muted); font-size: 0.625rem; }
+.empty-mark { color: var(--accent); font-size: 1.5rem; }
+
+.prayer-grid { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0.625rem; }
+.prayer-card { min-width: 0; padding: 0.9375rem; border: 0.0625rem solid var(--line); border-radius: 0.875rem; background: var(--surface); transition: border-color .16s ease, background .16s ease; }
+.prayer-card.active { border-color: var(--accent); box-shadow: inset 0 0 0 0.0625rem color-mix(in srgb, var(--accent) 42%, transparent); background: color-mix(in srgb, var(--accent) 7%, var(--surface)); }
+.prayer-card.done { border-color: color-mix(in srgb, var(--good) 45%, var(--line)); background: color-mix(in srgb, var(--good) 8%, var(--surface)); }
+.prayer-card-head { display: flex; align-items: center; justify-content: space-between; gap: 0.375rem; }
+.prayer-name-button { max-width: 100%; padding: 0; border: 0; background: transparent; color: var(--text); text-align: left; font-size: 0.8125rem; font-weight: 700; cursor: pointer; }
+.prayer-name-button:hover { color: var(--accent); text-decoration: underline; text-underline-offset: 0.1875rem; }
+.prayer-index { color: var(--muted); font: 700 0.5625rem/1 ui-monospace, Consolas, monospace; }
+.prayer-time { margin-top: 0.8125rem; color: var(--text); font-size: 1.0625rem; font-weight: 650; font-variant-numeric: tabular-nums; letter-spacing: -.025em; white-space: nowrap; }
+.prayer-status { margin-top: 0.3125rem; color: var(--muted); font-size: 0.5625rem; }
+.prayer-note { margin: 0.5rem 0 0; color: var(--muted); font-size: 0.5625rem; line-height: 1.5; overflow-wrap: anywhere; }
+.prayer-note-ref { color: var(--accent); font-weight: 650; white-space: nowrap; }
+
+.voluntary-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0.5625rem; }
+.voluntary-item { min-width: 0; padding: 0.8125rem 0.9375rem; border: 0.0625rem solid var(--line); border-radius: 0.8125rem; background: var(--surface); }
+.voluntary-item.done { border-color: color-mix(in srgb, var(--good) 45%, var(--line)); }
+.voluntary-item summary { display: flex; align-items: center; justify-content: space-between; gap: 0.625rem; cursor: pointer; list-style: none; }
+.voluntary-item summary::-webkit-details-marker { display: none; }
+.voluntary-summary-main { min-width: 0; }
+.voluntary-item strong { display: block; color: var(--text); font-size: 0.75rem; }
+.voluntary-item small { display: block; margin-top: 0.25rem; color: var(--muted); font-size: 0.5625rem; line-height: 1.4; }
+
+.voluntary-empty { grid-column: 1 / -1; padding: 1rem; border: 0.0625rem dashed var(--line); border-radius: 0.75rem; color: var(--muted); font-size: 0.625rem; }
+
+/* Live notice during a prohibited interval: same gold accent as the Zawal row, kept subtle. */
+footer { padding: 1.75rem 0 0; color: var(--muted); text-align: center; font-size: 0.5625rem; }
+
+.settings-title { display: flex; justify-content: space-between; align-items: center; margin: 1.625rem 0 1.0625rem; }
+.settings-title h1 { font-size: 1.6875rem; }
+.settings-title p { margin: 0.375rem 0 0; }
+.settings-card { padding: 1.3125rem 1.4375rem; margin-bottom: 0.8125rem; }
+.settings-card h2 { margin: 0.25rem 0 0.5rem; font-size: 1rem; font-weight: 700; letter-spacing: -.02em; }
+.settings-card p { line-height: 1.55; }
+.settings-card label { display: block; margin: 0.875rem 0 0.375rem; color: var(--text); font-size: 0.625rem; font-weight: 700; }
+.settings-card input:not([type="checkbox"]), .settings-card select {
+  width: 100%; min-width: 0; padding: 0.6875rem 0.75rem; border: 0.0625rem solid var(--line); border-radius: 0.625rem;
+  outline: none; background: var(--bg); color: var(--text); font: 0.75rem var(--ui-font);
+}
+.settings-card input:focus, .settings-card select:focus { border-color: var(--accent); box-shadow: 0 0 0 0.1875rem color-mix(in srgb, var(--accent) 12%, transparent); }
+.settings-card input::placeholder { color: var(--muted); opacity: .65; }
+.inline-input { display: flex; align-items: stretch; gap: 0.5rem; }
+.inline-input input { flex: 1; }
+.primary-button, .secondary-button, .danger-button {
+  padding: 0.625rem 0.9375rem; border: 0.0625rem solid transparent; border-radius: 0.625rem; font-size: 0.625rem; font-weight: 750; cursor: pointer; transition: transform .15s ease, filter .15s ease, border-color .15s ease;
+}
+.primary-button { background: var(--accent); color: color-mix(in srgb, var(--accent) 15%, #09110d); }
+.secondary-button { border-color: var(--line); background: var(--surface2); color: var(--text); }
+.danger-button { border-color: color-mix(in srgb, var(--danger) 40%, var(--line)); background: transparent; color: var(--danger); }
+.primary-button:hover, .secondary-button:hover, .danger-button:hover { transform: translateY(-0.0625rem); filter: brightness(1.06); }
+.form-note { margin-top: 0.4375rem; color: var(--muted); font-size: 0.5625rem; line-height: 1.5; }
+.coordinate-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 0.75rem; }
+.location-save-row { display: flex; align-items: center; gap: 0.75rem; margin-top: 0.8125rem; }
+.location-save-row .form-note { margin: 0; }
+.local-badge { display: inline-flex; align-items: center; gap: 0.4375rem; padding: 0.375rem 0.625rem; border: 0.0625rem solid var(--line); border-radius: 6.25rem; color: var(--muted); font-size: 0.5625rem; }
+.local-badge i { width: 0.375rem; height: 0.375rem; border-radius: 50%; background: var(--good); }
+.saved-location { display: flex; align-items: center; gap: 0.75rem; margin-top: 1.0625rem; padding: 0.8125rem 0.875rem; border: 0.0625rem solid var(--line); border-radius: 0.75rem; background: var(--surface2); }
+.saved-location-icon { display: grid; place-items: center; width: 2.0625rem; height: 2.0625rem; border-radius: 0.625rem; background: var(--accent2); color: var(--accent); font-size: 1.1875rem; }
+.saved-location small, .saved-location strong, .saved-location span:not(.saved-location-icon) { display: block; }
+.saved-location small { color: var(--muted); font-size: 0.5rem; }
+.saved-location strong { margin-top: 0.125rem; font-size: 0.6875rem; }
+.saved-location span:not(.saved-location-icon) { margin-top: 0.125rem; color: var(--muted); font: 0.5625rem ui-monospace, Consolas, monospace; }
+.setting-row { display: flex; align-items: center; justify-content: space-between; gap: 0.9375rem; padding: 0.75rem 0; border-bottom: 0.0625rem solid var(--line); }
+.setting-row:last-of-type { border: 0; }
+.setting-row strong { display: block; font-size: 0.625rem; }
+.setting-row small { display: block; margin-top: 0.25rem; color: var(--muted); font-size: 0.5625rem; line-height: 1.4; }
+.pill { flex: 0 0 auto; padding: 0.3125rem 0.5625rem; border-radius: 6.25rem; background: var(--surface2); color: var(--accent); font-size: 0.5rem; font-weight: 700; }
+.calculation-profile > summary { display: flex; align-items: center; justify-content: space-between; gap: 0.9375rem; list-style: none; cursor: pointer; }
+.calculation-profile > summary::-webkit-details-marker { display: none; }
+.calculation-profile > summary::after { content: "＋"; color: var(--muted); font-size: 0.9375rem; }
+.calculation-profile[open] > summary::after { content: "−"; }
+.calculation-profile > summary h2 { margin: 0.1875rem 0 0; font-size: 1.0625rem; }
+.profile-summary { color: var(--muted); font-size: 0.5625rem; }
+.check-row { display: flex !important; align-items: center; gap: 0.5625rem; font-weight: 500 !important; cursor: pointer; }
+.check-row input { width: 0.9375rem; height: 0.9375rem; accent-color: var(--accent); }
+.theme-preview { display: flex; gap: 0.5rem; margin-top: 0.625rem; }
+
+.adjustment-grid { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 0.625rem; }
+.adjustment-item { display: flex !important; align-items: center; justify-content: space-between; gap: 0.5rem; margin: 0 !important; padding: 0.5625rem 0.625rem; border: 0.0625rem solid var(--line); border-radius: 0.625rem; background: var(--bg); }
+.adjustment-item span { font-size: 0.5625rem; }
+.adjustment-item input { max-width: 4.5rem; padding: 0.4375rem 0.5rem !important; text-align: right; }
+.data-actions { display: flex; gap: 0.5625rem; margin-top: 0.875rem; }
+
+.countdown-back { display: inline-flex; align-items: center; gap: 0.5rem; margin: 1.5625rem 0 0.8125rem; padding: 0.5625rem 0.8125rem; border: 0.0625rem solid var(--line); border-radius: 0.625rem; background: var(--surface); color: var(--text); font-size: 0.625rem; font-weight: 700; cursor: pointer; }
+.countdown-back:hover { border-color: var(--accent); background: var(--surface2); }
+.countdown-focus { max-width: 48.75rem; margin: 0.9375rem auto; padding: 3.375rem 2.1875rem 2.8125rem; text-align: center; background: linear-gradient(145deg, var(--surface), color-mix(in srgb, var(--accent) 8%, var(--surface))); }
+.countdown-focus h1 { margin: 0.8125rem 0 0; font-size: 2.0625rem; letter-spacing: -.045em; }
+.countdown-large { margin-top: 1.25rem; color: var(--accent); font: 760 clamp(2.875rem, 7vw, 4.75rem)/1.08 var(--app-font); letter-spacing: -.055em; font-variant-numeric: tabular-nums; }
+.countdown-description { margin-top: 0.875rem; color: var(--muted); font-size: 0.6875rem; }
+.countdown-start { margin-top: 1.6875rem; padding-top: 1.125rem; border-top: 0.0625rem solid var(--line); color: var(--muted); font-size: 0.6875rem; }
+.toast { position: fixed; z-index: 50; left: 50%; bottom: 1.375rem; transform: translate(-50%, 0.875rem); max-width: min(32.5rem, calc(100vw - 2.5rem)); padding: 0.6875rem 1.0625rem; border: 0.0625rem solid var(--line); border-radius: 0.6875rem; background: var(--text); color: var(--bg); box-shadow: var(--shadow); font-size: 0.625rem; font-weight: 650; opacity: 0; pointer-events: none; transition: opacity .18s ease, transform .18s ease; }
+.toast.show { transform: translate(-50%, 0); opacity: 1; }
+.compact-mode .app-shell { max-width: 65.625rem; padding-top: 1.0625rem; }
+
+.compact-mode .section-block { margin-top: 1.25rem; }
+
+.compact-mode .prayer-card { padding: 0.6875rem; }
+.compact-mode .settings-card { padding: 1rem 1.125rem; }
+
+@media (max-width: 1000px) {
+  .app-shell { padding: 1.25rem 1.375rem 2.125rem; }
+
+}
+@media (max-width: 780px) {
+  html, body { min-width: 0; }
+  .app-shell { padding: 0.9375rem 0.875rem 1.875rem; }
+  .topbar { gap: 0.625rem; }
+  
+  .brand-name { font-size: 1.125rem; }
+
+  .next-card, .progress-panel { min-height: auto; }
+  .ref-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem; padding: .5rem; }
+  .prayer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .voluntary-list { grid-template-columns: 1fr; }
+    .countdown-focus { padding: 2.375rem 1.125rem; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+}
+
+/* High-resolution desktop layouts. These query the actual app content width,
+   not the monitor model, so the same project adapts while the window is resized. */
+@container app-shell (min-width: 1450px) {
+  
+  .voluntary-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+  #settingsView { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: start; gap: .85rem; }
+  #settingsView > .settings-title,
+  #settingsView > .location-settings,
+  #settingsView > .settings-card:last-of-type { grid-column: 1 / -1; }
+  #settingsView > .settings-card { min-width: 0; }
+  .settings-title { margin-top: .9rem; }
+}
+
+@container app-shell (min-width: 1900px) {
+  .topbar { min-height: 5.25rem; padding-bottom: 1.25rem; }
+
+  .next-card, .progress-panel { min-height: 16rem; padding: 1.9rem 2.1rem; }
+  .progress-visual { flex-basis: 8rem; width: 8rem; height: 8rem; }
+  .section-block { margin-top: 1.8rem; }
+  
+  .prayer-card { padding: 1.1rem; }
+  .settings-card { padding: 1.45rem 1.65rem; }
+  .countdown-focus { max-width: 64rem; padding: 3.2rem 2.8rem; }
+}
+
+@container app-shell (max-width: 1100px) {
+  
+  #settingsView { display: block; }
+}
+
+@container app-shell (max-width: 780px) {
+  .ref-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem; padding: .5rem; }
+  .prayer-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .voluntary-list { grid-template-columns: 1fr; }
+  }
+
+/* Weekly review and Islamic-history panel */
+.weekly-review { padding: 1rem; border: 1px solid var(--line); border-radius: 1rem; background: var(--surface); }
+.week-summary { display:grid; grid-template-columns:repeat(auto-fit,minmax(6.5rem,1fr)); gap:1rem; }
+.week-summary > div { display:flex; flex-direction:column; gap:.35rem; min-width:0; }
+.week-summary span { color:var(--muted); font-size:.62rem; letter-spacing:.07em; }
+.week-summary strong { font-size:1.25rem; font-weight:750; }
+.week-summary strong small { color:var(--muted); font-size:.7rem; font-weight:500; }
+.week-summary .week-range strong { font-size:.85rem; font-weight:650; }
+/* Seven full days, Saturday → Friday. Each day: a mini progress figure. */
+.week-constellation { display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:.55rem; margin-top:1.15rem; }
+.week-day { position:relative; display:flex; min-width:0; flex-direction:column; align-items:center; gap:.4rem; padding:.65rem .2rem .55rem; border:1px solid transparent; border-radius:.8rem; background:var(--surface2); }
+.week-day > strong { font-size:.7rem; }
+.week-day .week-date { margin-top:-.3rem; color:var(--muted); font-size:.55rem; }
+.week-day.today { border-color:var(--accent); box-shadow:0 0 0 1px color-mix(in srgb,var(--accent) 25%,transparent); }
+.week-day.friday { background:color-mix(in srgb,var(--good) 9%,var(--surface2)); border-color:color-mix(in srgb,var(--good) 35%,transparent); }
+.week-day.friday.today { border-color:var(--accent); }
+.week-day.future { opacity:.55; }
+.week-figure { display:block; width:3.25rem; height:3.25rem; }
+.compact-mode .week-figure { width:2.6rem; height:2.6rem; }
+.week-day small { color:var(--muted); font-size:.55rem; text-align:center; white-space:nowrap; }
+.week-jumuah { font-style:normal; font-size:.5rem; font-weight:650; color:var(--good); text-align:center; line-height:1.15; overflow-wrap:anywhere; }
+.week-foot { margin:.9rem 0 0; color:var(--muted); font-size:.65rem; }
+.on-this-day-card { padding:1rem 1.1rem; border:1px solid var(--line); border-radius:1rem; background:var(--surface); }
+.on-this-day-card strong { display:block; font-size:.95rem; }
+.on-this-day-card p { max-width:70rem; margin:.5rem 0 0; color:var(--muted); font-size:.75rem; line-height:1.65; }
+.rakah-line { display:block; margin-top:.45rem; color:var(--accent); font-size:.7rem; font-weight:700; line-height:1.55; }
+
+@media(max-width:680px) { .week-constellation { gap:.15rem; } .week-day { padding:.5rem 0; } .week-day small { font-size:.48rem; } .week-summary { gap:.5rem; grid-template-columns:repeat(2,minmax(0,1fr)); } .week-summary .week-range { grid-column:1 / -1; } .week-jumuah { font-size:.42rem; } .week-square i { width:.45rem; height:.45rem; } }
+.hijri-date-label { margin-top:.18rem; color:var(--muted); font-size:.62rem; letter-spacing:.01em; }
+
+/* Long rak‘ah lines (e.g. Jumu’ah) wrap instead of running under the countdown. */
+
+/* Individually configured end-of-window reminders. */
+.reminder-settings { margin-top: 1rem; padding-top: .9rem; border-top: 1px solid var(--line); }
+.reminder-settings h3 { margin: 0; font-size: .82rem; }
+.event-reminder-settings { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: .5rem; margin-top: .65rem; }
+.event-reminder-row { display:flex; align-items:center; justify-content:space-between; gap:.7rem; padding:.55rem .65rem; border:1px solid var(--line); border-radius:.65rem; background:var(--surface2); min-width:0; }
+.event-reminder-row label { margin:0; font-size:.68rem; font-weight:650; }
+.event-reminder-row select { width:auto; min-width:5.4rem; max-width:7rem; padding:.35rem .45rem; border:1px solid var(--line); border-radius:.45rem; background:var(--surface); color:var(--text); font-size:.65rem; }
+.pre-reminder-settings { margin-top: .9rem; }
+.pre-reminder-field { display:inline-flex; align-items:center; gap:.35rem; }
+.pre-reminder-field small { font-size:.6rem; color:var(--muted); white-space:nowrap; }
+.event-reminder-row .pre-reminder-input { width:4.2rem; padding:.35rem .45rem; border:1px solid var(--line); border-radius:.45rem; background:var(--surface); color:var(--text); font-size:.65rem; text-align:right; }
+.event-reminder-row .pre-reminder-input:invalid { border-color: var(--gold); }
+.progress-visual { filter: drop-shadow(0 0 .35rem color-mix(in srgb, var(--accent) 12%, transparent)); }
+@media (max-width: 700px) { .topbar { flex-wrap:wrap; }  .hero-grid { grid-template-columns:minmax(0,1fr); } .app-shell { padding-left: .75rem; padding-right:.75rem; } }
+@media (max-height: 560px) { .app-shell { padding-top:.65rem; } .topbar { min-height:3rem; padding-bottom:.5rem; } }
+.quran-verse { margin-top:.8rem; padding:.85rem 1rem; border:1px solid var(--line); border-radius:.75rem; background:var(--surface2); }
+
+.quran-verse p { margin:.35rem 0 0; }
+
+/* Small maker's signature stays unobtrusive and follows the selected language. */
+.app-footer { display:flex; align-items:flex-end; justify-content:flex-end; gap:1rem; margin-top:2.5rem; padding-top:1rem; border-top:1px solid var(--line); color:var(--muted); font-size:.55rem; }
+/* Tiny copyright line fixed in the bottom-left corner on every page. */
+.copyright-corner { position:fixed; z-index:40; left:.55rem; bottom:.35rem; color:color-mix(in srgb,var(--muted) 78%,transparent); font-size:.46rem; line-height:1.2; letter-spacing:.025em; white-space:nowrap; pointer-events:none; user-select:none; }
+.keyboard-help { width:min(28rem,calc(100vw - 2rem)); max-width:none; padding:1.25rem; border:1px solid var(--line); border-radius:1rem; color:var(--text); background:var(--surface); box-shadow:0 1.5rem 4rem rgba(0,0,0,.38); }
+.keyboard-help::backdrop { background:rgba(0,0,0,.55); backdrop-filter:blur(3px); }
+.keyboard-help-head { display:flex; align-items:center; justify-content:space-between; gap:1rem; }
+.keyboard-help-head h2 { margin:0; font-size:1.05rem; }
+.keyboard-help dl { display:grid; gap:.4rem; margin:1rem 0 0; }
+.keyboard-help dl div { display:flex; justify-content:space-between; align-items:center; gap:1rem; padding:.5rem 0; border-bottom:1px solid var(--line); }
+.keyboard-help dt { min-width:5rem; padding:.2rem .45rem; border:1px solid var(--line); border-radius:.35rem; background:var(--surface2); font:600 .72rem ui-monospace,Consolas,monospace; text-align:center; }
+.keyboard-help dd { margin:0; color:var(--muted); font-size:.72rem; text-align:right; }
+
+@media (max-width:560px) { .app-footer { align-items:flex-start; flex-direction:column; } }
+
+.description-group { border:0; border-radius:.8rem; overflow:hidden; background:var(--surface); margin-bottom:.75rem; }
+.description-group h3 { margin:0; padding:.7rem 1rem; color:var(--accent); background:var(--surface2); font-size:.7rem; letter-spacing:.04em; }
+
+/* Daily content carousels (history, Qur'anic verses, Sunnah & Seerah, date-specific prayers). */
+.carousel-host { position:relative; }
+.carousel-host.has-carousel:focus-visible { outline:0.125rem solid var(--accent); outline-offset:0.1875rem; }
+.carousel-nav { float:right; display:flex; align-items:center; gap:.4rem; margin:0 0 .4rem .75rem; color:var(--muted); font-size:.62rem; }
+.carousel-button { display:grid; place-items:center; width:1.6rem; height:1.6rem; padding:0; border:1px solid var(--line); border-radius:.5rem; background:var(--surface2); color:var(--text); font-size:1rem; line-height:1; cursor:pointer; transition:border-color .15s ease, background .15s ease; }
+.carousel-button:hover { border-color:var(--accent); background:var(--surface); }
+.carousel-counter { min-width:2.6rem; text-align:center; font-variant-numeric:tabular-nums; font-weight:650; }
+.carousel-slide::after { content:""; display:block; clear:both; }
+.voluntary-carousel { min-width:0; }
+.voluntary-carousel .carousel-nav { float:none; justify-content:flex-end; margin:0 0 .35rem; }
+.seasonal-carousel { padding:.4rem 1rem .2rem; }
+.seasonal-carousel .carousel-slide details { padding:.35rem 0 .6rem; border-bottom:0; }
+
+/* Prayer reference cards (v1.3.2): a reading layout, not the Daily prayers card.
+   The verse or hadith is the focus; rak'ahs and guidance sit below, quieter. */
+.ref-grid { display:grid; grid-template-columns:repeat(5, minmax(0, 1fr)); gap:.625rem; padding:.625rem; align-items:stretch; }
+.ref-card { display:flex; flex-direction:column; gap:.5rem; min-width:0; padding:.7rem .75rem .8rem; border:1px solid var(--line); border-radius:.8rem; background:var(--surface2); overflow-wrap:anywhere; }
+.seasonal-carousel .ref-card { margin:.2rem 0 .6rem; }
+.ref-title { margin:0; color:var(--accent); font-size:.7rem; font-weight:700; letter-spacing:.02em; line-height:1.35; }
+.ref-quote { position:relative; margin:0; padding:.55rem 0 0 1.45rem; overflow:visible; }
+.ref-quote::before { content:"\201C"; position:absolute; left:0; top:.15rem; color:var(--accent); font-family:Georgia, "Times New Roman", serif; font-size:2rem; line-height:1; }
+.ref-quote blockquote { margin:0; color:var(--text); font-size:.72rem; line-height:1.52; font-weight:500; }
+.ref-quote figcaption { margin-top:.3rem; color:var(--accent); font-size:.55rem; font-weight:650; line-height:1.4; }
+.ref-quote figcaption::before { content:"\2014\00a0"; }
+.ref-quote-minor { padding:.1rem 0 0 .8rem; border-left:.125rem solid var(--line); }
+.ref-quote-minor::before { content:none; }
+.ref-quote-minor blockquote { font-size:.68rem; font-weight:400; line-height:1.6; }
+.ref-note { margin:0; color:var(--muted); font-size:.56rem; font-style:italic; line-height:1.5; }
+.ref-practical { margin-top:auto; padding-top:.5rem; border-top:1px solid var(--line); color:var(--muted); font-size:.56rem; line-height:1.48; }
+.ref-practical p { margin:0 0 .3rem; }
+.ref-practical p:last-child { margin-bottom:0; }
+.ref-practical strong { color:var(--text); font-weight:650; }
+
+/* "Available right now" is always the first block of the home page (empty state included), directly above the next-event hero. */
+
+/* Calm style while the next event is a prohibited (disliked) interval, as in the Zawal row. */
+.next-card.is-interval .next-name { color: var(--gold); }
+.next-card.is-interval .next-name:hover { color: var(--gold); }
+.next-card.is-interval { background-image: linear-gradient(color-mix(in srgb, var(--gold) 5%, transparent), color-mix(in srgb, var(--gold) 5%, transparent)); }
+
+/* Locked ticks (v1.3.2): a marked event can be unmarked only until the next prayer event begins.
+   Colours stay; a small padlock and a tooltip ("Locked after Dhuhr began") say why it no longer changes. */
+.lock-mark { position:relative; display:inline-block; flex:0 0 auto; width:.6em; height:.44em; margin-inline-start:.4em; border-radius:.09em; background:currentColor; opacity:.5; vertical-align:baseline; font-size:inherit; cursor:default; }
+.lock-mark::before { content:""; position:absolute; left:50%; bottom:100%; width:.34em; height:.3em; transform:translateX(-50%); border:.1em solid currentColor; border-bottom:0; border-radius:.2em .2em 0 0; box-sizing:border-box; }
+.lock-mark::after { content:attr(data-lock-tip); display:none; position:absolute; left:0; bottom:calc(100% + .7rem); z-index:40; width:max-content; max-width:min(14rem,70vw); padding:.3rem .55rem; border:.0625rem solid var(--line); border-radius:.5rem; background:var(--surface3); box-shadow:0 .25rem .9rem rgba(0,0,0,.28); color:var(--text); font-size:.6rem; font-weight:500; line-height:1.4; white-space:normal; text-align:start; opacity:1; pointer-events:none; }
+.lock-mark:hover::after, .lock-mark:focus-visible::after, .is-locked:hover > .lock-mark::after, .is-locked:focus-visible > .lock-mark::after { display:block; }
+.lock-mark:focus-visible { outline:.125rem solid var(--accent); outline-offset:.2rem; }
+.round-check.is-locked, .part-tick.is-locked { position:relative; cursor:default; }
+.round-check.is-locked:hover { transform:none; }
+.part-tick.is-locked:hover i, .part-tick.is-locked:hover span { transform:none; }
+.round-check.is-locked > .lock-mark, .part-tick.is-locked > .lock-mark { position:absolute; right:-.1rem; bottom:-.05rem; margin:0; font-size:.5rem; color:var(--text); opacity:.75; }
+.round-check.is-locked > .lock-mark::after, .part-tick.is-locked > .lock-mark::after { left:auto; right:0; font-size:.6rem; }
+.prayer-status .lock-mark, .voluntary-summary-main .lock-mark { font-size:.5625rem; }
+.week-day.is-locked { cursor:default; }
+@media (prefers-reduced-motion: reduce) { .lock-mark::after { transition:none; } }
+
+/* Sky panel (v1.3.3): one soft SVG with rounded corners. Sky gradients (night, day, dawn, dusk) cross-fade by the
+   sun's altitude; every colour is mixed from theme tokens. Animation is transform/opacity only. */
+/* Dynamic Celestial Observatory: same Home-page position, redesigned as a compact instrument panel. */
+
+.st-sky0 { stop-color:var(--sk-l0,#243044); } .st-sky1 { stop-color:var(--sk-l1,#3c4658); } .st-sky2 { stop-color:var(--sk-l2,#6a5436); }
+
+/* Prohibited interval between "available now" and the next prayer event (v1.3.2): same gold style as the Zawal row. */
+
+/* ===== v1.3.3 · "Available right now" is the primary section =====
+   Sizes use em/rem/clamp so they follow the root scale and all ten UI fonts; colours are theme tokens only.
+   One full-width card per event; the Next event / Progress row below keeps its previous size. */
+
+.live-name { font-size: 2.1em; line-height: 1.12; white-space: normal; overflow: visible; text-overflow: clip; overflow-wrap: anywhere; }
+
+.compact-mode .live-name { font-size: 1.7em; }
+
+.live-empty { font-size: clamp(0.9375rem, 0.82rem + 0.4vw, 1.2rem); padding: 1.4em 1.6em; }
+
+/* Forbidden-time card: only while an interval is in progress, violet accent from theme tokens */
+.forbidden-card { --forbidden: #c9953c; --forbidden-ink: color-mix(in srgb, var(--forbidden) 78%, var(--text)); display: flex; flex-wrap: wrap; align-items: stretch; justify-content: space-between; gap: 1em 1.5em; min-width: 0; min-height: 7.5em; padding: 1.15em 1.5em; border: 1px solid color-mix(in srgb, #aab3bb 28%, var(--line)); border-radius: 1em; font-size: clamp(0.9375rem, 0.82rem + 0.4vw, 1.4rem); background: linear-gradient(160deg, color-mix(in srgb, var(--surface) 92%, #8aa0b4), color-mix(in srgb, var(--surface) 96%, #000)); box-shadow: inset 0.1875em 0 0 color-mix(in srgb, var(--forbidden) 62%, transparent), inset 0 1px 0 rgba(255,255,255,.06), var(--shadow); }
+.forbidden-main { flex: 1 1 15em; min-width: 0; display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: 0.35em; }
+.forbidden-type { color: var(--forbidden-ink); font-size: 0.7em; font-weight: 800; letter-spacing: .18em; }
+.forbidden-line { color: var(--text); font-size: clamp(1.3em, 1em + 0.9vw, 1.9em); line-height: 1.2; overflow-wrap: anywhere; }
+.forbidden-range { color: var(--muted); font-size: 0.9em; font-variant-numeric: tabular-nums; }
+.forbidden-detail { color: var(--muted); font-size: 0.76em; line-height: 1.45; }
+.forbidden-side { flex: 0 1 17em; min-width: min(100%, 12em); display: flex; flex-direction: column; justify-content: center; gap: 0.5em; margin-inline-start: auto; }
+.forbidden-left-box { cursor: default; border-color: color-mix(in srgb, var(--forbidden) 38%, var(--line)); background: linear-gradient(180deg, color-mix(in srgb, var(--forbidden) 8%, var(--surface2)), color-mix(in srgb, var(--forbidden) 3%, var(--surface2))); }
+.forbidden-left-box:hover { transform: none; border-color: color-mix(in srgb, var(--forbidden) 38%, var(--line)); }
+.forbidden-progress { height: 0.25em; min-height: 3px; border-radius: 999px; overflow: hidden; background: color-mix(in srgb, var(--text) 12%, transparent); }
+.forbidden-progress > i { display: block; height: 100%; border-radius: inherit; background: linear-gradient(90deg, color-mix(in srgb, var(--forbidden) 70%, #fff3c4), var(--forbidden)); transition: width 1s linear; }
+.forbidden-next { display: block; color: var(--muted); font-size: 0.78em; line-height: 1.4; text-align: center; overflow-wrap: anywhere; }
+.forbidden-left { color: var(--forbidden-ink) !important; }
+.compact-mode .forbidden-card { min-height: 5.75em; padding: 0.85em 1.2em; }
+
+/* Daily prayers: quiet countdown under the Qur'an/hadith line */
+.prayer-eta { margin-top: 0.5rem; color: var(--muted); font-size: 0.6875rem; font-weight: 650; font-variant-numeric: tabular-nums; }
+.prayer-eta.is-current { color: var(--good); }
+.prayer-eta[hidden] { display: none; }
+
+/* Settings: send a real test toast and show what Windows did (v1.3.3) */
+.test-notification { margin: .9rem 0 1rem; }
+.notification-status { margin: .5rem 0 0; padding: 0; white-space: pre-wrap; overflow-wrap: anywhere; font: inherit; font-size: .75rem; line-height: 1.5; color: var(--muted); }
+.notification-status:empty { display: none; }
+
+/* v1.3.3: hidden home sections stay hidden whatever display rule the section has; prayer descriptions are
+   three rows stacked vertically, each sized to its content (never side by side). */
+.section-block[hidden] { display: none !important; }
+.description-list { display: flex; flex-direction: column; gap: .75rem; overflow: visible; border: 0; border-radius: 0; background: transparent; }
+.description-list .description-group { margin: 0; }
+.interval-readout small { white-space: pre-line; line-height: 1.6; }
+
+/* ===== v1.3.4 ===== */
+:root {
+  /* one spacing scale for the whole page: rem/clamp, so it follows the window width and the root font size */
+  --sp-1: clamp(.25rem, .2rem + .1vw, .35rem); --sp-2: clamp(.5rem, .42rem + .18vw, .7rem); --sp-3: clamp(.75rem, .62rem + .3vw, 1.05rem);
+  --sp-4: clamp(1rem, .85rem + .4vw, 1.4rem); --sp-5: clamp(1.4rem, 1.15rem + .6vw, 2rem);
+  --girih: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 12'%3E%3Cpolygon points='12.0,1.4 12.9,3.8 15.3,2.7 14.2,5.1 16.6,6.0 14.2,6.9 15.3,9.3 12.9,8.2 12.0,10.6 11.1,8.2 8.7,9.3 9.8,6.9 7.4,6.0 9.8,5.1 8.7,2.7 11.1,3.8' fill='black'/%3E%3C/svg%3E"); --arch: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 18'%3E%3Cpath d='M2 10c7-8 16-9 26-5 7 3 14 3 18 1-7 2-14 7-22 7C14 14 7 14 2 10z' fill='black'/%3E%3C/svg%3E");
+}
+.topbar { gap: var(--sp-4); padding-bottom: var(--sp-3); min-height: 0; }
+
+main > .section-block, main > section { margin-top: var(--sp-4); margin-bottom: 0; }
+main > :first-child{ margin-top: 0; }
+
+ .prayer-grid { gap: var(--sp-3); }
+.section-heading { margin-bottom: var(--sp-3); }
+.section-heading h2, .section-heading .eyebrow { margin-top: 0; }
+.brand-sub { margin-top: var(--sp-1); font-size: clamp(.72rem, .68rem + .15vw, .85rem); }
+
+.brand-name { font-size: clamp(1.3rem, 1.15rem + .5vw, 1.7rem); }
+
+/* Available right now: same visual weight as the Next event / Progress cards, with a light geometric frame */
+
+.live-name { font-size: 1.9em; }
+
+/* Fard tick (the round check) is exactly 33% larger than Sunnah and Nafl, same em basis */
+
+.forbidden-card { min-height: 0; padding: var(--sp-3) calc(var(--sp-4) + .4em); }
+.live-empty { padding: var(--sp-3) var(--sp-4); }
+
+.on-this-day-card[hidden], .description-group[hidden] { display: none !important; }
+.card-toggles { display: flex; flex-direction: column; gap: var(--sp-1); margin: 0 0 var(--sp-2) 1.6rem; }
+.card-toggles .check-row { margin-top: 0; margin-bottom: 0; }
+.card-toggles input:disabled + * , .card-toggles:has(input:disabled) { opacity: .55; }
+/* Fullscreen: the page has no drag region; make sure nothing swallows pointer events there */
+.is-fullscreen, .is-fullscreen body { -webkit-app-region: no-drag; cursor: auto; }
+.is-fullscreen .app-shell { pointer-events: auto; }
+
+/* v1.3.5 refinement: keep simultaneous live events on one row whenever the available width permits. */
+
+/* Settings uses the same layered surfaces, spacing rhythm and restrained geometric framing as Home. */
+.settings-title { margin:var(--sp-4) 0 var(--sp-3); padding:0 0 var(--sp-3); border-bottom:1px solid var(--line); }
+.settings-title h1 { font-size:clamp(1.5rem,1.25rem + .7vw,2rem); letter-spacing:-.035em; }
+.settings-card { position:relative; overflow:hidden; padding:var(--sp-4) var(--sp-4) var(--sp-3); margin-bottom:var(--sp-3); border:1px solid color-mix(in srgb,var(--accent) 22%,var(--line)); border-radius:var(--radius); background:linear-gradient(145deg,color-mix(in srgb,var(--accent) 3.5%,var(--surface)),var(--surface) 62%); box-shadow:var(--shadow); }
+.settings-card::before { content:""; position:absolute; inset:0 0 auto; height:2px; background:linear-gradient(90deg,transparent,color-mix(in srgb,var(--gold) 65%,var(--accent)),transparent); opacity:.72; pointer-events:none; }
+.settings-card > .eyebrow { margin-bottom:var(--sp-1); color:var(--accent); }
+.settings-card h2 { margin:.15rem 0 var(--sp-3); font-size:clamp(1rem,.9rem + .22vw,1.2rem); letter-spacing:-.025em; }
+.settings-card label { margin:var(--sp-3) 0 var(--sp-1); font-size:.68rem; letter-spacing:.01em; }
+.settings-card input:not([type="checkbox"]), .settings-card select { min-height:2.65rem; border-radius:.7rem; }
+.settings-card .form-note { line-height:1.55; }
+.settings-card .reminder-settings { margin-top:var(--sp-4); padding-top:var(--sp-3); border-top:1px solid color-mix(in srgb,var(--accent) 16%,var(--line)); }
+.settings-card .setting-row { padding:.75rem 0; border-bottom:1px solid color-mix(in srgb,var(--line) 72%,transparent); }
+.settings-card .setting-row:last-child { border-bottom:0; }
+
+/* Shared section framework: restrained edge light and layered surfaces for the content cards. */
+.section-heading { align-items:flex-end; padding-bottom:var(--sp-2); border-bottom:1px solid color-mix(in srgb,var(--accent) 17%,var(--line)); }
+.section-heading > div:first-child { position:relative; padding-inline-start:.7rem; }
+.section-heading > div:first-child::before { content:""; position:absolute; inset:.08rem auto .12rem 0; width:2px; border-radius:2px; background:linear-gradient(180deg,var(--gold),var(--accent)); opacity:.9; }
+.prayer-card, .voluntary-item, .on-this-day-card, .ref-card { position:relative; overflow:hidden; border-color:color-mix(in srgb,var(--accent) 18%,var(--line)); border-radius:1rem; background:linear-gradient(145deg,color-mix(in srgb,var(--accent) 3%,var(--surface)),var(--surface) 68%); box-shadow:0 5px 18px color-mix(in srgb,#000 5%,transparent); }
+.prayer-card::before, .voluntary-item::before, .on-this-day-card::before, .ref-card::before { content:""; position:absolute; inset:0 0 auto; height:1.5px; background:linear-gradient(90deg,transparent,color-mix(in srgb,var(--gold) 55%,var(--accent)),transparent); opacity:.68; pointer-events:none; }
+.prayer-card.done { border-color:color-mix(in srgb,var(--good) 45%,var(--line)); background:linear-gradient(145deg,color-mix(in srgb,var(--good) 8%,var(--surface)),var(--surface) 72%); }
+.prayer-card.active { border-color:var(--accent); box-shadow:inset 0 0 0 1px color-mix(in srgb,var(--accent) 35%,transparent),0 6px 20px color-mix(in srgb,var(--accent) 8%,transparent); }
+.voluntary-item[open] { border-color:color-mix(in srgb,var(--accent) 42%,var(--line)); }
+.on-this-day-card + .on-this-day-card { margin-top:var(--sp-2); }
+.description-group { border:1px solid color-mix(in srgb,var(--accent) 20%,var(--line)); border-radius:1rem; box-shadow:var(--shadow); }
+.description-group h3 { background:linear-gradient(90deg,color-mix(in srgb,var(--accent) 9%,var(--surface2)),var(--surface2)); border-bottom:1px solid color-mix(in srgb,var(--accent) 15%,var(--line)); }
+.ref-card { background:linear-gradient(145deg,var(--surface2),color-mix(in srgb,var(--accent) 3%,var(--surface2))); }
+.weekly-review { border-color:color-mix(in srgb,var(--accent) 20%,var(--line)); background:linear-gradient(145deg,color-mix(in srgb,var(--accent) 3%,var(--surface)),var(--surface)); box-shadow:var(--shadow); }
+
+.home-board {
+  height: calc(100dvh - 5.6rem);
+  display: grid;
+  grid-template-rows: minmax(0, 1.25fr) minmax(0, .72fr) minmax(0, 1.05fr) auto;
+  gap: clamp(.35rem, 1vh, .7rem);
+  min-height: 0;
+}
+.board-panel { min-height: 0; overflow: auto; }
+.completion-summaries.board-panel { overflow: visible; }
+.app-shell .home-board { height: auto; overflow: visible; grid-template-rows: auto auto auto auto; }
+.app-shell .board-panel { overflow: visible; }
+.completion-grid { display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 14rem), 1fr)); gap:.55rem; }
+.summary-card { padding:.7rem .8rem; border:1px solid color-mix(in srgb, var(--gold) 45%, var(--line)); border-radius:.8rem; background:linear-gradient(145deg, color-mix(in srgb, var(--silver) 8%, var(--surface)), var(--surface)); }
+.summary-lines { margin:.4rem 0 0; padding-left:1rem; }
+.summary-lines li { margin:.15rem 0; }
+.page-cards { display:grid; grid-template-columns:repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); gap:clamp(.7rem, 1.6vw, 1.15rem); align-items:stretch; width:min(72rem, 100%); margin:0 auto; }
+.countdown-focus, #eventTimingCard { grid-column: 1 / -1; }
+#bestBlock[hidden] { display: none !important; }
+.countdown-large { font-size: clamp(2.4rem, 7vw, 5.4rem); line-height: .95; letter-spacing: .02em; overflow-wrap: anywhere; }
+.page-card { min-width:0; padding:1rem 1.1rem 1.15rem; border:1px solid transparent; border-radius:1rem; background:
+  linear-gradient(var(--surface), var(--surface)) padding-box,
+  linear-gradient(135deg, var(--gold), var(--silver)) border-box;
+  box-shadow:var(--shadow); }
+.page-card h1, .page-card h2 { margin:.35rem 0; }
+.countdown-large.is-gold, .page-card.is-best .countdown-large { color:var(--gold); }
+.fact-list { list-style:none; margin:0; padding:0; display:grid; gap:.35rem; }
+.fact-list li { display:flex; justify-content:space-between; gap:.75rem; border-bottom:1px solid color-mix(in srgb, var(--silver) 35%, transparent); padding-bottom:.28rem; }
+.daily-note { margin:.45rem 0 0; color:var(--muted); font-size:.72rem; }
+.event-info { width:min(42rem, calc(100vw - 2rem)); border:1px solid color-mix(in srgb, var(--gold) 50%, var(--silver)); border-radius:1rem; background:var(--surface); color:var(--text); padding:1rem 1.1rem 1.2rem; }
+.event-info::backdrop { background:color-mix(in srgb, #000 45%, transparent); }
+.event-info-head { display:flex; align-items:center; justify-content:space-between; gap:1rem; }
+#countdownView, #timeView { overflow:visible; }
+#countdownView[hidden], #timeView[hidden] { display:none !important; }
+.card-obligatory { box-shadow: inset 3px 0 0 #c6a15b; }
+.card-daily { box-shadow: inset 3px 0 0 #1e8e5a; }
+.card-situational { box-shadow: inset 3px 0 0 transparent; border-style: dashed; }
+.card-special { box-shadow: inset 3px 0 0 #e8a33d; }
+.is-best, .prayer-eta.is-best { color: #c6a15b; }
+body[data-mode="light"] .pf-disc,
+body[data-mode="light"] .pf-seg.fard { filter: drop-shadow(0 0 0.6px rgba(32, 40, 35, .55)); }
+.progress-core-label.is-recognition { display: flex; flex-direction: column; align-items: center; gap: .05rem; line-height: 1.05; }
+.recog-ar { font-size: .72rem; }
+.recog-tr, .recog-mean { font-size: .42rem; letter-spacing: 0; }
+.completed-card { padding: .55rem .7rem; border: 1px solid var(--line); border-radius: .7rem; background: color-mix(in srgb, var(--surface) 88%, transparent); }
+
+.eclipse-card { border-color: var(--gold); }
+
+/* v2.0 refinements: paired hero cards and detailed records. */
+.home-board { display:grid; grid-template-columns:minmax(0,1fr); grid-template-rows:auto auto auto auto; gap:clamp(.75rem,1.25vw,1.15rem); }
+ .home-board > .completion-summaries { grid-column:1 / -1; }
+.hero-row { display:grid; grid-template-columns:minmax(0,1fr) minmax(0,1fr); gap:clamp(.75rem,1.25vw,1.15rem); align-items:stretch; }
+.hero-row > .board-panel { min-width:0; min-height:100%; }
+.next-card { border-radius:1.25rem; }
+.progress-panel { border-radius:1.25rem; background:linear-gradient(145deg,color-mix(in srgb,var(--accent) 4%,var(--surface)),var(--surface)); }
+.rakah-set { display:flex; align-items:center; gap:.45rem; min-width:0; color:var(--text); font-size:.7rem; }
+.rakah-set input { accent-color:var(--accent); width:1rem; height:1rem; flex:0 0 auto; }
+
+.rakah-control { display:grid; gap:.35rem; padding:.55rem .65rem; border:1px solid var(--line); border-radius:.7rem; background:color-mix(in srgb,var(--surface2) 65%,transparent); }
+
+.rakah-set { padding:.25rem .4rem; border:1px solid var(--line); border-radius:.45rem; }
+.rakah-control small{ margin:0; color:var(--muted); font-size:.62rem; }
+
+.week-day { appearance:none; width:100%; color:var(--text); font:inherit; cursor:pointer; }
+.week-day:disabled { cursor:default; }
+.week-day:not(:disabled):hover { border-color:var(--accent); transform:translateY(-1px); }
+.weekly-day-heading { width:min(72rem,100%); margin:1rem auto; }
+.weekly-day-heading h1 { margin:.3rem 0; font:700 clamp(1.5rem,3vw,2.25rem)/1.15 var(--ui-font); }
+.weekly-record-card .ref-card { margin:.65rem 0; }
+.weekly-record-card > p { color:var(--muted); font-size:.72rem; }
+#weeklyDayView[hidden] { display:none !important; }
+
+@media(max-width:780px) {
+  .hero-row { grid-template-columns:1fr; }
+  .next-card,.progress-panel { min-height:auto; }
+}
+
+.back-button { display:inline-flex; align-items:center; gap:.5rem; margin:1.2rem 0 .8rem; padding:.58rem .85rem; border:1px solid var(--line); border-radius:.7rem; background:var(--surface); color:var(--text); font-size:.68rem; font-weight:700; cursor:pointer; transition:border-color .16s ease,background .16s ease,transform .16s ease; }
+.back-button:hover { border-color:var(--accent); background:var(--surface2); transform:translateX(-1px); }
+
+/* Prayer-reference cards use the same five-column rhythm as the five Fard cards.
+   On narrow windows they follow the Fard grid's two-column layout. */
+@container app-shell (max-width: 780px) {
+  .ref-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem; padding: .5rem; }
+}
+@media (max-width: 780px) {
+  .ref-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem; padding: .5rem; }
+}
+
+/* Worship cards now use the same always-visible information format as the five Fard cards.
+   No disclosure/accordion: evidence, rak'ah guidance and the relevant action stay in the card. */
+.voluntary-list,
+.situational-list {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: var(--sp-3);
+  align-items: stretch;
+}
+.voluntary-carousel { grid-column: 1 / -1; min-width: 0; }
+.voluntary-item {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: .38rem;
+  min-width: 0;
+  min-height: 0;
+  padding: .9375rem;
+}
+.voluntary-item > .voluntary-summary-main { min-width: 0; }
+.voluntary-item .voluntary-summary-main .prayer-name-button { overflow-wrap: anywhere; }
+.voluntary-item .voluntary-summary-main small { line-height: 1.35; }
+.voluntary-item .ref-card {
+  display: flex;
+  gap: .28rem;
+  margin: .08rem 0 0;
+  padding: .38rem .42rem;
+  border: 0;
+  border-top: 1px solid color-mix(in srgb,var(--line) 80%,transparent);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+}
+.voluntary-item .ref-card::before { display:none; }
+.voluntary-item .ref-title { display:none; }
+.voluntary-item .ref-quote { padding-left: .72rem; }
+.voluntary-item .ref-quote::before { top:-.12rem; font-size:1.25rem; }
+.voluntary-item .ref-quote blockquote { font-size:.59rem; line-height:1.38; }
+.voluntary-item .ref-quote figcaption { margin-top:.12rem; font-size:.48rem; }
+.voluntary-item .ref-quote-minor { padding-left:.5rem; }
+.voluntary-item .ref-quote-minor blockquote { font-size:.55rem; line-height:1.35; }
+.voluntary-item .ref-note { margin:0; font-size:.52rem; line-height:1.35; }
+.voluntary-item .ref-practical { margin-top:.12rem; padding-top:.28rem; font-size:.51rem; line-height:1.35; }
+.voluntary-item .ref-practical p { margin-bottom:.15rem; }
+.voluntary-item .rakah-control { gap:.22rem; padding:.32rem .4rem; border-radius:.5rem; }
+
+.voluntary-item .rakah-set { gap:.22rem; padding:.16rem .25rem; font-size:.53rem; }
+.voluntary-item .rakah-set input { width:.78rem; height:.78rem; }
+.voluntary-item .rakah-control small{ font-size:.52rem; line-height:1.3; }
+
+.voluntary-item .prayer-eta {
+  display: block;
+  width: fit-content;
+  max-width: 100%;
+  margin: .05rem 0 .1rem;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: var(--muted);
+  font-size: .59rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: left;
+  font-variant-numeric: tabular-nums;
+  cursor: pointer;
+}
+.voluntary-item .prayer-eta.is-current { color:var(--good); }
+.voluntary-item .prayer-eta.is-best { color:#c6a15b; }
+
+.voluntary-item .voluntary-disclosure { display:none !important; }
+@container app-shell (max-width: 1100px) {
+  .voluntary-list,
+  .situational-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@container app-shell (max-width: 780px) {
+  .voluntary-list,
+  .situational-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap:.5rem; }
+  .ref-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap:.5rem; padding:.5rem; }
+  .voluntary-item { padding:.75rem; }
+}
+@media (max-width: 780px) {
+  .voluntary-list,
+  .situational-list { grid-template-columns: repeat(2, minmax(0, 1fr)); gap:.5rem; }
+  .ref-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap:.5rem; padding:.5rem; }
+}
+
+@media (max-width: 420px) {
+  .voluntary-list,
+  .situational-list { grid-template-columns: minmax(0, 1fr); }
+}
+
+/* Abbasid-era manuscript and astrolabe illustration treatment for the Celestial Observatory.
+   The solar/lunar positions, phases, paths and prohibited-time geometry remain live engine output. */
+
+/* v1.6.1: countdown page is a three-row horizontal composition. */
+#countdownView .page-cards { grid-template-columns:repeat(2,minmax(0,1fr)); align-items:stretch; }
+#countdownView .countdown-focus,
+#countdownView #eventTimingCard { grid-column:1 / -1; }
+#countdownView #bestBlock,
+#countdownView #eventPrayerCard { grid-column:auto; min-width:0; }
+#countdownView .event-prayer-card { display:flex; flex-direction:column; gap:.55rem; }
+#countdownView .event-prayer-card > div { min-width:0; }
+#countdownView .event-prayer-card .ref-card { margin:0; border:0; padding:.45rem .2rem .15rem; background:transparent; box-shadow:none; overflow:visible; }
+#countdownView .event-prayer-divider { height:1px; flex:0 0 1px; background:var(--line); }
+#countdownView #eventTimingCard { display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:.4rem 1.25rem; }
+#countdownView #eventTimingCard h2 { margin:0; font-size:clamp(1rem,2vw,1.35rem); font-variant-numeric:tabular-nums; }
+#countdownView #eventTimingCard p { margin:.15rem 0; }
+@media(max-width:700px) {
+  #countdownView .page-cards { grid-template-columns:minmax(0,1fr); }
+  #countdownView .countdown-focus,
+  #countdownView #eventTimingCard,
+  #countdownView #bestBlock,
+  #countdownView #eventPrayerCard { grid-column:1; }
+}
+/* Engraved astrolabe markers remain crisp and visible; the lunar instrument is intentionally smaller. */
+
+/* v1.7.1: compact native-window replacement title strip and repeatable situational records. */
+.window-titlebar { height:2rem; display:flex; align-items:center; justify-content:space-between; padding-left:.8rem; background:#080a0b; color:#cbd2cf; user-select:none; }
+
+.window-titlebar [data-tauri-drag-region] { flex:1; height:100%; display:flex; align-items:center; }
+.app-shell { padding-top:.55rem; }
+
+/* v1.8.1: stereographic astrolabe, preferred period, reward line, other nafl, text that stays inside its card. */
+
+#timeView .countdown-focus, #timeView .preferred-period { grid-column: 1 / -1; }
+.preferred-period .countdown-large { font-size: clamp(1.15rem, 3.2vw, 2.35rem); line-height: 1.2; }
+.preferred-period p, .page-card h1, .page-card h2, .page-card p, .fact-list li { overflow-wrap: anywhere; }
+.progress-reward { position: absolute; inset: 18%; z-index: 3; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .06rem; text-align: center; pointer-events: none; }
+.progress-reward[hidden] { display: none !important; }
+.progress-reward-ar { font-family: "Alhamdulillah Ruqaa", "Aref Ruqaa", "Amiri", "Arabic Typesetting", serif; color: #1E8E5A; font-size: clamp(.78rem, 2vw, 1.15rem); font-weight: 700; line-height: 1.15; }
+.progress-reward-tr { color: #1E8E5A; font-size: .52rem; line-height: 1.15; letter-spacing: 0; font-weight: 700; }
+.progress-reward-mean { color: #1E8E5A; font-size: .42rem; line-height: 1.15; max-width: 6.2rem; }
+.progress-visual:has(.progress-reward:not([hidden])) .pf-reward { opacity: 0; }
+.prayer-card, .voluntary-item, .page-card, .next-card, .progress-copy, .settings-card, .weekly-record-card, .completed-card, .ref-card, .other-voluntary-card { min-width: 0; }
+.prayer-time, .prayer-name-button, .next-name, .next-meta, .next-foot, .progress-title, .progress-status, .progress-caption, .daily-note, .brand-sub, .section-heading h2, .live-name { white-space: normal; overflow-wrap: anywhere; word-break: break-word; text-overflow: unset; max-width: 100%; }
+
+/* v1.9.1: circular planispheric astrolabe beside a modern analog clock, fold, evidence lead, weekly undo. */
+
+.lead-evidence { margin: .15rem 0 .1rem; color: var(--text); font-size: .62rem; line-height: 1.28; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden; }
+.lead-evidence q { quotes: none; }
+.lead-evidence cite { color: var(--gold); font-style: normal; font-size: .54rem; }
+#nextEvidence:empty { display: none; }
+.ref-card > .ref-quote:first-child { margin-top: 0; }
+
+.weekly-record-card { position: relative; padding-bottom: 2.5rem; }
+.undo-corner { position: absolute; right: .7rem; bottom: .6rem; border: 1px solid var(--line); border-radius: .5rem; padding: .32rem .55rem; background: var(--surface2); color: var(--text); font-size: .62rem; font-weight: 750; cursor: pointer; }
+.undo-corner:disabled { opacity: .42; cursor: not-allowed; }
+.app-shell { padding-top: .4rem; padding-bottom: .8rem; }
+.topbar { min-height: 0; padding-bottom: .35rem; gap: .55rem; }
+.brand-mark { width: 2.15rem; height: 2.15rem; flex-basis: 2.15rem; border-radius: .6rem; }
+.brand-mark svg { width: 1.4rem; height: 1.4rem; }
+.brand-name { font-size: 1.05rem; }
+.home-board { gap: .35rem; }
+.home-board > .section-block { margin-top: 0; }
+.home-board .section-heading { margin-bottom: .2rem; }
+.home-board .section-heading h2 { font-size: .95rem; }
+
+.home-board .live-name { font-size: .98rem; }
+
+.home-board .live-empty { padding: .35rem .45rem; font-size: .75rem; }
+.home-board .hero-row { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
+.home-board .next-card, .home-board .progress-panel { min-height: 0; padding: .4rem .5rem; }
+.home-board .next-name { font-size: 1rem; margin-top: 0; }
+.home-board .next-count { font-size: 1.05rem; margin-top: 0; }
+.home-board .next-meta { margin-top: .12rem; font-size: .6rem; }
+.home-board .next-foot { margin-top: .22rem; padding-top: .2rem; }
+.home-board .lead-evidence { -webkit-line-clamp: 1; }
+.home-board .progress-head { gap: .35rem; }
+.home-board .progress-visual { width: 3.7rem; height: 3.7rem; flex-basis: 3.7rem; }
+.home-board .progress-title { font-size: .9rem; }
+.home-board .progress-legend { display: none; }
+.home-board .progress-caption, .home-board .daily-note, .home-board .progress-status { margin-top: .1rem; font-size: .55rem; display: -webkit-box; -webkit-line-clamp: 1; -webkit-box-orient: vertical; overflow: hidden; }
+@media (min-height: 980px) {
+  .home-board .progress-legend { display: flex; }
+  .home-board .progress-visual { width: 5.4rem; height: 5.4rem; flex-basis: 5.4rem; }
+  
+  .home-board .progress-caption, .home-board .daily-note { -webkit-line-clamp: 2; }
+}
+@media (min-height: 980px) {
+  .home-board .progress-legend { display: flex; }
+  .home-board .progress-visual { width: 5.4rem; height: 5.4rem; flex-basis: 5.4rem; }
+  
+  .home-board .progress-caption, .home-board .daily-note { -webkit-line-clamp: 2; }
+}
+
+/* v1.9.1 fold: the name column keeps the width; the tick and mark button stay a narrow stack. */
+.app-shell { padding: .28rem .5rem .55rem; }
+.topbar { flex-wrap: nowrap; align-items: center; min-height: 0; padding-bottom: .2rem; gap: .4rem; }
+
+.brand-sub, .hijri-date-label { white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+
+.home-board { gap: .28rem; }
+
+.home-board .section-heading { align-items: center; padding-bottom: 0; border-bottom: 0; margin-bottom: .12rem; gap: .35rem; }
+
+.home-board .hero-row { gap: .3rem; }
+.home-board .next-card, .home-board .progress-panel { padding: .32rem .42rem; }
+.home-board .next-count { font-size: .98rem; }
+.home-board .progress-visual { width: 3.35rem; height: 3.35rem; flex-basis: 3.35rem; }
+.home-board .progress-core-label.is-recognition { width: 82%; gap: 0; }
+.home-board .recog-ar { font-size: .58rem; }
+.home-board .recog-tr, .home-board .recog-mean { font-size: .4rem; line-height: 1.05; }
+.home-board .progress-reward { inset: 10%; gap: 0; }
+.home-board .progress-reward-ar { font-size: .68rem; }
+.home-board .progress-reward-tr, .home-board .progress-reward-mean { font-size: .38rem; max-width: 4.6rem; }
+@media (max-width: 700px) {
+  .brand-mark { width: 1.65rem; height: 1.65rem; flex-basis: 1.65rem; border-radius: .45rem; }
+  .brand-mark svg { width: 1.05rem; height: 1.05rem; }
+  .brand-name { font-size: .92rem; }
+  .brand-sub { max-width: 9.5rem; font-size: .58rem; }
+  .icon-button { width: 1.9rem; height: 1.9rem; flex-basis: 1.9rem; }
+
+}
+
+/* ==========================================================================
+   v2.0.1
+   1. Header: app mark + name on the left, a small coordinates card on the right.
+   1.2 Astrolabe 60% / Local time 40% of the same row (the clock card also carries the date).
+   2. Sixth Voluntary prayers card (+2 rak‘ahs / Undo prayer / nafl count).
+   4. Square Mark completed and Undo prayer buttons with smooth corners.
+   ========================================================================== */
+body { --on-good: #0b1a12; }
+body[data-mode="light"] { --on-good: #ffffff; }
+
+.topbar { display: flex; flex-wrap: nowrap; align-items: center; justify-content: flex-start; gap: .6rem; }
+.brand { flex: 1 1 auto; min-width: 0; }
+.brand-mark { display: block; flex: 0 0 2.6rem; width: 2.6rem; height: 2.6rem; padding: 0; border-radius: .72rem; background: transparent; overflow: hidden; box-shadow: 0 .2rem .7rem rgba(0,0,0,.28); }
+.brand-mark svg { display: block; width: 100%; height: 100%; fill: initial; stroke: initial; stroke-width: initial; }
+.brand-name { font-size: 1.15rem; white-space: nowrap; }
+
+/* Instrument row: astrolabe 60%, local time 40%, at every width. */
+
+@media (max-width: 700px) {
+
+  .brand-mark { flex-basis: 1.9rem; width: 1.9rem; height: 1.9rem; border-radius: .55rem; }
+  .brand-name { font-size: .98rem; }
+}
+
+/* Voluntary prayers: six cards, evenly. */
+.voluntary-list { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.voluntary-list > .voluntary-carousel { grid-column: 1 / -1; }
+.voluntary-list > .voluntary-empty { grid-column: 1 / -1; }
+@container app-shell (max-width: 780px) { .voluntary-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } .ref-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem; padding: .5rem; } }
+@media (max-width: 780px) { .voluntary-list { grid-template-columns: repeat(2, minmax(0, 1fr)); } .ref-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .5rem; padding: .5rem; } }
+@media (max-width: 420px) { .voluntary-list { grid-template-columns: minmax(0, 1fr); } }
+.other-voluntary-card { display: flex; flex-direction: column; gap: .55rem; border-color: color-mix(in srgb, var(--gold) 48%, var(--line)); background: linear-gradient(145deg, color-mix(in srgb, var(--gold) 8%, var(--surface)), var(--surface)); transition: box-shadow .12s linear, border-color .12s linear, background .12s linear; }
+.other-voluntary-card.is-locked { opacity: .72; }
+.other-voluntary-card.is-glow { border-color: #e7c56a; box-shadow: 0 0 0 1px rgba(216,180,94,.7), 0 0 28px rgba(216,180,94,.75); background: linear-gradient(90deg, color-mix(in srgb, #e7c56a 34%, var(--surface)), color-mix(in srgb, #f6e3a8 20%, var(--surface))); }
+.other-voluntary-title { margin: .2rem 0 .1rem; color: var(--text); font-size: .95rem; line-height: 1.2; overflow-wrap: anywhere; }
+
+.other-voluntary-actions { display: flex; align-items: center; gap: .55rem; flex-wrap: wrap; margin-top: auto; }
+
+/* Square buttons: Mark completed (filled) and Undo prayer (the same design in the opposite colours). */
+.square-button { --sq-fg: var(--on-good); --sq-bg: var(--good); display: inline-flex; flex: none; align-items: center; justify-content: center; width: 3.5rem; height: 3.5rem; aspect-ratio: 1 / 1; padding: .2rem; border: .09rem solid var(--good); border-radius: 1.05rem; background: var(--sq-bg); color: var(--sq-fg); font: inherit; font-size: .58rem; font-weight: 800; line-height: 1.15; text-align: center; overflow-wrap: anywhere; cursor: pointer; transition: transform .1s ease, filter .1s ease; }
+.square-button.is-undo { --sq-fg: var(--good); --sq-bg: var(--on-good); }
+.square-button:hover:not(:disabled) { filter: brightness(1.1); }
+.square-button:active:not(:disabled) { transform: scale(.96); }
+.square-button:focus-visible { outline: .125rem solid var(--gold); outline-offset: .125rem; }
+.square-button:disabled { opacity: .42; cursor: not-allowed; }
+.undo-corner.square-button { position: absolute; right: .7rem; bottom: .6rem; padding: .2rem; border-radius: 1.05rem; }
+.weekly-record-card { padding-bottom: 4.6rem; }
+
+@media (prefers-reduced-motion: reduce) { .square-button { transition: none; } }
+
+/* ==========================================================================
+   v2.0.1 layout: the opening view (title, coordinates, astrolabe + clock,
+   available events, next event, today's progress) fits the window height.
+   ========================================================================== */
+body .app-shell { --topbar-h: clamp(2.3rem, 6.5vh, 3.2rem); --inst-h: clamp(9.5rem, min(37vh, 34vw), 25rem); --hero-h: clamp(6.6rem, 19vh, 9.4rem); --pv: min(8.25rem, calc(var(--hero-h) - .9rem)); --fold-gap: clamp(.25rem, .9vh, .6rem); padding-top: clamp(.3rem, 1vh, .8rem); padding-bottom: 1rem; }
+body .topbar { height: var(--topbar-h); min-height: 0; padding: 0; margin: 0 0 var(--fold-gap); gap: .55rem; align-items: center; }
+body .topbar .brand { gap: .55rem; }
+body .brand-mark { flex: 0 0 var(--topbar-h); width: var(--topbar-h); height: var(--topbar-h); }
+body .brand-name { font-size: clamp(1rem, 2.4vh + .4rem, 1.4rem); letter-spacing: .01em; }
+body .topbar .icon-button { flex: 0 0 auto; width: 2.1rem; height: 2.1rem; }
+
+body .topbar .brand { margin-right: auto; }
+
+/* Astrolabe brass and plate colours */
+
+/* Local time card: echoes the astrolabe in brass and thin engraved rings, but clean and contemporary. */
+
+.copyright-corner { position: static !important; display: block; margin: .6rem auto .4rem; text-align: center; pointer-events: none; opacity: .6; font-size: .62rem; }
+
+/* Bangla conjuncts must not be letter-spaced. */
+html[lang="bn"] body, html[lang="bn"] body * { letter-spacing: 0 !important; }
+
+/* Reward / recognition disc (original size). Text inside scales with the disc but never below a readable size. */
+body .home-board .progress-visual { width: var(--pv); height: var(--pv); flex: 0 0 var(--pv); container-type: size; }
+body .home-board .progress-core-label.is-recognition { width: 78%; gap: .05rem; line-height: 1.15; }
+body .home-board .recog-ar { font-size: clamp(.78rem, 10cqw, 1.05rem); }
+body .home-board .recog-tr { font-size: clamp(.64rem, 7.4cqw, .8rem); line-height: 1.15; max-width: 100%; }
+body .home-board .recog-mean { font-size: clamp(.58rem, 6.4cqw, .72rem); line-height: 1.15; max-width: 100%; }
+body .home-board .progress-reward { inset: 14%; gap: .05rem; }
+body .home-board .progress-reward-ar { font-size: clamp(.8rem, 13cqw, 1.2rem); }
+body .home-board .progress-reward-tr { font-size: clamp(.62rem, 7.6cqw, .8rem); max-width: 100%; }
+body .home-board .progress-reward-mean { font-size: clamp(.56rem, 6.4cqw, .7rem); max-width: 100%; }
+body .home-board .progress-core-label { font-size: clamp(.8rem, 12cqw, 1.15rem); }
+
+/* ==========================================================================
+   v2.1.0
+   Layout rule: cards size to their content. Decorative borders, glows and corner
+   ornaments never sit on text; text wraps instead of being clipped or shrunk below
+   a readable size. The opening view still fits by choosing instrument heights from the
+   window height first, and only then scaling the whole page (never below 0.7).
+   ========================================================================== */
+body .app-shell { --mc-h: clamp(3.5rem, 3.4vh + 2.1rem, 4.1rem); --tick-d: calc(var(--mc-h) * .8); --tick-fard: calc(var(--mc-h) * .9); --tick-sunnah: calc(var(--mc-h) * .8); --tick-nafl: calc(var(--mc-h) * .7); --inst-h: clamp(9rem, min(33vh, 30vw), 21rem); --topbar-h: clamp(2.5rem, 6.4vh, 3.3rem); --pv: clamp(5.6rem, 16vh, 8.25rem); --fold-gap: clamp(.3rem, 1vh, .6rem); }
+
+/* Text safety: nothing decorative on top of text, nothing clipped. */
+body .panel, body .board-panel, body .settings-card, body .page-card, body .prayer-card, body .voluntary-item, body .completed-card, body .live-event, body .forbidden-card { overflow: visible; overflow-wrap: anywhere; }
+body .live-event::before, body .live-event::after, body .settings-card::before { content: none !important; display: none !important; }
+body .live-event { isolation: auto; overflow: visible; }
+body .eyebrow { font-size: max(.66rem, 10.5px); line-height: 1.25; letter-spacing: .12em; overflow-wrap: anywhere; }
+body .copyright-corner { position: static !important; display: block; margin: .5rem auto .3rem; text-align: center; pointer-events: none; }
+html[lang="bn"] body, html[lang="bn"] body * { letter-spacing: 0 !important; }
+html[lang="bn"] body { line-height: 1.55; }
+
+/* ---- Top bar ---------------------------------------------------------- */
+body .topbar { display: flex; align-items: center; gap: .6rem; height: auto; min-height: var(--topbar-h); }
+body .topbar .brand { flex: 0 0 auto; margin-right: 0; }
+body .topbar-astro { display: none; }
+body .topbar .icon-button { margin-left: auto; }
+body .coord-card { flex: 0 1 auto; max-width: min(60%, 24rem); margin-left: 0; white-space: normal; overflow: visible; text-overflow: clip; overflow-wrap: anywhere; font-size: clamp(.74rem, .55vw + .55rem, .9rem); line-height: 1.25; }
+body .topbar .brand-name { white-space: nowrap; }
+
+/* ---- Home instruments: astrolabe 60 % | clock 40 % -------------------------- */
+body .instrument-row { display: grid; grid-template-columns: minmax(0, 3fr) minmax(0, 2fr); gap: var(--fold-gap, .5rem); height: auto; margin: 0 0 var(--fold-gap, .5rem); align-items: stretch; }
+body .instrument-row > .sky-panel, body .instrument-row > .clock-card { height: auto; min-height: var(--inst-h); margin: 0; min-width: 0; container-type: inline-size; }
+body .instrument-row > .sky-panel.astro-card, body .topbar-astro > .sky-panel.astro-card { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); grid-template-areas: "top stage foot"; align-items: center; gap: .3rem .9rem; padding: .5rem .8rem; border-radius: .9rem; overflow: visible; background: linear-gradient(160deg, color-mix(in srgb, var(--surface) 92%, #8aa0b4), color-mix(in srgb, var(--surface) 96%, #000)); border: 1px solid color-mix(in srgb, #aab3bb 28%, var(--line)); }
+body .sky-panel[hidden] { display: none; }
+body .astro-top { grid-area: top; display: flex; flex-direction: column; align-items: flex-start; gap: .25rem; min-width: 0; line-height: 1.25; }
+body .astro-top .sky-observatory-title { position: static; font-size: .74rem; letter-spacing: .2em; font-weight: 800; color: #cfd6dc; }
+body .astro-top .sky-observatory-position { position: static; padding: 0; background: none; font-size: .78rem; color: var(--muted); white-space: normal; overflow: visible; text-align: start; overflow-wrap: anywhere; font-variant-numeric: tabular-nums; }
+body .astro-stage { grid-area: stage; position: relative; height: calc(var(--inst-h) - 1rem); aspect-ratio: 1 / 1; width: auto; margin: 0; padding: 0; cursor: grab; touch-action: none; user-select: none; -webkit-user-select: none; border-radius: 50%; outline-offset: 3px; }
+body .astro-stage.is-turning { cursor: grabbing; }
+body .astro-stage:focus-visible { outline: 2px solid var(--gold); }
+body .astro-svg { position: absolute; inset: 0; width: 100%; height: 100%; display: block; overflow: visible; }
+body .astro-foot { grid-area: foot; display: flex; flex-direction: column; align-items: stretch; gap: .28rem; min-width: 0; }
+body .astro-foot .sky-zone-chip { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .1rem .5rem; padding: .22rem .5rem; border-radius: .5rem; min-width: 0; white-space: normal; border: 1px solid var(--line); background: color-mix(in srgb, var(--surface2) 80%, transparent); }
+body .astro-foot .sky-zone-chip i { display: none; }
+body .astro-foot .sky-zone-chip b, body .astro-foot .sky-zone-chip small { font-size: .74rem; line-height: 1.25; white-space: normal; text-align: start; }
+body .astro-foot .sky-zone-chip.is-active { border-color: var(--gold); }
+@container (max-width: 34rem) {
+  body .sky-panel.astro-card { grid-template-columns: minmax(0, 1fr); grid-template-areas: "top" "stage" "foot"; justify-items: center; }
+  body .sky-panel .astro-top { align-items: center; text-align: center; }
+  body .sky-panel .astro-foot { flex-direction: row; flex-wrap: wrap; justify-content: center; }
+}
+/* instrument art */
+.av-num { font: 600 calc(8.4px * var(--av-tf, 1)) var(--ui-font, system-ui); fill: #f1f4f6; text-anchor: middle; font-variant-numeric: tabular-nums; }
+.av-word { font: 700 calc(6.4px * var(--av-tf, 1)) var(--ui-font, system-ui); letter-spacing: .14em; fill: #e3c071; opacity: .9; }
+.av-ecl { font: 600 calc(5.2px * var(--av-tf, 1)) var(--ui-font, system-ui); fill: #ffe9a8; text-anchor: middle; paint-order: stroke; stroke: rgba(10,22,52,.7); stroke-width: .9px; }
+html[lang="bn"] .av-word, html[lang="bn"] .av-num, html[lang="bn"] .av-ecl { letter-spacing: 0 !important; }
+.av-sun-day, .av-moon-day { stroke-width: .8; stroke-linecap: round; }
+.av-sun-day { stroke: #ffe9a8; opacity: .45; } .av-moon-day { stroke: #cfe0ff; opacity: .35; }
+.av-sun-trail { stroke: #f5c862; opacity: .85; } .av-moon-trail { stroke: #cfe0ff; opacity: .75; }
+.sky-moon.is-below { filter: saturate(.7); }
+#skyRule, #skySun, #skyMoon { pointer-events: none; }
+/* (v2.2.0) no permanent will-change: a pinned GPU layer keeps its old raster scale and goes soft when the instrument changes size */
+
+/* ---- Home clock card --------------------------------------------------- */
+body .instrument-row > .clock-card { display: grid; grid-template-columns: auto minmax(0, 1fr); align-items: center; gap: .3rem clamp(.5rem, 3cqw, 1.2rem); padding: .5rem clamp(.6rem, 3cqw, 1.2rem); border-radius: .9rem; overflow: visible; }
+body .clock-card .analog-clock { display: block; width: calc(var(--inst-h) - 1rem); height: calc(var(--inst-h) - 1rem); aspect-ratio: 1; padding: 0; border: 0; border-radius: 50%; background: none; cursor: pointer; transition: transform .35s cubic-bezier(.22,.72,.2,1), filter .3s; }
+body .clock-card .analog-clock:hover { transform: scale(1.025); filter: drop-shadow(0 .4rem .9rem rgba(0,0,0,.4)); }
+body .clock-card .analog-clock:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+body .analog-svg { display: block; width: 100%; height: 100%; overflow: visible; filter: drop-shadow(0 .25rem .5rem rgba(0,0,0,.35)); }
+.clock-hand { transform-box: view-box; filter: drop-shadow(0 1px 1.2px rgba(0,0,0,.55)); }
+.ck-num { font: 600 11px var(--app-font); fill: #f1f4f6; }
+.ck-date { font: 700 9.5px var(--app-font); fill: #101418; font-variant-numeric: tabular-nums; }
+.ck-caption { font: 600 5.6px var(--ui-font, system-ui); letter-spacing: .26em; fill: #c9d1d8; opacity: .8; }
+html[lang="bn"] .ck-caption { letter-spacing: 0 !important; }
+body .clock-readout { display: flex; flex-direction: column; align-items: flex-start; justify-content: center; gap: .3rem; min-width: 0; cursor: pointer; container-type: inline-size; }
+body .clock-readout .eyebrow { font-size: .7rem; }
+body .clock-card #liveClock { display: block; max-width: 100%; font-family: var(--app-font); /* v3.0.4 A: the app font, not Optima/Palatino */ font-size: clamp(1.3rem, 13cqw, 2.6rem); line-height: 1.1; font-weight: 600; letter-spacing: .02em; white-space: nowrap; font-variant-numeric: tabular-nums; }
+html[lang="bn"] body .clock-card #liveClock { font-family: var(--app-font); }
+body .clock-date { display: grid; gap: .1rem; min-width: 0; font-size: clamp(.78rem, 5.2cqw, .95rem); line-height: 1.3; }
+body .clock-date > div { white-space: normal; overflow-wrap: anywhere; }
+@container (max-width: 21rem) {
+  body .clock-card { grid-template-columns: minmax(0, 1fr); justify-items: center; }
+  body .clock-card .analog-clock { width: min(100%, calc(var(--inst-h) - 1rem)); height: auto; }
+  body .clock-readout { align-items: center; text-align: center; }
+}
+
+/* ---- Expanded clock page --------------------------------------------------- */
+body.clock-expanded .instrument-row { display: none; }
+body.clock-expanded .topbar { align-items: center; gap: .8rem; flex-wrap: nowrap; }
+body.clock-expanded .topbar-astro { display: flex; flex: 1 1 auto; justify-content: center; align-items: stretch; min-width: 0; height: clamp(6.4rem, 17vh, 9.5rem); }
+body.clock-expanded .topbar-astro > .sky-panel.astro-card { flex: 0 1 46rem; width: 100%; height: 100%; min-height: 0; grid-template-columns: auto minmax(0, 1fr); grid-template-areas: "stage top" "stage foot"; align-content: center; padding: .3rem .6rem; gap: .1rem .7rem; background: none; border: 0; box-shadow: none; }
+body.clock-expanded .topbar-astro .astro-stage { height: calc(100% - .2rem); max-height: 100%; }
+body.clock-expanded .topbar-astro .astro-top { align-self: end; }
+body.clock-expanded .topbar-astro .astro-foot { align-self: start; }
+@container (max-width: 34rem) {
+  body.clock-expanded .topbar-astro > .sky-panel.astro-card { grid-template-columns: auto minmax(0, 1fr); grid-template-areas: "stage top" "stage foot"; justify-items: stretch; }
+  body.clock-expanded .topbar-astro .astro-top { align-items: flex-start; text-align: start; }
+  body.clock-expanded .topbar-astro .astro-foot { flex-direction: column; justify-content: flex-start; }
+}
+body .clock-page .clock-hero { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: clamp(.8rem, 2vw, 2rem); align-items: center; padding: clamp(.8rem, 1.6vw, 1.6rem); margin: .4rem 0 .7rem; border-radius: 1.1rem; }
+body .clock-hero-center { display: flex; flex-direction: column; align-items: center; gap: .6rem; min-width: 0; --clock-big: clamp(13rem, min(44vh, 34vw), 28rem); }
+body .clock-big-slot { display: flex; flex-direction: column; align-items: center; gap: .6rem; min-width: 0; }
+body.clock-expanded .clock-big-slot .analog-clock { width: var(--clock-big); height: var(--clock-big); cursor: default; }
+body.clock-expanded .clock-big-slot .analog-clock:hover { transform: none; filter: none; }
+body.clock-expanded .clock-big-slot .clock-readout { align-items: center; text-align: center; cursor: default; }
+body.clock-expanded .clock-big-slot #liveClock { font-size: clamp(1.5rem, 3.4vw, 2.6rem); }
+body.clock-expanded .clock-big-slot .clock-date { justify-items: center; text-align: center; font-size: clamp(.85rem, 1.1vw, 1.05rem); }
+body .clock-hero-info { display: flex; flex-direction: column; gap: .5rem; min-width: 0; }
+body .clock-status-name { margin: 0; font-size: clamp(1.25rem, 2.2vw, 1.9rem); line-height: 1.2; overflow-wrap: anywhere; }
+body .clock-status-range, body .clock-status-line, body .clock-count-label, body .clock-count-name { margin: 0; font-size: clamp(.86rem, .9vw + .4rem, 1.05rem); line-height: 1.45; }
+body .clock-status-line strong { font-variant-numeric: tabular-nums; color: var(--accent); }
+body .clock-preferred { padding: .7rem .9rem; border: 1px solid var(--line); border-radius: .9rem; background: color-mix(in srgb, var(--surface2) 70%, transparent); }
+body .clock-preferred.is-best { border-color: var(--gold); }
+body .clock-preferred h3 { margin: .2rem 0 .3rem; font-size: 1rem; }
+body .clock-preferred-count { font: 700 clamp(1.4rem, 2.2vw, 2rem)/1.1 var(--app-font); font-variant-numeric: tabular-nums; color: var(--accent); }
+body .clock-preferred p { margin: .3rem 0 0; font-size: .86rem; line-height: 1.45; }
+body .clock-count-big { font: 750 clamp(2.2rem, 4.4vw, 3.8rem)/1.05 var(--app-font); font-variant-numeric: tabular-nums; color: var(--accent); overflow-wrap: normal; }
+body .clock-count-big.is-gold { color: var(--gold); }
+body .clock-timings { list-style: none; margin: .3rem 0 0; padding: 0; display: grid; gap: .1rem; }
+body .clock-timings li { display: flex; justify-content: space-between; gap: .8rem; padding: .22rem .5rem; border-radius: .5rem; font-size: .92rem; }
+body .clock-timings li.is-next { background: color-mix(in srgb, var(--accent) 16%, transparent); }
+body .clock-timings li.is-now { background: color-mix(in srgb, var(--good) 18%, transparent); }
+body .clock-page-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr)); gap: .7rem; }
+body .clock-page .back-button { margin: .2rem 0 .2rem; }
+@media (max-width: 880px) {
+  body .clock-page .clock-hero { grid-template-columns: minmax(0, 1fr); justify-items: stretch; }
+  body .clock-hero-center { order: -1; }
+}
+
+/* ---- Prayer event cards: tick hierarchy and countdown cards ------------------- */
+body .live-events { grid-template-columns: repeat(auto-fit, minmax(min(100%, 24rem), 1fr)); gap: .6rem; align-items: stretch; }
+body .live-event { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: center; gap: .6rem 1rem; padding: .7rem .9rem; min-height: 0; container-type: inline-size; font-size: clamp(.92rem, .85rem + .2vw, 1.05rem); }
+
+body .live-event-type { margin: 0 0 .2rem; font-size: .7rem; letter-spacing: .16em; }
+
+body .live-event .lead-evidence { font-size: .84rem; }
+
+body .live-tick-stack { display: flex; flex-direction: column; align-items: center; gap: .4rem; }
+@container (max-width: 31rem) {
+  body .live-event { grid-template-columns: minmax(0, 1fr); }
+
+}
+/* inner countdown card */
+body .countdown-card { container-type: inline-size; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: .15rem; min-width: 0; width: 100%; max-width: 100%; padding: .45rem .6rem; border: 1px solid color-mix(in srgb, var(--accent) 38%, var(--line)); border-radius: .8rem; background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 10%, var(--surface2)), color-mix(in srgb, var(--accent) 4%, var(--surface2))); box-shadow: inset 0 1px 0 rgba(255,255,255,.07), inset 0 -.2rem .5rem rgba(0,0,0,.14); color: var(--text); text-align: center; cursor: pointer; transition: border-color .2s, transform .2s; }
+body .countdown-card:hover { border-color: var(--accent); transform: translateY(-1px); background: linear-gradient(180deg, color-mix(in srgb, var(--accent) 14%, var(--surface2)), color-mix(in srgb, var(--accent) 6%, var(--surface2))); }
+body .countdown-card:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+body .countdown-card.is-best { border-color: var(--gold); }
+body .countdown-card .countdown-card-label { display: block; max-width: 100%; color: var(--muted); font-size: clamp(.64rem, 7cqw, .78rem); font-weight: 800; letter-spacing: .12em; line-height: 1.2; overflow-wrap: anywhere; text-align: center; }
+body .countdown-card .countdown-card-value { display: block; max-width: 100%; color: var(--accent); font: 700 clamp(1.05rem, 13.5cqw, 2.4rem)/1.1 var(--app-font); font-variant-numeric: tabular-nums; letter-spacing: 0; white-space: nowrap; text-align: center; }
+html[lang="bn"] body .countdown-card .countdown-card-label { letter-spacing: 0 !important; }
+body .next-card .next-count-button.countdown-card { display: flex; margin: .5rem 0 .1rem; width: min(100%, 17rem); font-size: inherit; }
+body .next-card .next-count-button .countdown-card-value { font-size: clamp(1.25rem, 14cqw, 2.8rem); }
+/* ticks: Fard, Sunnah, Nafl and voluntary are all 80 % of Mark Complete */
+body .live-event .round-check { flex: none; width: var(--tick-d); height: var(--tick-d); border-width: calc(var(--tick-d) * .07); font-size: calc(var(--tick-d) * .5); }
+body .live-event .part-tick i, body .part-tick.fard i { width: var(--tick-d); height: var(--tick-d); margin-top: 0; border-width: calc(var(--tick-d) * .07); font-size: calc(var(--tick-d) * .5); }
+body .live-event .prayer-parts { display: flex; flex-wrap: wrap; align-items: flex-start; gap: .35rem .3rem; width: 100%; max-width: none; margin-top: .45rem; }
+body .live-event .part-tick { flex: 0 0 auto; min-width: calc(var(--tick-d) + .5rem); max-width: 6.5rem; padding: .1rem .15rem; }
+body .live-event .part-tick span { max-width: 100%; font-size: .72rem; line-height: 1.2; text-align: center; white-space: normal; overflow-wrap: anywhere; }
+body .live-event .part-link { display: none; }
+body .part-tick.voluntary i { border-color: var(--layer-hillah-red, #b3122e); }
+body .part-tick.voluntary.done i { background: var(--layer-hillah, #b3122e); color: #fff; text-shadow: 0 0 2px #000; }
+body .vol-block { display: flex; flex-direction: column; gap: .25rem; width: 100%; }
+body .vol-count { font-size: .8rem; color: var(--muted); font-variant-numeric: tabular-nums; }
+body .vol-extra { display: flex; flex-direction: column; gap: .3rem; margin-top: .2rem; }
+body .vol-extra label { margin: 0; font-size: .76rem; font-weight: 650; color: var(--text); }
+body .vol-extra-field { display: flex; flex-wrap: wrap; gap: .4rem; align-items: center; }
+body .vol-extra input { flex: 1 1 6rem; min-width: 5rem; max-width: 10rem; min-height: 2.2rem; padding: .3rem .6rem; border: 1px solid var(--line); border-radius: .6rem; background: var(--surface2); color: var(--text); font: inherit; font-size: .9rem; }
+body .vol-extra input[aria-invalid="true"] { border-color: #e0574f; }
+body .vol-extra .vol-extra-set { min-height: 2.2rem; padding: .3rem .8rem; font-size: .82rem; }
+body .vol-extra-msg { min-height: 0; color: #f08a84; font-size: .78rem; line-height: 1.35; }
+body .vol-extra-msg:empty { display: none; }
+/* Mark Complete: the largest completion control */
+body .live-event .square-button.mark-event-complete { width: var(--mc-h); height: var(--mc-h); min-width: var(--mc-h); max-width: none; aspect-ratio: 1; padding: .15rem; border-radius: calc(var(--mc-h) * .3); font-size: .68rem; font-weight: 800; line-height: 1.12; letter-spacing: 0; white-space: normal; overflow-wrap: normal; word-break: keep-all; hyphens: none; text-align: center; }
+html[lang="bn"] body .live-event .square-button.mark-event-complete { font-size: .74rem; }
+/* rak‘ah sets use the same round tick look */
+
+body .rakah-set { margin: 0; }
+
+/* ---- Voluntary reward in Today's progress ------------------------------------ */
+body .voluntary-reward { margin: .35rem 0 0; padding: .5rem .7rem; border: 1px solid color-mix(in srgb, var(--gold) 55%, var(--line)); border-radius: .8rem; background: linear-gradient(180deg, color-mix(in srgb, var(--gold) 12%, var(--surface2)), var(--surface2)); }
+body .voluntary-reward[hidden] { display: none; }
+body .voluntary-reward .eyebrow { color: var(--gold); margin-bottom: .2rem; }
+
+/* ---- Home board: sections that must stay visible without scrolling ------------------- */
+body .home-board { gap: var(--fold-gap, .5rem); }
+body .live-events-section { padding: .5rem .7rem .6rem; }
+body .live-events-section .section-heading { margin-bottom: .3rem; }
+body .live-events-section .section-heading h2 { font-size: clamp(1rem, 1.2vh + .65rem, 1.3rem); }
+body .hero-row { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: var(--fold-gap, .5rem); align-items: stretch; }
+body .next-card, body .progress-panel { height: auto; min-height: 0; padding: .7rem .9rem; }
+body .next-name { font-size: clamp(1.2rem, 1.6vh + .8rem, 1.7rem); }
+body .next-meta, body .next-foot { font-size: .82rem; line-height: 1.4; overflow-wrap: anywhere; }
+body .progress-panel .progress-copy { min-width: 0; }
+body .progress-panel .progress-caption, body .progress-panel .daily-note, body .progress-panel .progress-status { font-size: .82rem; line-height: 1.45; overflow-wrap: anywhere; }
+body .progress-legend span { font-size: .76rem; }
+@media (max-width: 760px) { body .hero-row { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---- Settings: one steady rhythm, no dead gaps ------------------------------------------------ */
+body #settingsView { display: block; columns: 2 24rem; column-gap: .8rem; }
+body #settingsView > .settings-title, body #settingsView > .location-settings { column-span: all; }
+body #settingsView > .settings-card { break-inside: avoid; display: block; margin: 0 0 .75rem; padding: .85rem 1rem; }
+body .settings-title { margin: .5rem 0 .7rem; padding-bottom: .5rem; }
+body .settings-card h2 { margin: .1rem 0 .4rem; }
+body .settings-card > .eyebrow { margin-bottom: .1rem; }
+body .settings-card p, body .settings-card .muted { margin: .25rem 0 .4rem; }
+body .settings-card label { margin: .6rem 0 .25rem; font-size: .8rem; line-height: 1.35; }
+body .settings-card input:not([type="checkbox"]), body .settings-card select { min-height: 2.4rem; }
+body .settings-card .check-row { margin: .45rem 0 .15rem; font-size: .86rem; }
+body .settings-card .form-note { margin: .25rem 0 .45rem; font-size: .78rem; line-height: 1.45; }
+body .settings-card .setting-row { padding: .45rem 0; }
+body .settings-card .setting-row strong { font-size: .84rem; } body .settings-card .setting-row small { font-size: .76rem; }
+body .settings-card .reminder-settings { margin-top: .6rem; padding-top: .6rem; border-top: 1px solid var(--line); }
+body .settings-card .reminder-settings h3 { margin: 0 0 .25rem; font-size: .95rem; }
+body .event-reminder-row label { font-size: .84rem; }
+body .calculation-profile { display: block; }
+body .calculation-profile .settings-card-head { margin-bottom: .2rem; }
+body .calculation-profile .profile-summary { font-size: .8rem; color: var(--muted); text-align: end; overflow-wrap: anywhere; }
+body .calculation-profile .profile-controls { display: block; }
+body .calculation-profile > summary { display: none; }
+/* preferred-time reminder tabs */
+body .pref-tabs { display: flex; flex-wrap: wrap; gap: .3rem; margin: .4rem 0 .5rem; padding: .2rem; border: 1px solid var(--line); border-radius: .8rem; background: color-mix(in srgb, var(--surface2) 70%, transparent); }
+body .pref-tab { flex: 1 1 10rem; min-height: 2.3rem; padding: .35rem .7rem; border: 0; border-radius: .6rem; background: transparent; color: var(--muted); font: inherit; font-size: .84rem; font-weight: 650; line-height: 1.25; text-align: center; cursor: pointer; overflow-wrap: anywhere; }
+body .pref-tab.is-active { background: var(--accent); color: var(--on-accent, #0b1210); }
+body .pref-tab:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+body .pref-panel[hidden] { display: none; }
+body .pref-row label { display: flex; flex-direction: column; gap: .05rem; margin: 0; }
+body .pref-row .pref-name { font-weight: 700; }
+body .pref-row .pref-window { color: var(--muted); font-size: .74rem; font-weight: 500; }
+body .pref-row input:disabled, body .event-reminder-settings.is-off { opacity: .55; }
+body .event-reminder-row { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .3rem .8rem; padding: .25rem 0; }
+body .pre-reminder-field { display: inline-flex; align-items: center; gap: .4rem; }
+body .pre-reminder-field small { font-size: .76rem; color: var(--muted); }
+body .coordinate-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr)); gap: .5rem .8rem; }
+/* base looks for the cards whose old rules were retired in v2.1.0 */
+body .clock-card, body .sky-panel { position: relative; border: 1px solid color-mix(in srgb, var(--accent) 22%, var(--line)); border-radius: .9rem; background: linear-gradient(160deg, color-mix(in srgb, var(--surface) 94%, #9fb0c0), var(--surface)); box-shadow: 0 .5rem 1.4rem rgba(0,0,0,.22); }
+body .coord-card { padding: .32rem .8rem; border: 1px solid color-mix(in srgb, var(--accent) 30%, var(--line)); border-radius: .75rem; background: linear-gradient(135deg, color-mix(in srgb, var(--accent) 12%, var(--surface)), var(--surface)); color: var(--text); font-variant-numeric: tabular-nums; }
+body .coord-card.is-unset { color: var(--muted); }
+body .clock-card-kicker { text-align: start; }
+body .clock-date-greg { color: var(--text); font-weight: 650; }
+body .clock-date-hijri { color: var(--gold); }
+body .sky-panel .sky-observatory-title { text-transform: uppercase; }
+body .live-event { border: 1px solid color-mix(in srgb, var(--accent) 26%, var(--line)); border-radius: .9rem; background: linear-gradient(160deg, color-mix(in srgb, var(--surface) 92%, var(--accent)), var(--surface)); box-shadow: 0 .4rem 1.2rem rgba(0,0,0,.2); }
+body .live-event.obligatory { border-color: color-mix(in srgb, var(--gold) 45%, var(--line)); }
+
+body .analog-clock { background: transparent; border: 0; padding: 0; border-radius: 50%; }
+body.clock-expanded .clock-big-slot .clock-readout { container-type: normal; width: min(100%, 28rem); flex: 0 0 auto; }
+body.clock-expanded .topbar-astro .astro-top { gap: .05rem; }
+body.clock-expanded .topbar-astro .astro-foot { display: flex; flex-wrap: wrap; gap: .25rem .4rem; }
+body.clock-expanded .topbar-astro .astro-foot .zone-chip, body.clock-expanded .topbar-astro .astro-foot > * { font-size: .72rem; padding: .1rem .4rem; }
+
+.compact-mode .live-events-section { padding: .45rem .6rem; }
+
+/* ---- Text safety: no line clamps, no ellipsis, headings never collide ---------------- */
+body .progress-caption, body .daily-note, body .progress-status, body .home-board .progress-caption, body .home-board .daily-note, body .home-board .progress-status { display: block; -webkit-line-clamp: unset; overflow: visible; max-height: none; }
+body .brand-sub, body .hijri-date-label { white-space: normal; overflow: visible; text-overflow: clip; }
+body .section-heading > div { display: flex; flex-direction: column; gap: .2rem; }
+body .section-heading .eyebrow, body .section-heading h2 { margin: 0; line-height: 1.3; }
+body .section-heading h2 { line-height: 1.2; }
+body .next-card .eyebrow, body .progress-panel .eyebrow, body .live-events-section .eyebrow { margin: 0 0 .15rem; line-height: 1.4; }
+body .next-card .next-name { margin: 0; line-height: 1.3; padding-block: .05rem; }
+body .lead-evidence, body .home-board .lead-evidence { display: block; -webkit-line-clamp: unset; overflow: visible; }
+body .lead-evidence cite { font-size: .74rem; }
+@media (max-width: 820px) {
+  body .instrument-row { grid-template-columns: minmax(0, 1fr); }
+  body .app-shell { --inst-h: clamp(8.5rem, 26vh, 14rem); }
+  body .clock-card { grid-template-columns: auto minmax(0, 1fr); justify-items: stretch; }
+  body .clock-card .analog-clock { width: calc(var(--inst-h) - 1rem); height: calc(var(--inst-h) - 1rem); }
+  body .clock-readout { align-items: flex-start; text-align: start; }
+  body .clock-card #liveClock { font-size: clamp(1.3rem, 7vw, 2.2rem); }
+}
+@media (max-width: 700px) {
+  body.clock-expanded .topbar { flex-wrap: wrap; height: auto; }
+  body.clock-expanded .topbar-astro { order: 3; flex: 1 1 100%; height: auto; min-height: 7rem; }
+  body.clock-expanded .topbar-astro > .sky-panel.astro-card { flex: 1 1 100%; min-width: 0; }
+  body.clock-expanded .topbar .coord-card { max-width: 100%; }
+}
+
+/* ---- v2.1.1 reward panel: recognition phrase + voluntary reward, always at a readable size -------------------- */
+body .voluntary-reward .reward-phrase { display: flex; flex-wrap: wrap; align-items: baseline; gap: .1rem .65rem; min-width: 0; }
+body .voluntary-reward .reward-phrase + .eyebrow { margin-top: .45rem; padding-top: .4rem; border-top: 1px solid color-mix(in srgb, var(--gold) 28%, var(--line)); }
+body .voluntary-reward .recog-ar { font-family: "Alhamdulillah Ruqaa", "Aref Ruqaa", "Amiri", "Arabic Typesetting", serif; font-size: 1.3rem; line-height: 1.5; color: var(--gold); font-weight: 700; }
+body .voluntary-reward .recog-tr { font-size: .95rem; font-weight: 750; color: var(--text); letter-spacing: 0; overflow-wrap: anywhere; }
+body .voluntary-reward .recog-mean { font-size: .8rem; color: var(--muted); letter-spacing: 0; overflow-wrap: anywhere; }
+
+body .voluntary-reward[data-kind="day-complete"] { border-color: color-mix(in srgb, #1E8E5A 60%, var(--line)); background: linear-gradient(180deg, color-mix(in srgb, #1E8E5A 14%, var(--surface2)), var(--surface2)); }
+
+/* ---- v2.1.1 astrolabe: coin flip, machined flip button, enlarged detail ------------------------------------------- */
+body .astro-stage { perspective: 900px; }
+body .astro-flip { position: absolute; inset: 0; transform-origin: 50% 50%; backface-visibility: visible; }
+body .astro-stage.is-flipping .astro-flip { will-change: transform; }
+body .astro-stage.is-flipping { z-index: 2; }
+.av-detail { opacity: 0; pointer-events: none; transition: opacity .45s ease; }
+.is-detailed .av-detail { opacity: 1; }
+.av-dnum { font: 600 calc(4.4px * var(--av-tf, 1)) var(--ui-font, system-ui); fill: #1b2229; font-variant-numeric: tabular-nums; letter-spacing: 0; }
+.av-dnum2 { font: 600 calc(4.3px * var(--av-tf, 1)) var(--ui-font, system-ui); fill: #dfe6ec; opacity: .8; font-variant-numeric: tabular-nums; letter-spacing: 0; paint-order: stroke; stroke: rgba(8,12,16,.75); stroke-width: .7px; }
+.av-dcard { font: 800 calc(6px * var(--av-tf, 1)) var(--ui-font, system-ui); fill: #ffe9a8; letter-spacing: 0; paint-order: stroke; stroke: rgba(8,12,16,.85); stroke-width: .9px; }
+.av-star-label { font: 600 calc(4.6px * var(--av-tf, 1)) var(--ui-font, system-ui); fill: #f4f7fa; letter-spacing: .02em; paint-order: stroke; stroke: rgba(8,20,48,.85); stroke-width: 1px; }
+html[lang="bn"] .av-star-label, html[lang="bn"] .av-dnum, html[lang="bn"] .av-dnum2, html[lang="bn"] .av-dcard { letter-spacing: 0; }
+.astro-stage.is-detailed .astro-svg { shape-rendering: geometricPrecision; text-rendering: geometricPrecision; }
+
+/* ---- v2.1.1 expanded astrolabe page ------------------------------------------------------------------------------- */
+body .topbar-clock { display: none; }
+body.astro-expanded .instrument-row { display: none; }
+body.astro-expanded .topbar { align-items: center; gap: .8rem; flex-wrap: nowrap; height: auto; min-height: var(--topbar-h, 3rem); padding-bottom: .3rem; }
+body.astro-expanded .topbar-clock { display: flex; flex: 1 1 auto; justify-content: center; align-items: center; gap: .9rem; min-width: 0; }
+body.astro-expanded .topbar-clock .analog-clock { display: block; flex: 0 0 auto; width: clamp(4.4rem, 12vh, 6.6rem); height: clamp(4.4rem, 12vh, 6.6rem); padding: 0; border: 0; border-radius: 50%; background: none; cursor: pointer; transition: transform .35s cubic-bezier(.22,.72,.2,1); }
+body.astro-expanded .topbar-clock .analog-clock:hover { transform: scale(1.04); }
+body.astro-expanded .topbar-clock .analog-clock:focus-visible { outline: 2px solid var(--gold); outline-offset: 3px; }
+body.astro-expanded .topbar-clock .clock-readout { container-type: normal; width: auto; display: flex; flex-direction: column; align-items: flex-start; gap: .4rem; min-width: 0; cursor: default; }
+body.astro-expanded .topbar-clock .clock-readout .eyebrow { display: none; }
+body.astro-expanded .topbar-clock #liveClock { display: block; font-family: var(--app-font); /* v3.0.4 A: the app font, not Optima/Palatino */ font-size: clamp(1.25rem, 2.4vw, 2rem); line-height: 1.1; font-weight: 600; letter-spacing: .02em; white-space: nowrap; font-variant-numeric: tabular-nums; }
+html[lang="bn"] body.astro-expanded .topbar-clock #liveClock { font-family: var(--app-font); }
+body.astro-expanded .topbar-clock .clock-date { font-size: clamp(.72rem, .9vw, .88rem); text-align: start; }
+body.astro-expanded .topbar .coord-card { display: none; }
+body.astro-expanded .astro-big-slot > .sky-panel.astro-card { display: block; width: auto; min-height: 0; height: auto; margin: 0; padding: 0; border: 0; background: none; box-shadow: none; container-type: normal; }
+body.astro-expanded .astro-big-slot .astro-top, body.astro-expanded .astro-big-slot .astro-foot { display: none; }
+body.astro-expanded .astro-big-slot .astro-stage { height: var(--astro-big); width: var(--astro-big); margin: 0 auto; cursor: grab; }
+body .astro-page .back-button { margin: .2rem 0 .2rem; }
+body .astro-page .astro-hero { display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); gap: clamp(.8rem, 2vw, 2rem); align-items: center; padding: clamp(.8rem, 1.6vw, 1.6rem); margin: .4rem 0 .7rem; border-radius: 1.1rem; }
+body .astro-hero-center { display: flex; justify-content: center; min-width: 0; --astro-big: clamp(15rem, min(62vh, 36vw), 34rem); padding: .6rem; }
+body .astro-big-slot { display: flex; justify-content: center; min-width: 0; }
+body .astro-hero-info { display: flex; flex-direction: column; gap: .7rem; min-width: 0; }
+body .astro-info { margin: 0; padding: .8rem 1rem; }
+body .astro-info .fact-list li.is-now { border-bottom-color: var(--gold); }
+body .astro-info .fact-list li.is-now strong, body .astro-live { color: var(--gold); font-variant-numeric: tabular-nums; }
+body .astro-prayer-block + .astro-prayer-block { margin-top: .6rem; padding-top: .5rem; border-top: 1px solid color-mix(in srgb, var(--silver) 35%, transparent); }
+body .astro-prayer-name { margin: .1rem 0; font-size: 1.15rem; font-weight: 700; }
+body .astro-prayer-block p.muted { margin: 0; }
+body .astro-page-cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr)); gap: .7rem; }
+@media (max-width: 900px) {
+  body .astro-page .astro-hero { grid-template-columns: minmax(0, 1fr); justify-items: stretch; }
+  body .astro-hero-center { order: -1; --astro-big: clamp(14rem, min(60vh, 86vw), 30rem); }
+  body.astro-expanded .topbar { flex-wrap: wrap; }
+  body.astro-expanded .topbar-clock { order: 3; flex: 1 1 100%; justify-content: flex-start; }
+}
+
+/* v2.1.1: the tick circles on the event countdown page ("Completion & recording") match the home Available Now ticks:
+   Fard, Sunnah, Nafl and voluntary are all 80 % of Mark Complete (--tick-d), same border, glyph and label size. */
+body #eventCompletionCard .part-tick i { width: var(--tick-d); height: var(--tick-d); margin-top: 0; border-width: calc(var(--tick-d) * .07); font-size: calc(var(--tick-d) * .5); }
+body #eventCompletionCard .prayer-parts { display: flex; flex-wrap: wrap; align-items: flex-start; gap: .35rem .3rem; width: 100%; max-width: none; margin-top: .45rem; }
+body #eventCompletionCard .part-tick { flex: 0 0 auto; min-width: calc(var(--tick-d) + .5rem); max-width: 6.5rem; padding: .1rem .15rem; }
+body #eventCompletionCard .part-tick span { max-width: 100%; font-size: .72rem; line-height: 1.2; text-align: center; white-space: normal; overflow-wrap: anywhere; }
+
+/* ===== v2.2.0: horizontal prayer-countdown panel; the information card is centred when there is no preferred-time card ===== */
+body #countdownView .countdown-focus { max-width: none; width: 100%; margin: .2rem 0; padding: 1.5rem 2.2rem; display: grid; grid-template-columns: minmax(0, 1fr) auto minmax(0, 1fr); align-items: center; gap: .8rem 1.6rem; text-align: center; }
+body #countdownView .countdown-focus .cf-left { text-align: start; min-width: 0; }
+body #countdownView .countdown-focus .cf-left h1 { margin: .5rem 0 0; }
+body #countdownView .countdown-focus .cf-centre { min-width: 0; text-align: center; }
+body #countdownView .countdown-focus .countdown-large { margin-top: 0; }
+body #countdownView .countdown-focus .countdown-start { margin: 0; padding: 0; border: 0; text-align: end; line-height: 1.55; }
+@media (max-width: 900px) {
+  body #countdownView .countdown-focus { grid-template-columns: minmax(0, 1fr); padding: 2.375rem 1.125rem; gap: 0; }
+  body #countdownView .countdown-focus .cf-left { text-align: center; }
+  body #countdownView .countdown-focus .cf-left h1 { margin-top: .8125rem; }
+  body #countdownView .countdown-focus .countdown-large { margin-top: 1.25rem; }
+  body #countdownView .countdown-focus .countdown-start { margin-top: 1.6875rem; padding-top: 1.125rem; border-top: .0625rem solid var(--line); text-align: center; }
+}
+body #countdownView .page-cards.no-best #eventPrayerCard { grid-column: 1 / -1; justify-self: center; width: min(100%, 44rem); }
+
+/* ===== v2.2.0: matched premium Rotate + Flip buttons (knurled silver bezel, dark enamel centre, thin gold ring, engraved icon) ===== */
+.astro-tools { position: absolute; z-index: 3; display: flex; gap: .5rem; --tool-d: 2.3rem; }
+/* home: beside the dial (left of it, bottom-aligned), at least 16 px from every panel border and clear of the dial and the text */
+body .sky-panel .astro-stage > .astro-tools { right: calc(100% + 1rem); bottom: 1rem; }
+body.astro-expanded .astro-big-slot .astro-stage > .astro-tools { right: auto; bottom: auto; left: 50%; top: calc(100% + .5rem); transform: translateX(-50%); --tool-d: 2.5rem; }
+body.astro-expanded .astro-big-slot .astro-stage { margin-bottom: 3.6rem; }
+body.clock-expanded .topbar-astro .astro-tools { display: none; }
+.astro-tool, body .topbar #settingsToggle.settings-crown { position: relative; flex: 0 0 auto; width: var(--tool-d); height: var(--tool-d); padding: 0; border: 0; border-radius: 50%; display: grid; place-items: center; cursor: pointer; color: #e6cf8f; touch-action: manipulation;
+  background: conic-gradient(from 25deg, #aab3ba, #f3f5f7, #8a949c, #e9edf0, #a1aab1, #f2f4f6, #aab3ba);
+  box-shadow: 0 .15rem .4rem rgba(0,0,0,.55), inset 0 0 0 1px rgba(255,255,255,.4), inset 0 -1px 2px rgba(0,0,0,.35);
+  transition: transform .18s cubic-bezier(.22,.72,.2,1), box-shadow .2s; }
+.astro-tool::after, body .topbar #settingsToggle.settings-crown::after { content: ""; position: absolute; inset: 0; border-radius: 50%; pointer-events: none;
+  background: repeating-conic-gradient(rgba(0,0,0,.34) 0 1.1deg, transparent 1.1deg 3deg);
+  -webkit-mask: radial-gradient(circle, transparent 0 67%, #000 68%); mask: radial-gradient(circle, transparent 0 67%, #000 68%); }
+.astro-tool::before, body .topbar #settingsToggle.settings-crown::before { content: ""; position: absolute; inset: 17%; border-radius: 50%; pointer-events: none;
+  background: radial-gradient(circle at 36% 28%, #2a3a41, #0a1013 72%);
+  box-shadow: 0 0 0 1px rgba(214,170,74,.9), inset 0 .12rem .3rem rgba(0,0,0,.85), inset 0 -1px 1px rgba(255,255,255,.07);
+  transition: box-shadow .2s; }
+.astro-tool svg, body .topbar #settingsToggle.settings-crown svg { position: relative; z-index: 1; width: 48%; height: 48%; fill: none; stroke: currentColor; stroke-width: 1.6; stroke-linecap: round; stroke-linejoin: round; filter: drop-shadow(0 .5px 0 rgba(0,0,0,.95)); transition: transform .3s; }
+.astro-tool svg .axis { stroke-width: 1.2; stroke-dasharray: 1.6 2.2; }
+.astro-tool svg .dot { fill: currentColor; stroke: none; }
+.astro-tool:hover, body .topbar #settingsToggle.settings-crown:hover { transform: translateY(-1px); box-shadow: 0 .2rem .5rem rgba(0,0,0,.6), 0 0 .7rem rgba(230,190,90,.55), inset 0 0 0 1px rgba(255,255,255,.45), inset 0 -1px 2px rgba(0,0,0,.35); }
+.astro-tool:active, body .topbar #settingsToggle.settings-crown:active { transform: translateY(1px) scale(.94); }
+.astro-tool:active::before, body .topbar #settingsToggle.settings-crown:active::before { box-shadow: 0 0 0 1px rgba(214,170,74,.9), inset 0 .2rem .4rem rgba(0,0,0,.95); }
+.astro-tool:focus-visible, body .topbar #settingsToggle.settings-crown:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+.astro-tool[aria-pressed="true"] { color: #ffd877; }
+.astro-tool[aria-pressed="true"]::before { box-shadow: 0 0 0 1.5px #ffd877, 0 0 .55rem rgba(255,206,100,.75), inset 0 .12rem .3rem rgba(0,0,0,.85); }
+.astro-flip-btn[aria-pressed="true"] svg { transform: scaleX(-1); }
+.astro-rotate-btn[aria-pressed="true"] svg { transform: rotate(-35deg); }
+/* locked by default: a plain click opens the page; with Rotate on the dial can be dragged */
+body .astro-stage { cursor: pointer; }
+body .astro-stage.rotate-on { cursor: grab; }
+body .astro-stage.rotate-on.is-turning { cursor: grabbing; }
+body.astro-expanded .astro-big-slot .astro-stage:not(.rotate-on) { cursor: pointer; }
+body .astro-stage::after { content: ""; position: absolute; inset: 1%; border-radius: 50%; pointer-events: none; opacity: 0; transition: opacity .25s;
+  box-shadow: 0 0 0 1.5px rgba(230,190,90,.55), 0 0 .8rem rgba(230,190,90,.3); }
+body .astro-stage.rotate-on::after { opacity: 1; }
+
+/* ===== v2.2.0: settings crown (knurled watch crown, engraved gear) and coordinates plate (engraved compass, mono digits, place name) ===== */
+body .topbar #settingsToggle.settings-crown { --tool-d: 2.55rem; flex: 0 0 auto; margin-left: auto; color: #e6cf8f; }
+body .topbar #settingsToggle.settings-crown:hover svg { transform: rotate(60deg); }
+body .topbar #settingsToggle.settings-crown svg { stroke-width: 1.5; width: 50%; height: 50%; }
+body .topbar .coord-card { position: relative; display: inline-flex; align-items: center; gap: .55rem; margin-left: 0; padding: .3rem .85rem .3rem .6rem; cursor: pointer; text-align: start; color: var(--text); font: inherit; line-height: 1.2;
+  border: 2px solid transparent; border-radius: .9rem;
+  background: linear-gradient(160deg, #1b292f, #0a1013) padding-box, linear-gradient(135deg, #f3f5f7, #8a949c 30%, #e9edf0 52%, #8f99a1 78%, #dfe3e6) border-box;
+  box-shadow: 0 .15rem .45rem rgba(0,0,0,.45), inset 0 0 0 1px rgba(214,170,74,.55), inset 0 .1rem .3rem rgba(0,0,0,.6);
+  transition: box-shadow .2s, transform .18s; }
+body .topbar .coord-card:hover { box-shadow: 0 .2rem .5rem rgba(0,0,0,.5), 0 0 .7rem rgba(230,190,90,.4), inset 0 0 0 1px rgba(230,190,90,.8), inset 0 .1rem .3rem rgba(0,0,0,.6); }
+body .topbar .coord-card:active { transform: translateY(1px); }
+body .topbar .coord-card:focus-visible { outline: 2px solid var(--gold); outline-offset: 2px; }
+body .topbar .coord-card.is-unset { color: var(--muted); padding-inline: .9rem; }
+.coord-card .cp-mark { flex: 0 0 auto; width: 1.45rem; height: 1.45rem; fill: none; stroke: #e6cf8f; stroke-width: 1.4; stroke-linecap: round; filter: drop-shadow(0 .5px 0 rgba(0,0,0,.95)); }
+.coord-card .cp-mark .needle { fill: #e6cf8f; stroke-width: .6; }
+.coord-card .cp-text { display: flex; flex-direction: column; gap: .05rem; min-width: 0; }
+.coord-card .cp-coords { display: flex; flex-wrap: wrap; gap: 0 .7rem; font-family: ui-monospace, Consolas, 'SFMono-Regular', monospace; font-size: clamp(.78rem, .55vw + .55rem, .95rem); font-weight: 700; letter-spacing: .01em; font-variant-numeric: tabular-nums; color: #f1ead4; white-space: nowrap; }
+html[lang="bn"] .coord-card .cp-coords { font-family: var(--ui-font, system-ui); letter-spacing: 0; }
+.coord-card .cp-place { font-size: .7rem; line-height: 1.2; color: var(--muted); letter-spacing: .04em; overflow-wrap: anywhere; }
+body .brand-mark { border-radius: 50%; box-shadow: 0 .15rem .5rem rgba(0,0,0,.45); }
+
+/* ===== v2.2.0: crisp astrolabe: vector text and strokes at every size, hairlines floored to device pixels (see sharpenAstrolabe) ===== */
+.astro-svg, .astro-svg text { text-rendering: geometricPrecision; shape-rendering: geometricPrecision; }
+.astro-svg { backface-visibility: hidden; }
+
+/* v2.2.0 — the fit-to-window zoom is gone (never shrink the UI), so on a real ~1000 px wide window the
+   clock card must keep room for its time and date: the dial gives way, the text never wraps by letter. */
+@media (min-width: 821px) and (max-width: 1060px) {
+  body .instrument-row > .clock-card .analog-clock { width: min(calc(var(--inst-h) - 1rem), calc(100cqw - 11.5rem)); height: auto; aspect-ratio: 1; }
+}
+
+/* very narrow windows: the pair sits under the dial so it never meets the instrument text */
+@media (max-width: 520px) {
+  body .instrument-row > .sky-panel.astro-card { padding-bottom: 3.5rem; }
+  body .sky-panel .astro-stage > .astro-tools { right: auto; bottom: auto; left: 50%; top: calc(100% + .45rem); transform: translateX(-50%); }
+}
+.coord-card .cp-coords { line-height: 1.35; }
+
+/* ===== v2.3.0: tick size shows rank. Mark Complete 100 %, Fard 90 %, Sunnah 80 %, Nafl, the optional sunnah and the voluntary sets 70 %.
+   The light edge that made Nafl look bigger is now drawn INSIDE the circle (inset), so the outer diameters are exactly these. ===== */
+body .live-event .round-check { width: var(--tick-fard); height: var(--tick-fard); border-width: calc(var(--tick-fard) * .07); font-size: calc(var(--tick-fard) * .5); }
+body .live-event .part-tick, body #eventCompletionCard .part-tick { --own: var(--tick-sunnah); min-width: calc(var(--own) + .5rem); }
+body .live-event .part-tick.fard, body #eventCompletionCard .part-tick.fard { --own: var(--tick-fard); }
+body .live-event .part-tick.sunnah, body #eventCompletionCard .part-tick.sunnah { --own: var(--tick-sunnah); }
+body .live-event .part-tick.nafl, body #eventCompletionCard .part-tick.nafl,
+body .live-event .part-tick.voluntary, body #eventCompletionCard .part-tick.voluntary { --own: var(--tick-nafl); }
+body .live-event .part-tick i, body #eventCompletionCard .part-tick i { width: var(--own); height: var(--own); margin-top: calc((var(--tick-fard) - var(--own)) / 2); border-width: calc(var(--own) * .07); font-size: calc(var(--own) * .5); box-sizing: border-box; }
+body .live-event .part-tick.fard i, body #eventCompletionCard .part-tick.fard i { margin-top: 0; }
+.part-tick.nafl i, .part-tick.nafl.done i { box-shadow: inset 0 0 0 .0625rem var(--layer-nafl-edge); }
+
+/* ===== v2.3.0: settings crown edge smoothed. The 120 hard-edged knurl teeth aliased at every scale; the bezel is now a smooth brushed-silver
+   ring (soft conic gradient, a soft highlight) with fine, low-contrast grooves drawn as a smooth wave so nothing has a hard edge to alias. ===== */
+body .topbar #settingsToggle.settings-crown {
+  background: conic-gradient(from 30deg, #a9b2b9 0deg, #e9edf0 40deg, #c3cacf 85deg, #8f99a1 140deg, #dfe4e7 200deg, #b3bcc2 250deg, #f1f3f5 305deg, #a9b2b9 360deg);
+  box-shadow: 0 .15rem .4rem rgba(0,0,0,.5), 0 0 0 .5px rgba(0,0,0,.25), inset 0 0 0 1px rgba(255,255,255,.32), inset 0 -.06rem .14rem rgba(0,0,0,.28);
+  -webkit-font-smoothing: antialiased; }
+body .topbar #settingsToggle.settings-crown::after {
+  background:
+    radial-gradient(circle at 34% 24%, rgba(255,255,255,.34), rgba(255,255,255,0) 46%),
+    repeating-conic-gradient(rgba(0,0,0,.075) 0deg, rgba(0,0,0,0) 2.4deg, rgba(0,0,0,.075) 4.8deg);
+  -webkit-mask: radial-gradient(circle, transparent 0 60%, #000 74%); mask: radial-gradient(circle, transparent 0 60%, #000 74%); }
+body .topbar #settingsToggle.settings-crown::before { inset: 16%; box-shadow: 0 0 0 .75px rgba(214,170,74,.85), 0 0 0 1.5px rgba(0,0,0,.35), inset 0 .1rem .25rem rgba(0,0,0,.8), inset 0 -1px 1px rgba(255,255,255,.07); }
+
+/* v2.4.0: later voluntary circles that cannot be ticked yet share the locked, dimmed look. */
+.part-tick.is-locked:not(.done) { opacity: .45; cursor: default; }
+
+/* ===== v2.4.0: Rotate and Flip get the same smooth brushed-silver ring as the settings crown.
+   Size, position, icons, the gold on-state and the tooltips stay as they were. ===== */
+.astro-tool {
+  background: conic-gradient(from 30deg, #a9b2b9 0deg, #e9edf0 40deg, #c3cacf 85deg, #8f99a1 140deg, #dfe4e7 200deg, #b3bcc2 250deg, #f1f3f5 305deg, #a9b2b9 360deg);
+  box-shadow: 0 .15rem .4rem rgba(0,0,0,.5), 0 0 0 .5px rgba(0,0,0,.25), inset 0 0 0 1px rgba(255,255,255,.32), inset 0 -.06rem .14rem rgba(0,0,0,.28);
+  -webkit-font-smoothing: antialiased; }
+.astro-tool::after {
+  background:
+    radial-gradient(circle at 34% 24%, rgba(255,255,255,.34), rgba(255,255,255,0) 46%),
+    repeating-conic-gradient(rgba(0,0,0,.075) 0deg, rgba(0,0,0,0) 2.4deg, rgba(0,0,0,.075) 4.8deg);
+  -webkit-mask: radial-gradient(circle, transparent 0 60%, #000 74%); mask: radial-gradient(circle, transparent 0 60%, #000 74%); }
+.astro-tool::before { inset: 16%; box-shadow: 0 0 0 .75px rgba(214,170,74,.85), 0 0 0 1.5px rgba(0,0,0,.35), inset 0 .1rem .25rem rgba(0,0,0,.8), inset 0 -1px 1px rgba(255,255,255,.07); }
+
+/* ===== v2.4.0: Today's progress circle is centred in the left third of the card; text and legend stay in the other two-thirds.
+   Narrow stacked layouts keep their existing flex arrangement. ===== */
+@media (min-width: 700px) {
+  body .progress-panel {
+    display: flex;
+    flex-direction: column;
+  }
+  body .progress-panel .progress-head {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+    align-items: center;
+    justify-items: stretch;
+    gap: 0;
+    flex: 1 1 auto;
+    width: 100%;
+    min-height: 100%;
+  }
+  body .progress-panel .progress-visual {
+    justify-self: center;
+    align-self: center;
+    margin-inline: auto;
+  }
+  body .progress-panel .progress-copy { min-width: 0; padding-inline-start: 1rem; }
+}
+
+/* ===== v2.5.3: hour band is geometry (see astrolabe-view.js). These rules pack the home cards,
+   inset the reminder boxes, enlarge preferred-time type, and style the verse and rak‘ah cards. ===== */
+
+/* Home prayer cards shrink to their content and sit beside one another; the next card wraps under leftover space. */
+body .live-events {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  align-content: flex-start;
+  gap: .55rem;
+}
+body .live-events > .forbidden-card,
+body .live-events > .live-empty { flex: 1 1 100%; width: 100%; }
+body .live-event {
+  display: grid;
+  grid-template-columns: minmax(0, max-content) auto;
+  justify-content: start;
+  align-items: center;
+  column-gap: .75rem;
+  row-gap: .35rem;
+  flex: 0 1 auto;
+  width: fit-content;
+  max-width: 100%;
+}
+
+@container (max-width: 31rem) {
+  body .live-event { grid-template-columns: minmax(0, 1fr); width: 100%; }
+}
+
+/* Reminder boxes: text sits a little in from the border, not flush and not padded into a gap. */
+body .event-reminder-row {
+  padding: .5rem .85rem .5rem .95rem;
+  border: 1px solid var(--line);
+  border-radius: .65rem;
+  background: var(--surface2);
+}
+
+/* Preferred time, readable from across the room (clock page and the event countdown). */
+body .clock-preferred { padding: .85rem 1rem; }
+body .clock-preferred .eyebrow { font-size: clamp(.9rem, 1.3vw, 1.15rem); letter-spacing: .12em; }
+body .clock-preferred h3 { margin: .25rem 0 .35rem; font-size: clamp(1.45rem, 2.6vw, 2.15rem); line-height: 1.2; }
+body .clock-preferred-count { font-size: clamp(2.6rem, 6vw, 4.6rem); line-height: 1.05; }
+body .clock-preferred p,
+body .clock-preferred #timePreferredRange { font-size: clamp(1.05rem, 1.8vw, 1.4rem); line-height: 1.4; }
+body #bestBlock .eyebrow { font-size: clamp(.95rem, 1.4vw, 1.2rem); letter-spacing: .14em; }
+body #bestCountdown {
+  margin: .2rem 0 .35rem;
+  color: var(--accent);
+  font: 750 clamp(2.8rem, 7vw, 5.2rem)/1.02 var(--app-font);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0;
+}
+body #bestNote { margin: .2rem 0 0; font-size: clamp(1.15rem, 2.1vw, 1.65rem); line-height: 1.4; color: var(--text); }
+
+/* Qur’an 23:1, gold and silver, only while its own timer is running. */
+body .fard-verse-card {
+  margin: .35rem 0 0;
+  padding: .55rem .75rem;
+  border: 1px solid color-mix(in srgb, var(--gold) 62%, var(--silver));
+  border-radius: .8rem;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--gold) 14%, var(--surface2)), color-mix(in srgb, var(--silver) 10%, var(--surface2)));
+}
+body .fard-verse-card[hidden] { display: none; }
+body .fard-verse-card .reward-phrase { display: flex; flex-wrap: wrap; align-items: baseline; gap: .15rem .65rem; }
+body .fard-verse-card .recog-ar { font-family: "Alhamdulillah Ruqaa", "Aref Ruqaa", "Amiri", "Arabic Typesetting", serif; font-size: 1.35rem; line-height: 1.5; color: var(--gold); font-weight: 700; }
+body .fard-verse-card .recog-tr { font-size: .95rem; font-weight: 750; color: var(--silver); }
+body .fard-verse-card .recog-mean { font-size: .82rem; color: color-mix(in srgb, var(--silver) 78%, #fff); }
+
+/* Daily record: one short horizontal total, gold count and silver label. */
+body .rakah-total-card {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: .35rem .85rem;
+  width: 100%;
+  margin: 0;
+  padding: .45rem .9rem;
+  border: 1px solid color-mix(in srgb, var(--gold) 55%, var(--silver));
+  border-radius: .7rem;
+  background: linear-gradient(90deg, color-mix(in srgb, var(--gold) 12%, var(--surface)), color-mix(in srgb, var(--silver) 9%, var(--surface)));
+}
+body .rakah-total-kicker { color: var(--gold); font-size: .72rem; font-weight: 800; letter-spacing: .14em; }
+body .rakah-total-num { color: var(--gold); font-size: 1.35rem; font-weight: 750; font-variant-numeric: tabular-nums; line-height: 1; }
+body .rakah-total-label { color: var(--silver); font-size: .95rem; }
+
+/* Prayer page: verified passages only, stacked so a long quote is not squeezed beside another. */
+body #prayerView[hidden] { display: none !important; }
+body .prayer-page .prayer-page-cards { grid-template-columns: minmax(0, 1fr); width: min(46rem, 100%); }
+body .prayer-source-quote { margin: .25rem 0 .4rem; font-size: 1.05rem; line-height: 1.55; }
+body .prayer-source-ref { margin: 0; color: var(--gold); font-size: .86rem; }
+
+/* v2.5.3 event-card composition: identity, context, progress and action are distinct zones. */
+body .live-events {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 31rem), 1fr));
+  align-items: stretch;
+  justify-content: start;
+  gap: .7rem;
+}
+body .live-events > .forbidden-card,
+body .live-events > .live-empty { grid-column: 1 / -1; width: 100%; }
+body .live-events > .live-event {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  grid-template-rows: auto auto 1fr auto;
+  align-content: start;
+  gap: .8rem;
+  width: 100%;
+  max-width: 48rem;
+  min-width: 0;
+  min-height: 0;
+  padding: 1rem 1.05rem .9rem;
+  container-type: normal;
+}
+body .live-event-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(8.5rem, 10.5rem);
+  align-items: center;
+  gap: .8rem;
+  min-width: 0;
+}
+body .live-event-identity { display: flex; flex-direction: column; align-items: flex-start; min-width: 0; gap: .18rem; }
+body .live-event-type { margin: 0; color: var(--muted); font-size: .65rem; font-weight: 800; letter-spacing: .15em; line-height: 1.35; }
+body .live-event .live-name { max-width: 100%; font-size: clamp(1.15rem, 1.5vw, 1.45rem); font-weight: 750; line-height: 1.2; white-space: normal; overflow-wrap: anywhere; }
+body .live-event .live-time { margin: .12rem 0 0; color: var(--muted); font-size: .78rem; line-height: 1.35; font-variant-numeric: tabular-nums; }
+body .live-event-head .event-countdown { min-height: 4.2rem; padding: .55rem .7rem; }
+body .live-event-head .event-countdown .countdown-card-label { font-size: .62rem; }
+body .live-event-head .event-countdown .countdown-card-value { font-size: clamp(1.15rem, 2vw, 1.65rem); }
+body .live-event-evidence { min-width: 0; padding: .55rem .7rem; border-inline-start: 2px solid color-mix(in srgb, var(--accent) 55%, var(--line)); border-radius: 0 .55rem .55rem 0; background: color-mix(in srgb, var(--surface2) 68%, transparent); }
+body .live-event-evidence:empty { display: none; }
+body .live-event-evidence .lead-evidence { margin: 0; font-size: .78rem; line-height: 1.45; }
+body .live-event-evidence .lead-evidence cite { font-size: .7rem; }
+body .live-event-tracking { min-width: 0; align-self: stretch; display: flex; flex-direction: column; justify-content: center; padding-top: .15rem; }
+body .live-event-tracking .prayer-parts { display: flex; flex-wrap: wrap; align-items: flex-start; justify-content: flex-start; gap: .45rem .35rem; width: 100%; max-width: none; margin: 0; }
+body .live-event-tracking .part-tick { flex: 0 0 auto; min-width: calc(var(--tick-d) + .55rem); max-width: 7rem; padding: .12rem .2rem; }
+body .live-event-tracking .part-tick span { max-width: 100%; font-size: .72rem; line-height: 1.25; text-align: center; white-space: normal; overflow-wrap: anywhere; }
+body .live-event-tracking .part-link { display: none; }
+body .live-event-tracking .vol-block { width: 100%; }
+body .live-event-footer { display: flex; justify-content: flex-end; align-items: center; padding-top: .65rem; border-top: 1px solid color-mix(in srgb, var(--line) 75%, transparent); }
+body .live-event .square-button.mark-event-complete {
+  width: auto; min-width: 9.5rem; max-width: 100%; height: 2.55rem; aspect-ratio: auto;
+  padding: .45rem 1rem; border-radius: .7rem; font-size: .82rem; font-weight: 750;
+  line-height: 1.2; letter-spacing: 0; white-space: nowrap;
+}
+html[lang="bn"] body .live-event .square-button.mark-event-complete { font-size: .82rem; }
+@media (max-width: 520px) {
+  body .live-event-head { grid-template-columns: minmax(0, 1fr) minmax(7rem, 8.25rem); gap: .55rem; }
+  body .live-events > .live-event { padding: .8rem; gap: .65rem; }
+  body .live-event-head .event-countdown { min-height: 3.8rem; }
+}
+@media (max-width: 360px) {
+  body .live-event-head { grid-template-columns: minmax(0, 1fr); }
+  body .live-event-head .event-countdown { width: min(100%, 12rem); }
+}
+
+/* v3.0.2: countdown digits use the app font (both font pickers); tabular nums keep the width steady. */
+body .countdown-large,
+body .countdown-card .countdown-card-value,
+body .countdown-card-value,
+body .next-count,
+body .next-count .countdown-card-value,
+body .best-count,
+body .clock-hero-count,
+body .clock-count-big,
+body .clock-preferred-count,
+body #bestCountdown {
+  font-family: var(--app-font);
+  font-variant-numeric: tabular-nums;
+}
+html[lang="bn"] body .countdown-large,
+html[lang="bn"] body .countdown-card .countdown-card-value,
+html[lang="bn"] body .countdown-card-value,
+html[lang="bn"] body .next-count,
+html[lang="bn"] body .next-count .countdown-card-value,
+html[lang="bn"] body .best-count,
+html[lang="bn"] body .clock-hero-count,
+html[lang="bn"] body .clock-count-big,
+html[lang="bn"] body .clock-preferred-count,
+html[lang="bn"] body #bestCountdown {
+  font-family: var(--app-font);
+}
+
+/* Completion card: ticks on the left, Mark Complete on the right; wraps on narrow screens. */
+#eventCompletionCard .completion-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: .7rem 1rem;
+  margin-top: .45rem;
+  min-width: 0;
+}
+#eventCompletionCard .completion-row .prayer-parts,
+#eventCompletionCard .completion-row .vol-block { flex: 1 1 14rem; min-width: 0; margin-top: 0; }
+#eventCompletionCard .completion-row .mark-event-complete {
+  flex: 0 0 auto;
+  width: auto; min-width: 9.5rem; max-width: 100%; height: 2.55rem; aspect-ratio: auto;
+  padding: .45rem 1rem; border-radius: .7rem; font-size: .82rem; font-weight: 750;
+  line-height: 1.2; letter-spacing: 0; white-space: nowrap; margin-left: auto;
+}
+@media (max-width: 520px) {
+  #eventCompletionCard .completion-row { flex-direction: column; align-items: stretch; }
+  #eventCompletionCard .completion-row .mark-event-complete { margin-left: 0; width: 100%; max-width: none; }
+}
+
+/* Friday exclusive option: dimmed, not a time-lock. */
+.part-tick.is-exclusive { opacity: .45; }
+.part-tick.is-exclusive i { filter: grayscale(.3); }
+
+/* A Blessed Reminder card */
+#dailyNote { min-width: 0; }
+#dailyNote .eyebrow { margin-bottom: .25rem; }
+/* v3.0.2: translation only (no Arabic), a subject line above the passage, verse numbers inline. */
+#dailyNote .blessed-subject, .portion-body .blessed-subject { margin: .1rem 0 0; color: var(--text); font-size: .7rem; font-weight: 750; line-height: 1.35; }
+#dailyNote .blessed-tr, .portion-body .blessed-tr { margin: .2rem 0 0; font-size: .72rem; line-height: 1.45; }
+.blessed-num { margin-right: .1rem; color: var(--accent); font-size: .7em; font-weight: 750; }
+#dailyNote .blessed-ref, .portion-body .blessed-ref { margin: .15rem 0 0; color: var(--muted); font-size: .58rem; font-weight: 650; }
+.blessed-actions { display: flex; flex-wrap: wrap; gap: .25rem .8rem; }
+#dailyNote .blessed-more, .portion-body .blessed-more {
+  margin-top: .25rem; padding: 0; border: 0; background: none; color: var(--accent);
+  font: inherit; font-size: .62rem; font-weight: 700; cursor: pointer; text-decoration: underline;
+}
+#dailyNote .blessed-progress { margin: .25rem 0 0; color: var(--muted); font-size: .6rem; font-weight: 650; }
+.blessed-month { margin: .2rem 0 .4rem; font-weight: 700; }
+
+/* Today's portion */
+.portion-dialog { width: min(44rem, calc(100vw - 2rem)); max-height: min(80vh, 46rem); }
+.portion-dialog[open] { display: flex; flex-direction: column; }
+.portion-summary { margin: .2rem 0 .5rem; }
+.portion-list { flex: 1 1 auto; min-height: 0; margin: 0; padding: 0; overflow-y: auto; list-style: none; display: grid; gap: .35rem; }
+.portion-item { border: 1px solid var(--line); border-radius: .6rem; background: var(--surface); }
+.portion-item.is-unread { border-color: color-mix(in srgb, var(--accent) 45%, var(--line)); }
+.portion-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: .2rem .6rem; width: 100%; padding: .45rem .6rem; border: 0; background: none; color: var(--text); font: inherit; font-size: .72rem; text-align: left; cursor: pointer; }
+.portion-ref { color: var(--muted); font-weight: 700; white-space: nowrap; }
+.portion-subject { flex: 1 1 12rem; min-width: 0; }
+.portion-unread { padding: .05rem .4rem; border-radius: 999px; background: color-mix(in srgb, var(--accent) 18%, transparent); color: var(--accent); font-size: .6rem; font-weight: 750; }
+.portion-body { padding: 0 .6rem .55rem; }
+.portion-mark { padding: 0 .6rem .4rem; }
+.portion-mark .blessed-more, .portion-nav .blessed-more {
+  padding: 0; border: 0; background: none; color: var(--accent);
+  font: inherit; font-size: .62rem; font-weight: 700; cursor: pointer; text-decoration: underline;
+}
+.portion-mark .blessed-mark.is-read { color: var(--muted); }
+.portion-nav { margin: 0 0 .5rem; }
+.portion-featured { display: block; padding: .4rem .6rem 0; color: var(--gold); font-size: .62rem; font-weight: 700; }
+/* v3.0.6: Mark as read on the reminder, featured-passage note, all-read line */
+#dailyNote .blessed-mark.is-read { color: var(--muted); text-decoration: none; cursor: default; }
+#dailyNote .blessed-all-read { margin-top: .25rem; color: var(--good); font-size: .62rem; font-weight: 700; }
+#dailyNote .blessed-featured, .portion-body .blessed-featured { margin: .1rem 0 .15rem; color: var(--gold); font-size: .62rem; font-weight: 700; }
+/* v3.0.6: "Predicted by crescent visibility" under the Hijri date */
+body .clock-date .clock-date-note { color: var(--muted); font-size: .68em; line-height: 1.25; }
+
+/* "Recorded after its time" note (v3.0.2) */
+.late-note { color: var(--muted); }
+
+/* Version label: tiny, fixed, bottom-right, never intercepts clicks. */
+body .app-version-label {
+  position: fixed !important;
+  z-index: 35;
+  right: .55rem;
+  bottom: .35rem;
+  margin: 0;
+  color: color-mix(in srgb, var(--muted) 72%, transparent);
+  font-size: .42rem;
+  line-height: 1.2;
+  letter-spacing: .04em;
+  white-space: nowrap;
+  pointer-events: none;
+  user-select: none;
+  display: block;
+  text-align: right;
+}
+html[lang="bn"] body .app-version-label { letter-spacing: 0; }
+@media (max-width: 420px) {
+  body .app-version-label { right: .4rem; bottom: .28rem; font-size: .38rem; }
+}
+
+/* Ref text in the countdown card must not clip opening glyphs or first letters. */
+#eventRakahCard .ref-note,
+#eventRakahCard .ref-practical,
+#eventRakahCard .ref-practical p { overflow: visible; padding-inline: .12rem; }
+#eventPrayerCard { overflow: visible; }
+
+/* v3.0.3: Hijri date adjustment under Time adjustments */
+.hijri-adjust-row { display: grid; gap: .35rem; margin-top: 1rem; max-width: 22rem; }
+.hijri-adjust-row select { width: 100%; }
+
+/* ===== v3.0.4 G: every prayer card (available now and Revise previous prayer) flows in one wrapping row set.
+   Cards grow to fill their row, so a lone card in the last row takes the full width: no half-empty rows.
+   The Revise heading sits inside its card, so it never starts a row of its own. ===== */
+body .live-events { display: flex; flex-wrap: wrap; align-items: stretch; align-content: flex-start; gap: .7rem; }
+body .live-events > .live-event { flex: 1 1 min(100%, 31rem); width: auto; min-width: 0; max-width: none; }
+body .live-events > .forbidden-card,
+body .live-events > .live-empty { flex: 1 1 100%; width: 100%; }
+body .live-event .revise-heading { margin: 0; font-size: .9rem; font-weight: 750; color: var(--text); }
+/* v3.0.4 C4/C5: unsaved "+2 rak‘ahs" count and Other voluntary entries in the Prayer record. */
+.other-pending { color: var(--gold); font-weight: 700; font-size: .8rem; }
+.other-record-card { padding-bottom: 1rem; }
+.other-entry { display: grid; gap: .4rem; margin-top: .7rem; padding-top: .6rem; border-top: 1px solid var(--line); }
+.other-entry .other-entry-line { margin: 0; color: var(--muted); font-size: .72rem; }
+.weekly-part-line { margin: .25rem 0; }
+/* v3.0.4 K: after Mark Complete the countdown page keeps only the Prayer countdown and Event timing, with no gap. */
+#countdownView #eventPrayerCard[hidden] { display: none !important; }
+#countdownView .page-cards.is-recorded #bestBlock { grid-column: 1 / -1; }
+/* v3.0.4 A: the clock digits stay fixed-width wherever the clock sits (home card, clock page, top bar). */
+body #liveClock { font-variant-numeric: tabular-nums; }
